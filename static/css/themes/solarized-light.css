@@ -1,0 +1,44 @@
+/*
+Solarized Light
+Ethan Schoonover's precision color scheme
+*/
+
+:root {
+    --bg-primary: #fdf6e3;
+    --bg-secondary: #eee8d5;
+    --bg-sidebar: #eee8d5;
+    --text-primary: #657b83;
+    --text-secondary: #839496;
+    --text-muted: #93a1a1;
+    --border-color: #d3cbb7;
+    --accent-color: #268bd2;
+    --accent-hover: #2aa198;
+    --code-bg: #eee8d5;
+    --link-color: #268bd2;
+}
+
+.sidebar-header {
+    background: #fdf6e3;
+}
+
+.breadcrumb {
+    background: #fdf6e3;
+}
+
+.content-header {
+    background: #eee8d5;
+}
+
+.file-item .badge {
+    background: #268bd2;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+    border-bottom-color: #d3cbb7;
+    color: #586e75;
+}
+
+.markdown-body blockquote {
+    border-left-color: #2aa198;
+}
