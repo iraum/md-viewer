@@ -1,0 +1,68 @@
+/*
+High Contrast
+Maximum readability with strong contrast
+*/
+
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --bg-sidebar: #0a0a0a;
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-muted: #b0b0b0;
+    --border-color: #444444;
+    --accent-color: #ffff00;
+    --accent-hover: #ffff66;
+    --code-bg: #1a1a1a;
+    --link-color: #00ffff;
+}
+
+.sidebar-header {
+    background: #1a1a1a;
+}
+
+.breadcrumb {
+    background: #1a1a1a;
+}
+
+.content-header {
+    background: #1a1a1a;
+}
+
+.file-item:hover {
+    background: #333333;
+}
+
+.file-item.active {
+    background: #ffff00;
+    color: #000000;
+}
+
+.file-item.active .size,
+.file-item.active .badge {
+    color: #000000;
+}
+
+.file-item .badge {
+    background: #ffff00;
+    color: #000000;
+}
+
+.error {
+    color: #ff6666;
+    background: #330000;
+}
+
+.markdown-body a {
+    text-decoration: underline;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+    border-bottom-color: #666666;
+}
+
+.hljs {
+    background: #1a1a1a !important;
+    color: #ffffff !important;
+}

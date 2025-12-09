@@ -1,0 +1,97 @@
+/*
+Raw Markdown
+View the raw markdown source with syntax highlighting
+*/
+
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --bg-sidebar: #f0f0f0;
+    --text-primary: #2e3436;
+    --text-secondary: #555753;
+    --text-muted: #888a85;
+    --border-color: #d3d7cf;
+    --accent-color: #3465a4;
+    --accent-hover: #204a87;
+    --code-bg: #f5f5f5;
+    --link-color: #3465a4;
+}
+
+.sidebar-header {
+    background: #f5f5f5;
+}
+
+.breadcrumb {
+    background: #f5f5f5;
+}
+
+.content-header {
+    background: #f5f5f5;
+}
+
+.file-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Raw source display */
+.raw-source {
+    font-family: "Source Code Pro", "DejaVu Sans Mono", "Liberation Mono", Consolas, monospace;
+    font-size: 11px;
+    line-height: 1.35;
+    color: #000000;
+    background: #ffffff;
+    margin: 0;
+    padding: 4px 8px 4px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.raw-source .raw-line {
+    display: flex;
+    align-items: flex-start;
+    min-height: 15px;
+}
+
+.raw-source .line-num {
+    flex-shrink: 0;
+    width: 32px;
+    color: #888a85;
+    text-align: right;
+    padding-right: 8px;
+    margin-right: 8px;
+    user-select: none;
+    font-size: 11px;
+}
+
+.raw-source .line-content {
+    flex: 1;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Markdown syntax highlighting - matching gedit */
+.raw-source .md-h1 { color: #a40000; font-weight: bold; }
+.raw-source .md-h2 { color: #4e9a06; font-weight: bold; }
+.raw-source .md-h3 { color: #204a87; font-weight: bold; }
+.raw-source .md-h4 { color: #5c3566; font-weight: bold; }
+.raw-source .md-h5,
+.raw-source .md-h6 { color: #555753; font-weight: bold; }
+
+.raw-source .md-bold { color: #a40000; }
+.raw-source .md-italic { color: #c4a000; }
+.raw-source .md-code { color: #4e9a06; }
+.raw-source .md-code-block { color: #4e9a06; }
+.raw-source .md-link { color: #204a87; }
+.raw-source .md-url { color: #204a87; }
+.raw-source .md-image { color: #5c3566; }
+.raw-source .md-blockquote { color: #888a85; }
+.raw-source .md-list { color: #c4a000; font-weight: bold; }
+.raw-source .md-hr { color: #888a85; }
+.raw-source .md-table { color: #000000; }
+
+/* Override markdown body for raw view */
+.markdown-body {
+    padding: 0;
+    background: #ffffff;
+}
