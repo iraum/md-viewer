@@ -2,6 +2,8 @@
 
 A lightweight, self-hosted markdown file browser and viewer with beautiful themes.
 
+![Markdown Viewer Screenshot](md-viewer.png)
+
 ---
 
 ## Overview
