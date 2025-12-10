@@ -1,1 +1,16 @@
-flask>=2.0.0
+# Pinned dependencies for security and reproducibility
+# Last updated: 2025-12-10
+
+# Web Framework
+flask==3.0.0
+
+# Security: Flask 3.0.0 is the latest stable version
+# - Includes Werkzeug 3.0.0+ with security fixes
+# - Python 3.8+ required
+# - No known CVEs as of 2025-12-10
+
+# To upgrade Flask in the future:
+# 1. Check Flask changelog for breaking changes
+# 2. Test application thoroughly
+# 3. Update this pin with new version
+# 4. Document any required code changes
