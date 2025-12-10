@@ -8,6 +8,7 @@
     // State
     let currentPath = null;
     let currentTheme = localStorage.getItem('md-viewer-theme') || '';
+    let csrfToken = null;
 
     // DOM Elements
     const fileTree = document.getElementById('file-tree');
@@ -32,9 +33,125 @@
     });
 
     /**
+     * Fetch CSRF token from the server
+     */
+    async function fetchCsrfToken() {
+        try {
+            const response = await fetch('/api/csrf-token');
+            if (!response.ok) {
+                throw new Error(`Failed to fetch CSRF token: ${response.statusText}`);
+            }
+            const data = await response.json();
+            csrfToken = data.csrf_token;
+            console.log('CSRF token acquired');
+            return csrfToken;
+        } catch (error) {
+            console.error('Failed to acquire CSRF token:', error);
+            // Display user-friendly error message
+            const fileTree = document.getElementById('file-tree');
+            if (fileTree) {
+                fileTree.innerHTML = '<div class="error">Security error: Failed to initialize application. Please refresh the page.</div>';
+            }
+            throw error;
+        }
+    }
+
+    /**
+     * Make a POST request with CSRF token protection
+     */
+    async function postWithCsrf(url, data) {
+        if (!csrfToken) {
+            throw new Error('CSRF token not available. Please refresh the page.');
+        }
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-Token': csrfToken
+                },
+                body: JSON.stringify(data)
+            });
+
+            if (response.status === 403) {
+                // CSRF token is invalid or expired
+                console.error('CSRF token validation failed');
+                throw new Error('Security validation failed. Your session may have expired. Please refresh the page.');
+            }
+
+            if (!response.ok) {
+                const errorData = await response.json().catch(() => ({}));
+                throw new Error(errorData.error || `Server error: ${response.statusText}`);
+            }
+
+            return await response.json();
+        } catch (error) {
+            console.error('POST request failed:', error);
+            throw error;
+        }
+    }
+
+    /**
+     * Save a custom theme
+     */
+    async function saveTheme(themeData) {
+        try {
+            const result = await postWithCsrf('/api/themes', themeData);
+            console.log('Theme saved successfully:', result);
+            return result;
+        } catch (error) {
+            console.error('Failed to save theme:', error);
+            showNotification('Error: ' + error.message, 'error');
+            throw error;
+        }
+    }
+
+    /**
+     * Show notification message to user
+     */
+    function showNotification(message, type = 'info') {
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification notification-${type}`;
+        notification.textContent = message;
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 20px;
+            background-color: ${type === 'error' ? '#f8d7da' : type === 'success' ? '#d4edda' : '#d1ecf1'};
+            color: ${type === 'error' ? '#721c24' : type === 'success' ? '#155724' : '#0c5460'};
+            border: 1px solid ${type === 'error' ? '#f5c6cb' : type === 'success' ? '#c3e6cb' : '#bee5eb'};
+            border-radius: 4px;
+            z-index: 10000;
+            max-width: 400px;
+            word-wrap: break-word;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        `;
+
+        document.body.appendChild(notification);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+            notification.style.transition = 'opacity 0.3s ease-out';
+            notification.style.opacity = '0';
+            setTimeout(() => notification.remove(), 300);
+        }, 5000);
+    }
+
+    /**
      * Initialize the application
      */
     async function init() {
+        // Fetch CSRF token early for protected endpoints
+        try {
+            await fetchCsrfToken();
+        } catch (error) {
+            console.error('Failed to initialize CSRF protection. Some features may not work.');
+            return;
+        }
+
         await loadThemes();
         await browse();
 
