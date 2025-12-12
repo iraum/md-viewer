@@ -15,18 +15,15 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Security Configuration
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(32))
-app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max request size
-
-# Application Configuration
+# Application Configuration (before logging setup)
 HOME_DIR = Path.home()
 THEMES_DIR = Path(__file__).parent / "static" / "css" / "themes"
 DEFAULT_START_DIR = HOME_DIR / "Documents"
 MAX_THEME_SIZE = 100 * 1024  # 100KB max theme size
+MAX_MARKDOWN_SIZE = 10 * 1024 * 1024  # 10MB max markdown file size
 LOG_FILE = Path(__file__).parent / "security.log"
 
-# Setup security logging
+# Setup security logging (before using logger)
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -36,6 +33,28 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+# Security Configuration
+# Enforce SECRET_KEY as mandatory environment variable in production
+if 'SECRET_KEY' not in os.environ:
+    # Generate a warning and use a random key (insecure for production)
+    secret_key = secrets.token_hex(32)
+    logger.warning("="*60)
+    logger.warning("SECURITY WARNING: SECRET_KEY environment variable not set!")
+    logger.warning("Using a randomly generated key. Sessions will not persist across restarts.")
+    logger.warning("For production, set SECRET_KEY environment variable to a secure random value:")
+    logger.warning(f"  export SECRET_KEY='{secret_key}'")
+    logger.warning("="*60)
+    app.config['SECRET_KEY'] = secret_key
+else:
+    app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
+    logger.info("SECRET_KEY loaded from environment variable")
+
+app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16MB max request size
+app.config['SESSION_COOKIE_SECURE'] = os.environ.get('FLASK_ENV') == 'production'
+app.config['SESSION_COOKIE_HTTPONLY'] = True
+app.config['SESSION_COOKIE_SAMESITE'] = 'Lax'
+app.config['PERMANENT_SESSION_LIFETIME'] = 3600  # 1 hour session lifetime
 
 
 # Security Headers
@@ -58,20 +77,43 @@ def add_security_headers(response):
     return response
 
 
-# CSRF Protection
+# CSRF Protection with token rotation and expiration
+from datetime import datetime, timedelta
+
 def generate_csrf_token():
-    """Generate a CSRF token for the session."""
-    if 'csrf_token' not in session:
-        session['csrf_token'] = secrets.token_hex(32)
+    """Generate a CSRF token for the session with expiration."""
+    current_time = datetime.utcnow()
+
+    # Check if token exists and is still valid (within 1 hour)
+    if 'csrf_token' in session and 'csrf_token_time' in session:
+        token_time = datetime.fromisoformat(session['csrf_token_time'])
+        if current_time - token_time < timedelta(hours=1):
+            return session['csrf_token']
+
+    # Generate new token (expired or doesn't exist)
+    session['csrf_token'] = secrets.token_hex(32)
+    session['csrf_token_time'] = current_time.isoformat()
+    session.permanent = True  # Enable session expiration
+    logger.info(f"New CSRF token generated for session from {request.remote_addr if request else 'unknown'}")
     return session['csrf_token']
 
 
 def validate_csrf_token():
-    """Validate CSRF token from request."""
+    """Validate CSRF token from request and check expiration."""
     token = request.headers.get('X-CSRF-Token') or request.form.get('csrf_token')
+
     if not token or token != session.get('csrf_token'):
         logger.warning(f"CSRF validation failed from {request.remote_addr}")
         return False
+
+    # Check token expiration
+    if 'csrf_token_time' in session:
+        token_time = datetime.fromisoformat(session['csrf_token_time'])
+        current_time = datetime.utcnow()
+        if current_time - token_time >= timedelta(hours=1):
+            logger.warning(f"CSRF token expired from {request.remote_addr}")
+            return False
+
     return True
 
 
@@ -174,11 +216,17 @@ def browse():
                     "has_markdown": has_md
                 })
             elif item.suffix.lower() == ".md":
-                items.append({
-                    "name": item.name,
-                    "path": str(item),
-                    "type": "file"
-                })
+                try:
+                    file_size = item.stat().st_size
+                    items.append({
+                        "name": item.name,
+                        "path": str(item),
+                        "type": "file",
+                        "size": file_size
+                    })
+                except Exception:
+                    # Skip files we can't stat
+                    continue
     except PermissionError:
         logger.warning(f"Permission denied accessing: {requested_path} from {request.remote_addr}")
         return jsonify({"error": "Permission denied"}), 403
@@ -236,17 +284,33 @@ def get_file():
         logger.warning(f"Non-markdown file access attempt: {path} from {request.remote_addr}")
         return jsonify({"error": "Not a markdown file"}), 400
 
+    # Check file size before reading to prevent memory exhaustion
+    try:
+        file_size = file_path.stat().st_size
+        if file_size > MAX_MARKDOWN_SIZE:
+            logger.warning(f"File too large: {file_path} ({file_size} bytes) from {request.remote_addr}")
+            return jsonify({
+                "error": f"File too large. Maximum size is {MAX_MARKDOWN_SIZE / (1024*1024):.1f}MB"
+            }), 413
+    except Exception as e:
+        logger.error(f"Error checking file size: {file_path} - {type(e).__name__}")
+        return jsonify({"error": "Error accessing file"}), 500
+
     try:
         content = file_path.read_text(encoding="utf-8")
-        logger.info(f"File accessed: {file_path} from {request.remote_addr}")
+        logger.info(f"File accessed: {file_path} ({file_size} bytes) from {request.remote_addr}")
         return jsonify({
             "path": str(file_path),
             "name": file_path.name,
-            "content": content
+            "content": content,
+            "size": file_size
         })
     except PermissionError:
         logger.warning(f"Permission denied reading file: {file_path} from {request.remote_addr}")
         return jsonify({"error": "Permission denied"}), 403
+    except UnicodeDecodeError:
+        logger.warning(f"Invalid UTF-8 encoding: {file_path} from {request.remote_addr}")
+        return jsonify({"error": "File contains invalid UTF-8 encoding"}), 400
     except Exception as e:
         logger.error(f"Error reading file: {file_path} - {type(e).__name__}")
         return jsonify({"error": "An error occurred"}), 500

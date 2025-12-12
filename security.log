@@ -1,0 +1,441 @@
+2025-12-10 11:55:30,376 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-10 11:55:30,378 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-10 11:55:30,378 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-10 11:55:33,592 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET / HTTP/1.1" 200 -
+2025-12-10 11:55:33,632 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-10 11:55:33,635 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-10 11:55:33,635 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-10 11:55:33,635 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-10 11:55:33,636 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-10 11:55:33,677 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 11:55:33,681 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-10 11:55:33,693 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 11:55:33,696 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 11:55:33,696 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 11:55:33,704 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:33] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-10 11:55:38,753 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-10 11:55:38,753 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:38] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-10 11:55:40,303 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 11:55:40,304 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:40] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 11:55:42,012 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-10 11:55:42,013 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:42] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-10 11:55:46,021 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 11:55:46,021 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:46] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 11:55:48,249 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md from 127.0.0.1
+2025-12-10 11:55:48,249 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:48] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-10 11:55:49,272 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 11:55:49,273 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:49] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 11:55:50,969 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md from 127.0.0.1
+2025-12-10 11:55:50,969 - INFO - 127.0.0.1 - - [10/Dec/2025 11:55:50] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-10 12:35:20,517 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-10 12:35:20,518 - INFO - 127.0.0.1 - - [10/Dec/2025 12:35:20] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-10 12:35:21,976 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md from 127.0.0.1
+2025-12-10 12:35:21,976 - INFO - 127.0.0.1 - - [10/Dec/2025 12:35:21] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md HTTP/1.1" 200 -
+2025-12-10 12:35:25,702 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup from 127.0.0.1
+2025-12-10 12:35:25,702 - INFO - 127.0.0.1 - - [10/Dec/2025 12:35:25] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup HTTP/1.1" 200 -
+2025-12-10 12:35:26,665 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md from 127.0.0.1
+2025-12-10 12:35:26,665 - INFO - 127.0.0.1 - - [10/Dec/2025 12:35:26] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md HTTP/1.1" 200 -
+2025-12-10 12:36:03,226 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 12:36:03,226 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:03] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 12:36:05,594 - INFO - Browse: /home/opc/Documents/reference from 127.0.0.1
+2025-12-10 12:36:05,595 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:05] "GET /api/browse?path=/home/opc/Documents/reference HTTP/1.1" 200 -
+2025-12-10 12:36:07,588 - INFO - Browse: /home/opc/Documents/reference/JEP-samples from 127.0.0.1
+2025-12-10 12:36:07,588 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:07] "GET /api/browse?path=/home/opc/Documents/reference/JEP-samples HTTP/1.1" 200 -
+2025-12-10 12:36:08,816 - INFO - File accessed: /home/opc/Documents/reference/JEP-samples/README.md from 127.0.0.1
+2025-12-10 12:36:08,816 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:08] "GET /api/file?path=/home/opc/Documents/reference/JEP-samples/README.md HTTP/1.1" 200 -
+2025-12-10 12:36:10,769 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 12:36:10,770 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:10] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 12:36:12,165 - INFO - Browse: /home/opc/Documents/JEP building from 127.0.0.1
+2025-12-10 12:36:12,165 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:12] "GET /api/browse?path=/home/opc/Documents/JEP%20building HTTP/1.1" 200 -
+2025-12-10 12:36:12,992 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md from 127.0.0.1
+2025-12-10 12:36:12,992 - INFO - 127.0.0.1 - - [10/Dec/2025 12:36:12] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-10 12:37:44,635 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md from 127.0.0.1
+2025-12-10 12:37:44,636 - INFO - 127.0.0.1 - - [10/Dec/2025 12:37:44] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-10 12:40:13,912 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md from 127.0.0.1
+2025-12-10 12:40:13,912 - INFO - 127.0.0.1 - - [10/Dec/2025 12:40:13] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-10 12:42:43,271 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 12:42:43,271 - INFO - 127.0.0.1 - - [10/Dec/2025 12:42:43] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 12:42:44,516 - INFO - Browse: /home/opc/Documents/orcl-code from 127.0.0.1
+2025-12-10 12:42:44,516 - INFO - 127.0.0.1 - - [10/Dec/2025 12:42:44] "GET /api/browse?path=/home/opc/Documents/orcl-code HTTP/1.1" 200 -
+2025-12-10 12:42:45,632 - INFO - Browse: /home/opc/Documents/orcl-code/sqlcl-mcp-bug from 127.0.0.1
+2025-12-10 12:42:45,632 - INFO - 127.0.0.1 - - [10/Dec/2025 12:42:45] "GET /api/browse?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug HTTP/1.1" 200 -
+2025-12-10 12:42:47,905 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md from 127.0.0.1
+2025-12-10 12:42:47,906 - INFO - 127.0.0.1 - - [10/Dec/2025 12:42:47] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-10 12:57:12,490 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md from 127.0.0.1
+2025-12-10 12:57:12,490 - INFO - 127.0.0.1 - - [10/Dec/2025 12:57:12] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-10 12:57:14,223 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md from 127.0.0.1
+2025-12-10 12:57:14,223 - INFO - 127.0.0.1 - - [10/Dec/2025 12:57:14] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-10 12:57:21,175 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md from 127.0.0.1
+2025-12-10 12:57:21,176 - INFO - 127.0.0.1 - - [10/Dec/2025 12:57:21] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-10 13:02:19,951 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-10 13:02:19,952 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-10 13:02:19,952 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-10 13:03:05,704 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-10 13:03:05,706 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-10 13:03:05,706 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-10 13:03:12,173 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-10 13:03:27,953 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:27] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:27,997 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:27] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:27,999 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:27] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:27,999 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:28,003 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:28,010 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:28,030 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:28,047 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:28,056 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:28,056 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:28,061 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:28] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,911 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:29,930 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,931 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,931 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,932 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,933 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:29,954 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:29,957 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:29,960 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:29,960 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:29,963 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:29] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,876 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:38,895 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,896 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,896 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,897 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,897 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:38,926 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:38,930 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:38,939 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:38,939 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:38,943 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:38] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,728 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:39,744 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,744 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,745 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,746 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,746 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:39,770 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:39,775 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:39,778 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:39,778 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:39,785 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:39] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,330 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:47,344 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,345 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,346 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,348 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,348 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:47,368 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:47,372 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:47,374 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:47,374 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:47,377 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:47] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,044 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:48,058 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,059 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,061 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,061 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,062 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:48,080 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:48,084 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:48,087 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:48,087 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:48,090 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:48] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,911 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "GET / HTTP/1.1" 200 -
+2025-12-10 13:03:49,925 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,926 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,926 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,926 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,928 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:03:49,945 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:03:49,954 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:03:49,956 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:03:49,957 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:03:49,959 - INFO - 127.0.0.1 - - [10/Dec/2025 13:03:49] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:02,075 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-10 13:06:02,077 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-10 13:06:02,077 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-10 13:06:08,770 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "GET / HTTP/1.1" 200 -
+2025-12-10 13:06:08,811 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:08,811 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:08,815 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:08,817 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:08,818 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:08,839 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:06:08,858 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:06:08,871 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:06:08,871 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:06:08,878 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:08] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,476 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "GET / HTTP/1.1" 200 -
+2025-12-10 13:06:48,492 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,492 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,493 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,495 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,496 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:48,512 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:06:48,517 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:06:48,520 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:06:48,520 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:06:48,522 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:48] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,605 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "GET / HTTP/1.1" 200 -
+2025-12-10 13:06:51,619 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,621 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,622 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,622 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,624 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:06:51,639 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:06:51,642 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:06:51,645 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:06:51,645 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:06:51,651 - INFO - 127.0.0.1 - - [10/Dec/2025 13:06:51] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,087 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "GET / HTTP/1.1" 200 -
+2025-12-10 13:07:03,096 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,097 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,098 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,098 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,100 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 13:07:03,119 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 13:07:03,123 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 13:07:03,125 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:07:03,125 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 13:07:03,128 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:03] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 13:07:32,574 - INFO - Browse: /home/opc/Documents/JEP building from 127.0.0.1
+2025-12-10 13:07:32,574 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:32] "GET /api/browse?path=/home/opc/Documents/JEP%20building HTTP/1.1" 200 -
+2025-12-10 13:07:33,646 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md from 127.0.0.1
+2025-12-10 13:07:33,647 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:33] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-10 13:07:35,535 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:07:35,536 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:35] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 13:07:36,405 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-10 13:07:36,405 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:36] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-10 13:07:38,047 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 13:07:38,047 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:38] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 13:07:39,791 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-10 13:07:39,791 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:39] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-10 13:07:39,918 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 13:07:39,918 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:39] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 13:07:41,795 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-10 13:07:41,796 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:41] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-10 13:07:41,936 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md from 127.0.0.1
+2025-12-10 13:07:41,936 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:41] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md HTTP/1.1" 200 -
+2025-12-10 13:07:43,346 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup from 127.0.0.1
+2025-12-10 13:07:43,346 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:43] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup HTTP/1.1" 200 -
+2025-12-10 13:07:44,545 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-10 13:07:44,546 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:44] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-10 13:07:45,418 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md from 127.0.0.1
+2025-12-10 13:07:45,419 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:45] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md HTTP/1.1" 200 -
+2025-12-10 13:07:47,472 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/guides from 127.0.0.1
+2025-12-10 13:07:47,472 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:47] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/guides HTTP/1.1" 200 -
+2025-12-10 13:07:49,440 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-10 13:07:49,440 - INFO - 127.0.0.1 - - [10/Dec/2025 13:07:49] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-10 13:09:27,512 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-10 13:09:27,512 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:27] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-10 13:09:29,339 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/guides from 127.0.0.1
+2025-12-10 13:09:29,340 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:29] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/guides HTTP/1.1" 200 -
+2025-12-10 13:09:30,709 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-10 13:09:30,709 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:30] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-10 13:09:32,101 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-10 13:09:32,101 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:32] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-10 13:09:32,908 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup from 127.0.0.1
+2025-12-10 13:09:32,908 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:32] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup HTTP/1.1" 200 -
+2025-12-10 13:09:42,213 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-10 13:09:42,214 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:42] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-10 13:09:43,429 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md from 127.0.0.1
+2025-12-10 13:09:43,430 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:43] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-10 13:09:44,664 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md from 127.0.0.1
+2025-12-10 13:09:44,664 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:44] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-10 13:09:45,186 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md from 127.0.0.1
+2025-12-10 13:09:45,186 - INFO - 127.0.0.1 - - [10/Dec/2025 13:09:45] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-10 18:04:42,618 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/discovery HR from 127.0.0.1
+2025-12-10 18:04:42,619 - INFO - 127.0.0.1 - - [10/Dec/2025 18:04:42] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/discovery%20HR HTTP/1.1" 200 -
+2025-12-10 18:04:43,579 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 18:04:43,579 - INFO - 127.0.0.1 - - [10/Dec/2025 18:04:43] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 18:04:46,955 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-10 18:04:46,955 - INFO - 127.0.0.1 - - [10/Dec/2025 18:04:46] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-10 18:04:48,397 - INFO - File accessed: /home/opc/chat-opc-20251210-account-engagement-plans.md from 127.0.0.1
+2025-12-10 18:04:48,397 - INFO - 127.0.0.1 - - [10/Dec/2025 18:04:48] "GET /api/file?path=/home/opc/chat-opc-20251210-account-engagement-plans.md HTTP/1.1" 200 -
+2025-12-10 19:25:46,881 - INFO - File accessed: /home/opc/chat-opc-20251210-account-engagement-plans.md from 127.0.0.1
+2025-12-10 19:25:46,881 - INFO - 127.0.0.1 - - [10/Dec/2025 19:25:46] "GET /api/file?path=/home/opc/chat-opc-20251210-account-engagement-plans.md HTTP/1.1" 200 -
+2025-12-10 19:25:56,445 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 19:25:56,445 - INFO - 127.0.0.1 - - [10/Dec/2025 19:25:56] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 19:25:58,976 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-10 19:25:58,977 - INFO - 127.0.0.1 - - [10/Dec/2025 19:25:58] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-10 19:26:00,877 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:00,878 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:00] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:03,040 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:03,041 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:03] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:05,803 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:05,804 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:05] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:08,089 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:08,089 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:08] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:10,671 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:10,671 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:10] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:12,828 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:12,829 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:12] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:20,339 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:20,340 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:20] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:23,992 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:23,992 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:23] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:27,612 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:27,613 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:27] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:32,277 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:32,277 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:32] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:34,604 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:34,605 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:34] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:38,199 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-10 19:26:38,199 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:38] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-10 19:26:45,705 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md from 127.0.0.1
+2025-12-10 19:26:45,705 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:45] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-10 19:26:46,426 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 19:26:46,427 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:46] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-10 19:26:47,248 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-10 19:26:47,249 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:47] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-10 19:26:50,322 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "GET / HTTP/1.1" 200 -
+2025-12-10 19:26:50,336 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-10 19:26:50,337 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-10 19:26:50,337 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-10 19:26:50,339 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-10 19:26:50,340 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 19:26:50,358 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-10 19:26:50,364 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "GET /api/themes HTTP/1.1" 200 -
+2025-12-10 19:26:50,367 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-10 19:26:50,367 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "GET /api/browse HTTP/1.1" 200 -
+2025-12-10 19:26:50,369 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:50] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-10 19:26:51,712 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-10 19:26:51,712 - INFO - 127.0.0.1 - - [10/Dec/2025 19:26:51] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-11 22:14:01,871 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-11 22:14:01,873 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-11 22:14:01,873 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-11 22:14:08,724 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "GET / HTTP/1.1" 200 -
+2025-12-11 22:14:08,900 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-11 22:14:08,902 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-11 22:14:08,902 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:08,904 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:08,905 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:08,955 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-11 22:14:08,981 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:08] "GET /api/themes HTTP/1.1" 200 -
+2025-12-11 22:14:09,034 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:14:09,035 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:09] "GET /api/browse HTTP/1.1" 200 -
+2025-12-11 22:14:09,049 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:09] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-11 22:14:12,883 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-11 22:14:12,884 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:12] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-11 22:14:15,389 - WARNING - Path traversal attempt: /home from 127.0.0.1
+2025-12-11 22:14:15,389 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:15] "[31m[1mGET /api/browse?path=/home HTTP/1.1[0m" 403 -
+2025-12-11 22:14:18,454 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "GET / HTTP/1.1" 200 -
+2025-12-11 22:14:18,475 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-11 22:14:18,477 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:18,478 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:18,478 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:14:18,479 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-11 22:14:18,497 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-11 22:14:18,505 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "GET /api/themes HTTP/1.1" 200 -
+2025-12-11 22:14:18,508 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:14:18,508 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "GET /api/browse HTTP/1.1" 200 -
+2025-12-11 22:14:18,511 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:18] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-11 22:14:20,409 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-11 22:14:20,410 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:20] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-11 22:14:22,609 - INFO - Browse: /home/opc/Downloads from 127.0.0.1
+2025-12-11 22:14:22,610 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:22] "GET /api/browse?path=/home/opc/Downloads HTTP/1.1" 200 -
+2025-12-11 22:14:23,618 - INFO - Browse: /home/opc/Downloads/claude-mem from 127.0.0.1
+2025-12-11 22:14:23,618 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:23] "GET /api/browse?path=/home/opc/Downloads/claude-mem HTTP/1.1" 200 -
+2025-12-11 22:14:24,909 - INFO - Browse: /home/opc/Downloads/claude-mem/docs from 127.0.0.1
+2025-12-11 22:14:24,909 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:24] "GET /api/browse?path=/home/opc/Downloads/claude-mem/docs HTTP/1.1" 200 -
+2025-12-11 22:14:26,764 - INFO - Browse: /home/opc/Downloads/claude-mem from 127.0.0.1
+2025-12-11 22:14:26,765 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:26] "GET /api/browse?path=/home/opc/Downloads/claude-mem HTTP/1.1" 200 -
+2025-12-11 22:14:27,930 - INFO - File accessed: /home/opc/Downloads/claude-mem/CHANGELOG.md from 127.0.0.1
+2025-12-11 22:14:27,930 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:27] "GET /api/file?path=/home/opc/Downloads/claude-mem/CHANGELOG.md HTTP/1.1" 200 -
+2025-12-11 22:14:28,605 - INFO - File accessed: /home/opc/Downloads/claude-mem/CLAUDE.md from 127.0.0.1
+2025-12-11 22:14:28,605 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:28] "GET /api/file?path=/home/opc/Downloads/claude-mem/CLAUDE.md HTTP/1.1" 200 -
+2025-12-11 22:14:42,962 - INFO - File accessed: /home/opc/Downloads/claude-mem/README.md from 127.0.0.1
+2025-12-11 22:14:42,962 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:42] "GET /api/file?path=/home/opc/Downloads/claude-mem/README.md HTTP/1.1" 200 -
+2025-12-11 22:14:44,819 - INFO - File accessed: /home/opc/Downloads/claude-mem/README.md from 127.0.0.1
+2025-12-11 22:14:44,819 - INFO - 127.0.0.1 - - [11/Dec/2025 22:14:44] "GET /api/file?path=/home/opc/Downloads/claude-mem/README.md HTTP/1.1" 200 -
+2025-12-11 22:15:28,779 - INFO - 127.0.0.1 - - [11/Dec/2025 22:15:28] "[33mGET /docs/ HTTP/1.1[0m" 404 -
+2025-12-11 22:17:35,731 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "GET / HTTP/1.1" 200 -
+2025-12-11 22:17:35,882 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-11 22:17:35,883 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:17:35,888 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-11 22:17:35,888 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-11 22:17:35,890 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-11 22:17:35,937 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-11 22:17:35,945 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-11 22:17:35,951 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "GET /api/themes HTTP/1.1" 200 -
+2025-12-11 22:17:35,983 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:17:35,983 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:35] "GET /api/browse HTTP/1.1" 200 -
+2025-12-11 22:17:36,000 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:36] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-11 22:17:37,425 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-11 22:17:37,426 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:37] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-11 22:17:38,809 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:17:38,810 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:38] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-11 22:17:40,404 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md from 127.0.0.1
+2025-12-11 22:17:40,404 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:40] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-11 22:17:42,333 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:17:42,333 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:42] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-11 22:17:44,039 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-11 22:17:44,040 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:44] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-11 22:17:45,320 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:17:45,320 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:45] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-11 22:17:48,603 - INFO - Browse: /home/opc/Documents/JEP building from 127.0.0.1
+2025-12-11 22:17:48,604 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:48] "GET /api/browse?path=/home/opc/Documents/JEP%20building HTTP/1.1" 200 -
+2025-12-11 22:17:49,891 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md from 127.0.0.1
+2025-12-11 22:17:49,892 - INFO - 127.0.0.1 - - [11/Dec/2025 22:17:49] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-11 22:18:04,191 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-11 22:18:04,191 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:04] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-11 22:18:05,222 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-11 22:18:05,223 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:05] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-11 22:18:06,228 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-11 22:18:06,229 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:06] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-11 22:18:09,023 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:18:09,023 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:09] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-11 22:18:10,813 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md from 127.0.0.1
+2025-12-11 22:18:10,813 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:10] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-11 22:18:14,654 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:18:14,655 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:14] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-11 22:18:17,835 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md from 127.0.0.1
+2025-12-11 22:18:17,835 - INFO - 127.0.0.1 - - [11/Dec/2025 22:18:17] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-11 22:22:14,953 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:22:14,954 - INFO - 127.0.0.1 - - [11/Dec/2025 22:22:14] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-11 22:22:17,995 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md from 127.0.0.1
+2025-12-11 22:22:17,995 - INFO - 127.0.0.1 - - [11/Dec/2025 22:22:17] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-11 22:31:27,090 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:31:27,090 - INFO - 127.0.0.1 - - [11/Dec/2025 22:31:27] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-11 22:31:29,490 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md from 127.0.0.1
+2025-12-11 22:31:29,490 - INFO - 127.0.0.1 - - [11/Dec/2025 22:31:29] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-11 22:31:31,040 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md from 127.0.0.1
+2025-12-11 22:31:31,040 - INFO - 127.0.0.1 - - [11/Dec/2025 22:31:31] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-12 15:09:27,473 - INFO - SECRET_KEY loaded from environment variable
+2025-12-12 15:09:27,478 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-12 15:09:27,480 - INFO - Theme saved: test from 127.0.0.1
+2025-12-12 15:09:27,481 - WARNING - CSRF validation failed from 127.0.0.1
+2025-12-12 15:15:59,017 - INFO - SECRET_KEY loaded from environment variable
+2025-12-12 15:15:59,018 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-12 15:15:59,019 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-12 15:15:59,019 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-12 15:16:07,605 - INFO - SECRET_KEY loaded from environment variable
+2025-12-12 15:32:59,842 - INFO - SECRET_KEY loaded from environment variable
+2025-12-12 15:32:59,844 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-12 15:32:59,846 - INFO - Theme saved: test from 127.0.0.1
+2025-12-12 15:32:59,847 - WARNING - CSRF validation failed from 127.0.0.1
+2025-12-12 15:40:16,742 - INFO - SECRET_KEY loaded from environment variable
+2025-12-12 15:40:16,744 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-12 15:40:16,746 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-12 15:40:16,746 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-12 16:02:16,011 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET / HTTP/1.1" 200 -
+2025-12-12 16:02:16,151 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-12 16:02:16,168 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-12 16:02:16,169 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-12 16:02:16,173 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:02:16,174 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-12 16:02:16,174 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:02:16,729 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-12 16:02:16,730 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:02:16,948 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:02:16,966 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:02:16,966 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:02:16,973 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-12 16:02:21,085 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:21] "GET /static/css/themes/zen.css HTTP/1.1" 200 -

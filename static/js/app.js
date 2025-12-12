@@ -305,9 +305,23 @@
             }).join('');
             markdownContent.innerHTML = `<div class="raw-source">${numberedLines}</div>`;
         } else {
-            // Render as formatted markdown
+            // Render as formatted markdown with HTML sanitization
             const html = marked.parse(content);
-            markdownContent.innerHTML = html;
+
+            // Sanitize HTML to prevent XSS attacks from malicious markdown
+            // DOMPurify config: Allow safe HTML, links, images, but remove dangerous elements
+            const sanitizedHtml = DOMPurify.sanitize(html, {
+                ALLOWED_TAGS: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'a', 'ul', 'ol', 'li',
+                               'blockquote', 'code', 'pre', 'strong', 'em', 'del', 'img', 'table',
+                               'thead', 'tbody', 'tr', 'th', 'td', 'br', 'hr', 'div', 'span'],
+                ALLOWED_ATTR: ['href', 'src', 'alt', 'title', 'class', 'id'],
+                ALLOW_DATA_ATTR: false,
+                FORBID_TAGS: ['script', 'style', 'iframe', 'object', 'embed', 'link'],
+                FORBID_ATTR: ['onerror', 'onload', 'onclick', 'onmouseover'],
+                KEEP_CONTENT: true
+            });
+
+            markdownContent.innerHTML = sanitizedHtml;
 
             // Apply syntax highlighting only to code blocks with explicit language
             if (typeof hljs !== 'undefined') {
@@ -360,9 +374,9 @@
             const isLast = index === parts.length - 1;
 
             if (isLast) {
-                html += `<span class="breadcrumb-current">${part}</span>`;
+                html += `<span class="breadcrumb-current">${escapeHtml(part)}</span>`;
             } else {
-                html += `<a href="#" class="breadcrumb-link" data-path="${accumulated}">${part}</a>`;
+                html += `<a href="#" class="breadcrumb-link" data-path="${escapeHtml(accumulated)}">${escapeHtml(part)}</a>`;
                 html += '<span class="breadcrumb-sep">/</span>';
             }
         });
@@ -387,7 +401,7 @@
         // Parent directory link
         if (parent) {
             html += `
-                <div class="file-item directory parent" data-path="${parent}">
+                <div class="file-item directory parent" data-path="${escapeHtml(parent)}">
                     <span class="icon">&#128194;</span>
                     <span class="name">..</span>
                 </div>
@@ -398,7 +412,7 @@
         items.forEach(item => {
             if (item.type === 'directory') {
                 html += `
-                    <div class="file-item directory" data-path="${item.path}">
+                    <div class="file-item directory" data-path="${escapeHtml(item.path)}">
                         <span class="icon">${item.has_markdown ? '&#128194;' : '&#128193;'}</span>
                         <span class="name">${escapeHtml(item.name)}</span>
                         ${item.has_markdown ? '<span class="badge">md</span>' : ''}
@@ -406,7 +420,7 @@
                 `;
             } else {
                 html += `
-                    <div class="file-item file" data-path="${item.path}">
+                    <div class="file-item file" data-path="${escapeHtml(item.path)}">
                         <span class="icon">&#128196;</span>
                         <span class="name">${escapeHtml(item.name)}</span>
                         <span class="size">${formatSize(item.size)}</span>
