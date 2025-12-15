@@ -439,3 +439,958 @@
 2025-12-12 16:02:16,966 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /api/browse HTTP/1.1" 200 -
 2025-12-12 16:02:16,973 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:16] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
 2025-12-12 16:02:21,085 - INFO - 127.0.0.1 - - [12/Dec/2025 16:02:21] "GET /static/css/themes/zen.css HTTP/1.1" 200 -
+2025-12-12 16:30:54,104 - WARNING - ============================================================
+2025-12-12 16:30:54,105 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-12 16:30:54,105 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-12 16:30:54,105 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-12 16:30:54,105 - WARNING -   export SECRET_KEY='03b203ffd920a8ed609370b88eeeb9a0a02216f38034a3ab678f6dab40de634d'
+2025-12-12 16:30:54,105 - WARNING - ============================================================
+2025-12-12 16:30:54,106 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-12 16:30:54,108 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-12 16:30:54,108 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-12 16:31:00,447 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET / HTTP/1.1" 200 -
+2025-12-12 16:31:00,566 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-12 16:31:00,568 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-12 16:31:00,569 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-12 16:31:00,602 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-12 16:31:00,621 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:31:00,622 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:31:00,676 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-12 16:31:00,676 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:31:00,732 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:31:00,784 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:31:00,785 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:31:00,802 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:00] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-12 16:31:06,182 - INFO - Browse: /home/opc/Documents/JEP building from 127.0.0.1
+2025-12-12 16:31:06,183 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:06] "GET /api/browse?path=/home/opc/Documents/JEP%20building HTTP/1.1" 200 -
+2025-12-12 16:31:06,876 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md (21685 bytes) from 127.0.0.1
+2025-12-12 16:31:06,877 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:06] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-12 16:31:17,521 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-12 16:31:17,522 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:17] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-12 16:31:18,915 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:31:18,916 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:18] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-12 16:31:21,303 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-12 16:31:21,303 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:21] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-12 16:31:22,523 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-12 16:31:22,524 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:22] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-12 16:31:24,123 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-12 16:31:24,123 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:24] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-12 16:31:26,212 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup from 127.0.0.1
+2025-12-12 16:31:26,213 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:26] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup HTTP/1.1" 200 -
+2025-12-12 16:31:27,219 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md (29948 bytes) from 127.0.0.1
+2025-12-12 16:31:27,219 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:27] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md HTTP/1.1" 200 -
+2025-12-12 16:31:30,151 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:31:30,151 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:30] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-12 16:31:31,102 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-12 16:31:31,102 - INFO - 127.0.0.1 - - [12/Dec/2025 16:31:31] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-12 16:32:35,725 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "GET / HTTP/1.1" 200 -
+2025-12-12 16:32:35,746 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,746 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,747 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,750 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,751 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,751 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-12 16:32:35,768 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:32:35,776 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:32:35,779 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:32:35,779 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:32:35,782 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:35] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-12 16:32:38,198 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-12 16:32:38,198 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:38] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-12 16:32:39,233 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md (6061 bytes) from 127.0.0.1
+2025-12-12 16:32:39,233 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:39] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-12 16:32:40,593 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md (10299 bytes) from 127.0.0.1
+2025-12-12 16:32:40,593 - INFO - 127.0.0.1 - - [12/Dec/2025 16:32:40] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-12 16:35:03,097 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "GET / HTTP/1.1" 200 -
+2025-12-12 16:35:03,117 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,118 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,119 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,121 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,123 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,124 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:03,147 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:35:03,152 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:35:03,159 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:35:03,160 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:35:03,165 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:03] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,491 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "GET / HTTP/1.1" 200 -
+2025-12-12 16:35:04,507 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,509 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,509 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,512 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,516 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,516 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:04,532 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:35:04,536 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:35:04,538 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:35:04,538 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:35:04,541 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:04] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,281 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "GET / HTTP/1.1" 200 -
+2025-12-12 16:35:14,301 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,301 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,303 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,303 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,305 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,305 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-12 16:35:14,325 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-12 16:35:14,332 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "GET /api/themes HTTP/1.1" 200 -
+2025-12-12 16:35:14,335 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-12 16:35:14,335 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "GET /api/browse HTTP/1.1" 200 -
+2025-12-12 16:35:14,339 - INFO - 127.0.0.1 - - [12/Dec/2025 16:35:14] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:24:16,112 - WARNING - ============================================================
+2025-12-15 10:24:16,112 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:24:16,113 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:24:16,113 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:24:16,113 - WARNING -   export SECRET_KEY='3719ebe04ff0106a7b4d47b057980898c7a7dd4951c445d1d3ee62989ff0e304'
+2025-12-15 10:24:16,113 - WARNING - ============================================================
+2025-12-15 10:24:16,113 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:24:16,115 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:24:16,115 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:24:22,216 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET / HTTP/1.1" 200 -
+2025-12-15 10:24:22,403 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:22,403 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:22,404 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:22,405 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:22,405 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 10:24:22,406 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 10:24:22,518 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:24:22,518 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:24:22,576 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:24:22,617 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:24:22,618 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:24:22,624 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:22] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,506 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "GET / HTTP/1.1" 200 -
+2025-12-15 10:24:45,532 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,533 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,534 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,536 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,538 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,539 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:24:45,554 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:24:45,562 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:24:45,565 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:24:45,566 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:24:45,569 - INFO - 127.0.0.1 - - [15/Dec/2025 10:24:45] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:42:18,372 - WARNING - ============================================================
+2025-12-15 10:42:18,372 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:42:18,372 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:42:18,372 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:42:18,373 - WARNING -   export SECRET_KEY='ea5b4f31d6ce94ca3e758599266f8693639f00afd234bb521ccbf361079a812f'
+2025-12-15 10:42:18,373 - WARNING - ============================================================
+2025-12-15 10:42:18,373 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:42:18,375 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:42:18,375 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:42:22,020 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "GET / HTTP/1.1" 200 -
+2025-12-15 10:42:22,199 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,201 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,206 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,209 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,211 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,210 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:42:22,252 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 10:42:22,256 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:42:22,256 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:42:22,300 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:42:22,332 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:42:22,333 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:42:22,350 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:22] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:42:34,134 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 10:42:34,135 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:34] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 10:42:35,165 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 10:42:35,166 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:35] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 10:42:37,641 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:37] "GET /static/css/themes/nord.css HTTP/1.1" 200 -
+2025-12-15 10:42:39,700 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:39] "GET /static/css/themes/high-contrast.css HTTP/1.1" 200 -
+2025-12-15 10:42:41,282 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:41] "GET /static/css/themes/dark.css HTTP/1.1" 200 -
+2025-12-15 10:42:46,245 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 10:42:46,245 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:46] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 10:42:47,478 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 10:42:47,478 - INFO - 127.0.0.1 - - [15/Dec/2025 10:42:47] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 10:45:42,637 - WARNING - ============================================================
+2025-12-15 10:45:42,638 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:45:42,638 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:45:42,638 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:45:42,638 - WARNING -   export SECRET_KEY='b50bf9c3274744701fd258a286bfb102bf55cf5ddebfe8f11d922222016e3ab9'
+2025-12-15 10:45:42,638 - WARNING - ============================================================
+2025-12-15 10:45:42,638 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:45:50,534 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET / HTTP/1.1" 200 -
+2025-12-15 10:45:50,564 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 10:45:50,565 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 10:45:50,565 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 10:45:50,566 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 10:45:50,568 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 10:45:50,568 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 10:45:50,613 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 10:45:50,614 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:45:50,615 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:45:50,621 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:45:50,624 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:45:50,624 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:45:50,627 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:50] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-15 10:45:57,716 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "GET / HTTP/1.1" 200 -
+2025-12-15 10:45:57,736 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,737 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,738 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,740 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,741 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,742 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:45:57,771 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:45:57,777 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:45:57,780 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:45:57,780 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:45:57,788 - INFO - 127.0.0.1 - - [15/Dec/2025 10:45:57] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,820 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "GET / HTTP/1.1" 200 -
+2025-12-15 10:46:00,834 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,838 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,839 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,839 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,840 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,841 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:46:00,861 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:46:00,863 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:46:00,866 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:46:00,866 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:46:00,869 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:00] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:46:46,474 - WARNING - ============================================================
+2025-12-15 10:46:46,474 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:46:46,474 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:46:46,474 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:46:46,474 - WARNING -   export SECRET_KEY='7c7a59c7fe0a9fe0dff7df8235e2003f3ac27fe941fa663291f029cba70030d2'
+2025-12-15 10:46:46,474 - WARNING - ============================================================
+2025-12-15 10:46:46,475 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:46:46,477 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:46:46,477 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:46:50,293 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET / HTTP/1.1" 200 -
+2025-12-15 10:46:50,330 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 10:46:50,330 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 10:46:50,330 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 10:46:50,331 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 10:46:50,331 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 10:46:50,332 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 10:46:50,363 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:46:50,364 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 10:46:50,364 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:46:50,373 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:46:50,404 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:46:50,404 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:46:50,408 - INFO - 127.0.0.1 - - [15/Dec/2025 10:46:50] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-15 10:48:38,544 - WARNING - ============================================================
+2025-12-15 10:48:38,544 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:48:38,544 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:48:38,544 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:48:38,544 - WARNING -   export SECRET_KEY='e9e30f55e400c9ccf52a1e12f76719d739f32d8c891a7f78c50ab343774dfd7b'
+2025-12-15 10:48:38,544 - WARNING - ============================================================
+2025-12-15 10:48:38,545 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:48:38,547 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:48:38,547 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:48:43,056 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "GET / HTTP/1.1" 200 -
+2025-12-15 10:48:43,078 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,078 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,079 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,080 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,080 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,082 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:43,100 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:48:43,101 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:48:43,107 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:48:43,109 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:48:43,109 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:48:43,112 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:43] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,276 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "GET / HTTP/1.1" 200 -
+2025-12-15 10:48:50,293 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,294 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,295 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,296 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,297 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,298 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:48:50,318 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:48:50,326 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:48:50,329 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:48:50,329 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:48:50,332 - INFO - 127.0.0.1 - - [15/Dec/2025 10:48:50] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:51:09,358 - WARNING - ============================================================
+2025-12-15 10:51:09,358 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:51:09,358 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:51:09,358 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:51:09,358 - WARNING -   export SECRET_KEY='dd3600be7e7b64ec24eafcd5007b74d766dcabc93bca24187706a79982994f54'
+2025-12-15 10:51:09,358 - WARNING - ============================================================
+2025-12-15 10:51:09,359 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:51:09,360 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:51:09,360 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:51:14,849 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "GET / HTTP/1.1" 200 -
+2025-12-15 10:51:14,872 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,874 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,874 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,874 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,875 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,876 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:51:14,901 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:51:14,902 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:51:14,905 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:51:14,907 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:51:14,907 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:51:14,914 - INFO - 127.0.0.1 - - [15/Dec/2025 10:51:14] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:51:26,095 - WARNING - ============================================================
+2025-12-15 10:51:26,095 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:51:26,095 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:51:26,095 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:51:26,095 - WARNING -   export SECRET_KEY='688918ec3751802b65c1b90b4092de178a9e3c8ffe1b73588eec544ceb5ae0ca'
+2025-12-15 10:51:26,095 - WARNING - ============================================================
+2025-12-15 10:51:26,096 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:51:26,098 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:51:26,098 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:52:11,553 - WARNING - ============================================================
+2025-12-15 10:52:11,553 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:52:11,553 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:52:11,553 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:52:11,553 - WARNING -   export SECRET_KEY='ed1d6db5daf04533adfcd70b62113935edd05f1f02e2e87f59b778a9c29a1ed0'
+2025-12-15 10:52:11,554 - WARNING - ============================================================
+2025-12-15 10:52:11,554 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:52:11,556 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:52:11,556 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:52:19,169 - WARNING - ============================================================
+2025-12-15 10:52:19,169 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:52:19,169 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:52:19,169 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:52:19,169 - WARNING -   export SECRET_KEY='cc285548284c7c270309d872090c52bb02221a824a94d3a9f0e3b1bb5f372a34'
+2025-12-15 10:52:19,169 - WARNING - ============================================================
+2025-12-15 10:52:19,170 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:53:55,676 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "GET / HTTP/1.1" 200 -
+2025-12-15 10:53:55,698 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,698 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,699 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,700 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,701 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,702 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:55,720 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:53:55,720 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:53:55,727 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:53:55,730 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:53:55,730 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:53:55,734 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:55] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,385 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET / HTTP/1.1" 200 -
+2025-12-15 10:53:56,401 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,404 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,404 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,407 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,408 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,409 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,427 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:53:56,431 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:53:56,434 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:53:56,434 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:53:56,437 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,928 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET / HTTP/1.1" 200 -
+2025-12-15 10:53:56,943 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,945 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,946 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,946 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,947 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,948 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:56,965 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:53:56,969 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:53:56,975 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:53:56,975 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:53:56,978 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:56] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,625 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "GET / HTTP/1.1" 200 -
+2025-12-15 10:53:57,637 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,638 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,639 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,641 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,642 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,643 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:57,660 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:53:57,663 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:53:57,666 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:53:57,666 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:53:57,669 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:57] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,158 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "GET / HTTP/1.1" 200 -
+2025-12-15 10:53:58,169 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,170 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,172 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,173 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,174 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,175 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 10:53:58,193 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:53:58,196 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:53:58,199 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:53:58,199 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:53:58,202 - INFO - 127.0.0.1 - - [15/Dec/2025 10:53:58] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 10:54:14,779 - WARNING - ============================================================
+2025-12-15 10:54:14,779 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 10:54:14,779 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 10:54:14,779 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 10:54:14,779 - WARNING -   export SECRET_KEY='e8e69bb4e6bd1ae81afe6a72745d3158eb984e617578b008cd63455b129a1bae'
+2025-12-15 10:54:14,779 - WARNING - ============================================================
+2025-12-15 10:54:14,780 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 10:54:14,782 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 10:54:14,782 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 10:54:21,061 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET / HTTP/1.1" 200 -
+2025-12-15 10:54:21,171 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 10:54:21,171 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:54:21,172 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 10:54:21,175 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 10:54:21,176 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:54:21,176 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 10:54:21,213 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:54:21,214 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:54:21,250 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:54:21,284 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:54:21,285 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:54:21,296 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:21] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-15 10:54:25,768 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 10:54:25,768 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:25] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 10:54:26,432 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 10:54:26,432 - INFO - 127.0.0.1 - - [15/Dec/2025 10:54:26] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 10:59:10,710 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET / HTTP/1.1" 200 -
+2025-12-15 10:59:10,778 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 10:59:10,809 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 10:59:10,818 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 10:59:10,819 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 10:59:10,819 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 10:59:10,820 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:10] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 10:59:11,042 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 10:59:11,043 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:11] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 10:59:11,051 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 10:59:11,107 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:11] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 10:59:11,169 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 10:59:11,169 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:11] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 10:59:28,192 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:28] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-15 10:59:29,696 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 10:59:29,697 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:29] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 10:59:30,397 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 10:59:30,398 - INFO - 127.0.0.1 - - [15/Dec/2025 10:59:30] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 11:05:11,851 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-15 11:05:11,851 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:11] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-15 11:05:13,597 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:05:13,598 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:13] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:05:14,312 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/discovery HR from 127.0.0.1
+2025-12-15 11:05:14,313 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:14] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/discovery%20HR HTTP/1.1" 200 -
+2025-12-15 11:05:15,346 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:05:15,347 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:15] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:05:15,958 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/discovery SH from 127.0.0.1
+2025-12-15 11:05:15,958 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:15] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/discovery%20SH HTTP/1.1" 200 -
+2025-12-15 11:05:19,715 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/discovery SH/1-sh_sales_analysis_report.md (8503 bytes) from 127.0.0.1
+2025-12-15 11:05:19,716 - INFO - 127.0.0.1 - - [15/Dec/2025 11:05:19] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/discovery%20SH/1-sh_sales_analysis_report.md HTTP/1.1" 200 -
+2025-12-15 11:06:08,746 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:06:08,746 - INFO - 127.0.0.1 - - [15/Dec/2025 11:06:08] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:06:11,240 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:06:11,240 - INFO - 127.0.0.1 - - [15/Dec/2025 11:06:11] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-15 11:07:48,334 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:07:48,334 - INFO - 127.0.0.1 - - [15/Dec/2025 11:07:48] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:07:48,972 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 11:07:48,973 - INFO - 127.0.0.1 - - [15/Dec/2025 11:07:48] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 11:21:15,829 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "GET / HTTP/1.1" 200 -
+2025-12-15 11:21:15,879 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:21:15,915 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:21:15,915 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:21:15,923 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:21:15,923 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:21:15,924 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:15] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:21:16,004 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:16] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:21:16,067 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:16] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:21:16,126 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:21:16,127 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:16] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:21:16,192 - INFO - 127.0.0.1 - - [15/Dec/2025 11:21:16] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,686 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "GET / HTTP/1.1" 200 -
+2025-12-15 11:29:33,707 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,707 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,708 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,710 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,711 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,712 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:29:33,736 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:29:33,739 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:29:33,742 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:29:33,742 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:29:33,745 - INFO - 127.0.0.1 - - [15/Dec/2025 11:29:33] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:30:36,020 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:30:36,020 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:36] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:30:37,056 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md (1991 bytes) from 127.0.0.1
+2025-12-15 11:30:37,056 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:37] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/PROJECT_SUMMARY.md HTTP/1.1" 200 -
+2025-12-15 11:30:37,887 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building from 127.0.0.1
+2025-12-15 11:30:37,888 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:37] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building HTTP/1.1" 200 -
+2025-12-15 11:30:39,184 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md (9977 bytes) from 127.0.0.1
+2025-12-15 11:30:39,185 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:39] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/OCI_MODELS_REFERENCE.md HTTP/1.1" 200 -
+2025-12-15 11:30:44,502 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup from 127.0.0.1
+2025-12-15 11:30:44,503 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:44] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup HTTP/1.1" 200 -
+2025-12-15 11:30:45,638 - INFO - File accessed: /home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md (29948 bytes) from 127.0.0.1
+2025-12-15 11:30:45,639 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:45] "GET /api/file?path=/home/opc/Documents/SAMPLE_CO/sample_co_building/poc_setup/ARCHITECTURE.md HTTP/1.1" 200 -
+2025-12-15 11:30:49,505 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:30:49,505 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:49] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:30:51,041 - INFO - Browse: /home/opc/Documents/SAMPLE_CO/discovery HR from 127.0.0.1
+2025-12-15 11:30:51,041 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:51] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO/discovery%20HR HTTP/1.1" 200 -
+2025-12-15 11:30:54,663 - INFO - Browse: /home/opc/Documents/SAMPLE_CO from 127.0.0.1
+2025-12-15 11:30:54,664 - INFO - 127.0.0.1 - - [15/Dec/2025 11:30:54] "GET /api/browse?path=/home/opc/Documents/SAMPLE_CO HTTP/1.1" 200 -
+2025-12-15 11:40:17,570 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:17] "GET / HTTP/1.1" 200 -
+2025-12-15 11:40:22,524 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:22] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:40:57,758 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "GET / HTTP/1.1" 200 -
+2025-12-15 11:40:57,811 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,851 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,857 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,857 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,857 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,858 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:57,928 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:40:57,987 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:57] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:40:58,049 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:40:58,050 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:40:58,121 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,852 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "GET / HTTP/1.1" 200 -
+2025-12-15 11:40:58,906 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,932 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,932 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,951 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,951 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:58,951 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:58] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,022 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:40:59,087 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:40:59,153 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:40:59,153 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:40:59,211 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,780 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "GET / HTTP/1.1" 200 -
+2025-12-15 11:40:59,838 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,882 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,892 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,893 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,893 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,893 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:40:59,958 - INFO - 127.0.0.1 - - [15/Dec/2025 11:40:59] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:00,018 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:00,081 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:00,081 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:00,153 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,783 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:00,833 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,864 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,864 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,873 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,873 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,873 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:00,949 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:00] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:01,024 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:01] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:01,082 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:01,082 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:01] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:01,159 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:01] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,625 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:05,641 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,642 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,644 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,645 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,646 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,646 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:05,665 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:05,669 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:05,671 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:05,672 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:05,674 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:05] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,882 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:06,892 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,893 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,894 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,896 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,897 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,897 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:06,917 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:06,920 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:06,922 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:06,923 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:06,926 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:06] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:24,107 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:24,118 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 11:41:24,119 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 11:41:24,119 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 11:41:24,120 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 11:41:24,122 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 11:41:24,123 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 11:41:24,144 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-15 11:41:24,145 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:24,149 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:24,154 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:24,154 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:24,157 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:24] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,378 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:30,403 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,410 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,411 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,411 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,413 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,414 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:30,434 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 11:41:30,434 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:30,450 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:30,453 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:30,453 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:30] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:52,299 - WARNING - ============================================================
+2025-12-15 11:41:52,299 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 11:41:52,299 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 11:41:52,299 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 11:41:52,299 - WARNING -   export SECRET_KEY='77f8c608c3f74f83310f99b1508c5ff86a6fe97278871888005baab1a9bdabd4'
+2025-12-15 11:41:52,299 - WARNING - ============================================================
+2025-12-15 11:41:52,300 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 11:41:52,301 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 11:41:52,301 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 11:41:55,485 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:55,560 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,586 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,596 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,596 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,596 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,597 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:55,721 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 11:41:55,721 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:55,730 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:41:55,793 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:55,856 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:55,857 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:55,918 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:55] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,510 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "GET / HTTP/1.1" 200 -
+2025-12-15 11:41:59,564 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,601 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,601 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,608 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,608 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,609 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,691 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:41:59,699 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2025-12-15 11:41:59,754 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:41:59,818 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:41:59,818 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:41:59,890 - INFO - 127.0.0.1 - - [15/Dec/2025 11:41:59] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:42:06,509 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "GET / HTTP/1.1" 200 -
+2025-12-15 11:42:06,695 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 11:42:06,695 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 11:42:06,696 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:42:06,697 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:42:06,698 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:42:06,699 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:06] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:42:07,054 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 11:42:07,055 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:07] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:42:07,064 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:07] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:42:07,098 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:07] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:42:07,111 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:42:07,111 - INFO - 127.0.0.1 - - [15/Dec/2025 11:42:07] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:10,439 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:10] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:45:34,963 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:34,982 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:34,982 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:34,984 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:34,985 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:34,986 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:34,987 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:34] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:35,004 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:35] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:35,010 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:35] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:35,012 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:35,013 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:35] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:36,164 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:36,177 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,179 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,180 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,182 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,182 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,186 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,203 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:36,207 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:36,209 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:36,210 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:36,739 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:36,756 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,756 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,756 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,757 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,759 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,760 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:36,776 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:36,784 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:36,786 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:36,786 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:36] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:37,216 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:37,230 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,230 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,230 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,232 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,233 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,235 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,249 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:37,257 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:37,259 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:37,259 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:37,685 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:37,697 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,698 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,700 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,701 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,703 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,703 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:37,722 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:37,726 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:37,732 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:37,733 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:37] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:38,020 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:38,035 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,037 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,038 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,039 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,040 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,040 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,056 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:38,061 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:38,069 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:38,069 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:38,252 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:38,263 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,264 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,266 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,267 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,268 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,270 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,288 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:38,292 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:38,295 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:38,295 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:38,540 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:38,559 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,559 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,559 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,560 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,561 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,561 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:38,581 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:38,586 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:38,589 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:38,589 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:38] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:50,318 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:50,337 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,338 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,338 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,341 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,341 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,342 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:50,361 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:50,370 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:50,374 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:50,375 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:50] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:45:57,342 - WARNING - ============================================================
+2025-12-15 11:45:57,342 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 11:45:57,342 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 11:45:57,342 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 11:45:57,342 - WARNING -   export SECRET_KEY='4f1e5bb80e2913deda5edffbcecc0e4fbb7d776a59cd31bdfa77efdf6cfb0f28'
+2025-12-15 11:45:57,342 - WARNING - ============================================================
+2025-12-15 11:45:57,343 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 11:45:57,345 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 11:45:57,345 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 11:45:59,679 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "GET / HTTP/1.1" 200 -
+2025-12-15 11:45:59,738 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,769 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,770 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,770 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,771 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,771 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:45:59,849 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 11:45:59,850 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:45:59,850 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:45:59,917 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:45:59,984 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:45:59,984 - INFO - 127.0.0.1 - - [15/Dec/2025 11:45:59] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 11:46:00,047 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:00] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,663 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "GET / HTTP/1.1" 200 -
+2025-12-15 11:46:05,818 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,820 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,821 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,821 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,821 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,821 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 11:46:05,892 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 11:46:05,892 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 11:46:05,899 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 11:46:05,933 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 11:46:05,941 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 11:46:05,942 - INFO - 127.0.0.1 - - [15/Dec/2025 11:46:05] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 12:23:14,766 - WARNING - ============================================================
+2025-12-15 12:23:14,767 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 12:23:14,767 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 12:23:14,767 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 12:23:14,767 - WARNING -   export SECRET_KEY='458a6bb1cdbe3046e793eae0b828d8ba1db7233006de3eba0efbb46a10392fbe'
+2025-12-15 12:23:14,767 - WARNING - ============================================================
+2025-12-15 12:23:14,768 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 12:23:14,770 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 12:23:14,770 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 12:23:24,735 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "GET / HTTP/1.1" 200 -
+2025-12-15 12:23:24,814 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,849 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,850 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,850 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,850 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,855 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 12:23:24,959 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 12:23:24,959 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 12:23:24,996 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:24] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2025-12-15 12:23:25,042 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:25] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 12:23:25,105 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:23:25,105 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:25] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 12:23:25,176 - INFO - 127.0.0.1 - - [15/Dec/2025 12:23:25] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,118 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "GET / HTTP/1.1" 200 -
+2025-12-15 12:27:31,171 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,206 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,217 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,217 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,217 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,218 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,283 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 12:27:31,292 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2025-12-15 12:27:31,345 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 12:27:31,411 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:27:31,411 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 12:27:31,482 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:31] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2025-12-15 12:27:44,626 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET / HTTP/1.1" 200 -
+2025-12-15 12:27:44,668 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 12:27:44,670 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 12:27:44,670 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 12:27:44,671 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 12:27:44,672 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 12:27:44,673 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 12:27:44,701 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 12:27:44,702 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/favicon.svg HTTP/1.1" 200 -
+2025-12-15 12:27:44,702 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 12:27:44,720 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 12:27:44,750 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:27:44,751 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 12:27:44,755 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:44] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2025-12-15 12:27:46,863 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2025-12-15 12:27:46,863 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:46] "GET /api/browse?path=/home/opc/Documents/chats HTTP/1.1" 200 -
+2025-12-15 12:27:47,566 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md (6061 bytes) from 127.0.0.1
+2025-12-15 12:27:47,567 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:47] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-15 12:27:49,963 - INFO - Browse: /home/opc/Documents/reference from 127.0.0.1
+2025-12-15 12:27:49,964 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:49] "GET /api/browse?path=/home/opc/Documents/reference HTTP/1.1" 200 -
+2025-12-15 12:27:50,962 - INFO - Browse: /home/opc/Documents/reference/select-ai-reference from 127.0.0.1
+2025-12-15 12:27:50,962 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:50] "GET /api/browse?path=/home/opc/Documents/reference/select-ai-reference HTTP/1.1" 200 -
+2025-12-15 12:27:51,815 - INFO - File accessed: /home/opc/Documents/reference/select-ai-reference/oracle-select-ai-reference.md (41448 bytes) from 127.0.0.1
+2025-12-15 12:27:51,816 - INFO - 127.0.0.1 - - [15/Dec/2025 12:27:51] "GET /api/file?path=/home/opc/Documents/reference/select-ai-reference/oracle-select-ai-reference.md HTTP/1.1" 200 -
+2025-12-15 12:41:44,263 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md (10299 bytes) from 127.0.0.1
+2025-12-15 12:41:44,264 - INFO - 127.0.0.1 - - [15/Dec/2025 12:41:44] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-15 12:41:54,325 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md (6061 bytes) from 127.0.0.1
+2025-12-15 12:41:54,325 - INFO - 127.0.0.1 - - [15/Dec/2025 12:41:54] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-15 12:41:55,845 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md (10299 bytes) from 127.0.0.1
+2025-12-15 12:41:55,846 - INFO - 127.0.0.1 - - [15/Dec/2025 12:41:55] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.2203-md-viewer-development.md HTTP/1.1" 200 -
+2025-12-15 12:41:57,055 - INFO - File accessed: /home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md (6061 bytes) from 127.0.0.1
+2025-12-15 12:41:57,056 - INFO - 127.0.0.1 - - [15/Dec/2025 12:41:57] "GET /api/file?path=/home/opc/Documents/chats/chat-2025.1208.1935-markdown-viewer.md HTTP/1.1" 200 -
+2025-12-15 12:41:58,777 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:41:58,778 - INFO - 127.0.0.1 - - [15/Dec/2025 12:41:58] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-15 12:42:00,421 - INFO - Browse: /home/opc/Documents/JEP building from 127.0.0.1
+2025-12-15 12:42:00,422 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:00] "GET /api/browse?path=/home/opc/Documents/JEP%20building HTTP/1.1" 200 -
+2025-12-15 12:42:01,464 - INFO - File accessed: /home/opc/Documents/JEP building/Sherwin-Williams_Data_Pipeline_JEP_2026.md (21685 bytes) from 127.0.0.1
+2025-12-15 12:42:01,465 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:01] "GET /api/file?path=/home/opc/Documents/JEP%20building/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2025-12-15 12:42:07,139 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:42:07,140 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:07] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-15 12:42:10,118 - INFO - Browse: /home/opc/Documents/orcl-code from 127.0.0.1
+2025-12-15 12:42:10,118 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:10] "GET /api/browse?path=/home/opc/Documents/orcl-code HTTP/1.1" 200 -
+2025-12-15 12:42:13,002 - INFO - Browse: /home/opc/Documents/orcl-code/sqlcl-mcp-bug from 127.0.0.1
+2025-12-15 12:42:13,003 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:13] "GET /api/browse?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug HTTP/1.1" 200 -
+2025-12-15 12:42:14,563 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md (6106 bytes) from 127.0.0.1
+2025-12-15 12:42:14,564 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:14] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-15 12:42:16,654 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md (1899 bytes) from 127.0.0.1
+2025-12-15 12:42:16,655 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:16] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-15 12:42:18,249 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md (6106 bytes) from 127.0.0.1
+2025-12-15 12:42:18,250 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:18] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-15 12:42:19,391 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md (1899 bytes) from 127.0.0.1
+2025-12-15 12:42:19,392 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:19] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-15 12:42:20,857 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md (6106 bytes) from 127.0.0.1
+2025-12-15 12:42:20,858 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:20] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-15 12:42:22,144 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md (1899 bytes) from 127.0.0.1
+2025-12-15 12:42:22,144 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:22] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-15 12:42:24,396 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md (6106 bytes) from 127.0.0.1
+2025-12-15 12:42:24,397 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:24] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2025-12-15 12:42:30,062 - INFO - File accessed: /home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md (1899 bytes) from 127.0.0.1
+2025-12-15 12:42:30,063 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:30] "GET /api/file?path=/home/opc/Documents/orcl-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-summary.md HTTP/1.1" 200 -
+2025-12-15 12:42:33,816 - INFO - Browse: /home/opc/Documents/orcl-code from 127.0.0.1
+2025-12-15 12:42:33,817 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:33] "GET /api/browse?path=/home/opc/Documents/orcl-code HTTP/1.1" 200 -
+2025-12-15 12:42:35,943 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:42:35,944 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:35] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-15 12:42:37,742 - INFO - Browse: /home/opc/Documents/orcl-code from 127.0.0.1
+2025-12-15 12:42:37,742 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:37] "GET /api/browse?path=/home/opc/Documents/orcl-code HTTP/1.1" 200 -
+2025-12-15 12:42:40,873 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 12:42:40,873 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:40] "GET /api/browse?path=/home/opc/Documents HTTP/1.1" 200 -
+2025-12-15 12:42:42,139 - INFO - Browse: /home/opc from 127.0.0.1
+2025-12-15 12:42:42,140 - INFO - 127.0.0.1 - - [15/Dec/2025 12:42:42] "GET /api/browse?path=/home/opc HTTP/1.1" 200 -
+2025-12-15 12:54:45,081 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "GET / HTTP/1.1" 200 -
+2025-12-15 12:54:45,135 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,172 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,172 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/js/marked.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,173 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/js/purify.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,180 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,180 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,234 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:45,324 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:45] "[33mGET /static/favicon.svg HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,758 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "GET / HTTP/1.1" 200 -
+2025-12-15 12:54:47,811 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,852 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,861 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,861 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/js/purify.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,862 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/js/marked.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,862 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:47,937 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:47] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:48,914 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:48] "GET / HTTP/1.1" 200 -
+2025-12-15 12:54:48,968 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:48] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,002 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,011 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,011 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/js/purify.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,011 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,012 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/js/marked.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:54:49,073 - INFO - 127.0.0.1 - - [15/Dec/2025 12:54:49] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,043 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "GET / HTTP/1.1" 200 -
+2025-12-15 12:55:01,065 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,071 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/marked.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,075 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/purify.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,076 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,077 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,077 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,087 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:01,091 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:01] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,075 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "GET / HTTP/1.1" 200 -
+2025-12-15 12:55:18,134 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/css/main.css HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,170 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/js/highlight.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,171 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/js/marked.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,171 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/js/purify.min.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,172 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,172 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/js/app.js HTTP/1.1[0m" 404 -
+2025-12-15 12:55:18,242 - INFO - 127.0.0.1 - - [15/Dec/2025 12:55:18] "[33mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 404 -
+2025-12-15 13:04:32,554 - WARNING - ============================================================
+2025-12-15 13:04:32,554 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 13:04:32,554 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 13:04:32,554 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 13:04:32,554 - WARNING -   export SECRET_KEY='8377495f1b3dd514d0190dcf84a74dec2fdbba98f589672c1d746ccf10cb2f69'
+2025-12-15 13:04:32,554 - WARNING - ============================================================
+2025-12-15 13:07:06,605 - WARNING - ============================================================
+2025-12-15 13:07:06,605 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2025-12-15 13:07:06,605 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2025-12-15 13:07:06,605 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2025-12-15 13:07:06,605 - WARNING -   export SECRET_KEY='89fb9f5e97515af46b6d5ce7998b417b003f2a8e5d2c13d6c90c1ae1b0b2da13'
+2025-12-15 13:07:06,605 - WARNING - ============================================================
+2025-12-15 13:07:06,606 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2025-12-15 13:07:06,607 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-15 13:07:06,607 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-15 13:07:08,919 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:08] "GET / HTTP/1.1" 200 -
+2025-12-15 13:07:08,990 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:08] "GET /static/css/main.css HTTP/1.1" 200 -
+2025-12-15 13:07:09,036 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2025-12-15 13:07:09,036 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2025-12-15 13:07:09,036 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-12-15 13:07:09,037 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2025-12-15 13:07:09,037 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2025-12-15 13:07:09,268 - INFO - New CSRF token generated for session from 127.0.0.1
+2025-12-15 13:07:09,268 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /api/csrf-token HTTP/1.1" 200 -
+2025-12-15 13:07:09,340 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /api/themes HTTP/1.1" 200 -
+2025-12-15 13:07:09,415 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2025-12-15 13:07:09,415 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /api/browse HTTP/1.1" 200 -
+2025-12-15 13:07:09,487 - INFO - 127.0.0.1 - - [15/Dec/2025 13:07:09] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -

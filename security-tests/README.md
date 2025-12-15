@@ -6,7 +6,7 @@ This directory contains test files for verifying the security fixes in md-viewer
 
 1. Start the application with proper security settings:
 ```bash
-cd /home/opc/Documents/orcl-code/md-viewer
+cd /home/opc/Documents/dev-code/md-viewer
 export SECRET_KEY=$(python3 -c 'import secrets; print(secrets.token_hex(32))')
 python3 app.py
 ```
@@ -40,7 +40,7 @@ Contains 12 different XSS attack vectors to verify DOMPurify sanitization.
 **Test**: Create a directory with XSS payload in the name
 
 ```bash
-cd /home/opc/Documents/orcl-code/md-viewer/security-tests
+cd /home/opc/Documents/dev-code/md-viewer/security-tests
 mkdir -p 'test"><script>alert(1)</script><div class="'
 echo "# Test" > 'test"><script>alert(1)</script><div class="/test.md'
 ```
@@ -89,7 +89,7 @@ curl -X POST http://127.0.0.1:5000/api/themes \
 **Test**: Create a file larger than 10MB
 
 ```bash
-cd /home/opc/Documents/orcl-code/md-viewer/security-tests
+cd /home/opc/Documents/dev-code/md-viewer/security-tests
 dd if=/dev/zero of=large-file.md bs=1M count=15
 ```
 
@@ -147,7 +147,7 @@ curl "http://127.0.0.1:5000/api/file?path=/etc/passwd"
 Run the comprehensive test suite:
 
 ```bash
-cd /home/opc/Documents/orcl-code/md-viewer
+cd /home/opc/Documents/dev-code/md-viewer
 python3 test_security_fixes.py
 ```
 
@@ -158,7 +158,7 @@ python3 test_security_fixes.py
 Monitor the security log in real-time:
 
 ```bash
-tail -f /home/opc/Documents/orcl-code/md-viewer/security.log
+tail -f /home/opc/Documents/dev-code/md-viewer/security.log
 ```
 
 Look for:
@@ -173,7 +173,7 @@ Look for:
 After testing, clean up dangerous test directories:
 
 ```bash
-cd /home/opc/Documents/orcl-code/md-viewer/security-tests
+cd /home/opc/Documents/dev-code/md-viewer/security-tests
 rm -rf 'test"><script>alert(1)</script><div class="'
 rm -f large-file.md
 ```
