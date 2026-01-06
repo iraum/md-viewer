@@ -18,7 +18,7 @@ app = Flask(__name__)
 # Application Configuration (before logging setup)
 HOME_DIR = Path.home()
 THEMES_DIR = Path(__file__).parent / "static" / "css" / "themes"
-DEFAULT_START_DIR = HOME_DIR / "Documents"
+DEFAULT_START_DIR = Path("/run/media/opc/spielraum")  # Changed to allow full filesystem access
 MAX_THEME_SIZE = 100 * 1024  # 100KB max theme size
 MAX_MARKDOWN_SIZE = 10 * 1024 * 1024  # 10MB max markdown file size
 LOG_FILE = Path(__file__).parent / "security.log"
@@ -169,10 +169,12 @@ def browse():
     Browse directory and return markdown files and subdirectories.
     Query params:
         path: Directory path to browse (defaults to ~/Documents)
+        show_hidden: Show hidden files/folders (default: false)
     """
     path = request.args.get("path", str(DEFAULT_START_DIR))
+    show_hidden = request.args.get("show_hidden", "false").lower() == "true"
 
-    # Security: Ensure path is within home directory and not a symlink
+    # Security: Resolve path and check for symlinks (filesystem access unrestricted)
     try:
         requested_path = Path(path).resolve()
 
@@ -181,10 +183,7 @@ def browse():
             logger.warning(f"Symlink access attempt: {path} from {request.remote_addr}")
             return jsonify({"error": "Access denied"}), 403
 
-        # Ensure path is within home directory
-        if not str(requested_path).startswith(str(HOME_DIR)):
-            logger.warning(f"Path traversal attempt: {path} from {request.remote_addr}")
-            return jsonify({"error": "Access denied"}), 403
+        # Note: Home directory restriction removed to allow full filesystem access
 
     except Exception as e:
         logger.error(f"Invalid path error: {path} - {type(e).__name__}")
@@ -199,8 +198,9 @@ def browse():
     items = []
     try:
         for item in sorted(requested_path.iterdir(), key=lambda x: (not x.is_dir(), x.name.lower())):
-            if item.name.startswith("."):
-                continue  # Skip hidden files
+            # Skip hidden files unless show_hidden is enabled
+            if item.name.startswith(".") and not show_hidden:
+                continue
 
             # Skip symlinks
             if item.is_symlink():
@@ -259,7 +259,7 @@ def get_file():
     if not path:
         return jsonify({"error": "Path required"}), 400
 
-    # Security: Ensure path is within home directory and not a symlink
+    # Security: Resolve path and check for symlinks (filesystem access unrestricted)
     try:
         file_path = Path(path).resolve()
 
@@ -268,10 +268,7 @@ def get_file():
             logger.warning(f"Symlink file access attempt: {path} from {request.remote_addr}")
             return jsonify({"error": "Access denied"}), 403
 
-        # Ensure path is within home directory
-        if not str(file_path).startswith(str(HOME_DIR)):
-            logger.warning(f"Path traversal file access attempt: {path} from {request.remote_addr}")
-            return jsonify({"error": "Access denied"}), 403
+        # Note: Home directory restriction removed to allow full filesystem access
 
     except Exception as e:
         logger.error(f"Invalid file path error: {path} - {type(e).__name__}")

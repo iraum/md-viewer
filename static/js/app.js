@@ -9,6 +9,12 @@
     let currentPath = null;
     let currentTheme = localStorage.getItem('md-viewer-theme') || '';
     let csrfToken = null;
+    let showHidden = localStorage.getItem('md-viewer-show-hidden') === 'true' || false;
+
+    // Path display configuration
+    const BASE_PATH = '/run/media/opc/spielraum';
+    const DISPLAY_ROOT = '/spielraum';
+    const HOME_DIR = '/home/opc';
 
     // DOM Elements
     const fileTree = document.getElementById('file-tree');
@@ -17,6 +23,8 @@
     const contentHeader = document.getElementById('content-header');
     const themeSelect = document.getElementById('theme-select');
     const themeStylesheet = document.getElementById('theme-stylesheet');
+    const homeBtn = document.getElementById('home-btn');
+    const spielraumBtn = document.getElementById('spielraum-btn');
 
     // Configure marked (with safe hljs check)
     marked.setOptions({
@@ -181,6 +189,33 @@
             sidebar.classList.toggle('collapsed');
             localStorage.setItem('md-viewer-sidebar-collapsed', sidebar.classList.contains('collapsed'));
         });
+
+        // Home button
+        homeBtn.addEventListener('click', () => {
+            browse(HOME_DIR);
+        });
+
+        // Spielraum button
+        spielraumBtn.addEventListener('click', () => {
+            browse(BASE_PATH);
+        });
+
+        // Keyboard shortcut: Ctrl+H to toggle hidden files
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.key === 'h') {
+                e.preventDefault();
+                toggleHiddenFiles();
+            }
+        });
+    }
+
+    /**
+     * Toggle showing hidden files
+     */
+    function toggleHiddenFiles() {
+        showHidden = !showHidden;
+        localStorage.setItem('md-viewer-show-hidden', showHidden);
+        browse(currentPath);
     }
 
     /**
@@ -344,7 +379,10 @@
         fileTree.innerHTML = '<div class="loading">Loading...</div>';
 
         try {
-            const url = path ? `/api/browse?path=${encodeURIComponent(path)}` : '/api/browse';
+            let url = path ? `/api/browse?path=${encodeURIComponent(path)}` : '/api/browse';
+            if (showHidden) {
+                url += (url.includes('?') ? '&' : '?') + 'show_hidden=true';
+            }
             const response = await fetch(url);
             const data = await response.json();
 
@@ -365,18 +403,23 @@
      * Render breadcrumb navigation
      */
     function renderBreadcrumb(path, parent) {
-        const parts = path.split('/').filter(Boolean);
+        // Convert to display path for showing to user
+        const displayPath = toDisplayPath(path);
+        const parts = displayPath.split('/').filter(Boolean);
         let html = '';
-        let accumulated = '';
+        let accumulatedDisplay = '';
+        let accumulatedReal = '';
 
         parts.forEach((part, index) => {
-            accumulated += '/' + part;
+            accumulatedDisplay += '/' + part;
+            // Convert display path back to real path for API calls
+            accumulatedReal = toRealPath(accumulatedDisplay);
             const isLast = index === parts.length - 1;
 
             if (isLast) {
                 html += `<span class="breadcrumb-current">${escapeHtml(part)}</span>`;
             } else {
-                html += `<a href="#" class="breadcrumb-link" data-path="${escapeHtml(accumulated)}">${escapeHtml(part)}</a>`;
+                html += `<a href="#" class="breadcrumb-link" data-path="${escapeHtml(accumulatedReal)}">${escapeHtml(part)}</a>`;
                 html += '<span class="breadcrumb-sep">/</span>';
             }
         });
@@ -496,6 +539,26 @@
         } catch (error) {
             markdownContent.innerHTML = `<div class="error">Failed to load file: ${error.message}</div>`;
         }
+    }
+
+    /**
+     * Convert real filesystem path to display path
+     */
+    function toDisplayPath(realPath) {
+        if (realPath.startsWith(BASE_PATH)) {
+            return DISPLAY_ROOT + realPath.substring(BASE_PATH.length);
+        }
+        return realPath;
+    }
+
+    /**
+     * Convert display path to real filesystem path
+     */
+    function toRealPath(displayPath) {
+        if (displayPath.startsWith(DISPLAY_ROOT)) {
+            return BASE_PATH + displayPath.substring(DISPLAY_ROOT.length);
+        }
+        return displayPath;
     }
 
     /**
