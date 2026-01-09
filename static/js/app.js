@@ -10,6 +10,7 @@
     let currentTheme = localStorage.getItem('md-viewer-theme') || '';
     let csrfToken = null;
     let showHidden = localStorage.getItem('md-viewer-show-hidden') === 'true' || false;
+    let sortOrder = localStorage.getItem('md-viewer-sort-order') || 'date'; // 'date' or 'name'
 
     // Path display configuration
     const BASE_PATH = '/run/media/opc/spielraum';
@@ -25,6 +26,8 @@
     const themeStylesheet = document.getElementById('theme-stylesheet');
     const homeBtn = document.getElementById('home-btn');
     const spielraumBtn = document.getElementById('spielraum-btn');
+    const sortToggleBtn = document.getElementById('sort-toggle-btn');
+    const sortIcon = document.getElementById('sort-icon');
 
     // Configure marked (with safe hljs check)
     marked.setOptions({
@@ -200,6 +203,14 @@
             browse(BASE_PATH);
         });
 
+        // Sort toggle button
+        sortToggleBtn.addEventListener('click', () => {
+            toggleSortOrder();
+        });
+
+        // Update sort button icon on init
+        updateSortIcon();
+
         // Keyboard shortcut: Ctrl+H to toggle hidden files
         document.addEventListener('keydown', (e) => {
             if (e.ctrlKey && e.key === 'h') {
@@ -216,6 +227,29 @@
         showHidden = !showHidden;
         localStorage.setItem('md-viewer-show-hidden', showHidden);
         browse(currentPath);
+    }
+
+    /**
+     * Toggle sort order between date and name
+     */
+    function toggleSortOrder() {
+        sortOrder = sortOrder === 'date' ? 'name' : 'date';
+        localStorage.setItem('md-viewer-sort-order', sortOrder);
+        updateSortIcon();
+        browse(currentPath);
+    }
+
+    /**
+     * Update sort button icon based on current sort order
+     */
+    function updateSortIcon() {
+        if (sortOrder === 'date') {
+            sortIcon.textContent = '↓';
+            sortToggleBtn.title = 'Sort: Newest first (click for A-Z)';
+        } else {
+            sortIcon.textContent = 'A-Z';
+            sortToggleBtn.title = 'Sort: A-Z (click for Newest)';
+        }
     }
 
     /**
@@ -242,6 +276,7 @@
     let rawMode = false;
     let currentFileContent = '';
     let currentFileName = '';
+    let currentFileDir = '';
 
     /**
      * Apply a theme by ID
@@ -358,6 +393,17 @@
 
             markdownContent.innerHTML = sanitizedHtml;
 
+            // Transform relative image URLs to use the /api/image endpoint
+            markdownContent.querySelectorAll('img').forEach((img) => {
+                const src = img.getAttribute('src');
+                if (src && !src.startsWith('http://') && !src.startsWith('https://') &&
+                    !src.startsWith('/') && !src.startsWith('data:') && currentFileDir) {
+                    // Relative path - resolve against current file's directory
+                    const absolutePath = currentFileDir + '/' + src;
+                    img.setAttribute('src', `/api/image?path=${encodeURIComponent(absolutePath)}`);
+                }
+            });
+
             // Apply syntax highlighting only to code blocks with explicit language
             if (typeof hljs !== 'undefined') {
                 markdownContent.querySelectorAll('pre code').forEach((block) => {
@@ -383,6 +429,8 @@
             if (showHidden) {
                 url += (url.includes('?') ? '&' : '?') + 'show_hidden=true';
             }
+            // Add sort order parameter
+            url += (url.includes('?') ? '&' : '?') + `sort_by=${sortOrder}`;
             const response = await fetch(url);
             const data = await response.json();
 
@@ -529,6 +577,7 @@
             // Store content for theme switching
             currentFileContent = data.content;
             currentFileName = data.name;
+            currentFileDir = data.path.substring(0, data.path.lastIndexOf('/'));
 
             // Render content (raw or formatted based on current mode)
             renderContent(data.content, data.name, rawMode);

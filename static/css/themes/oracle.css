@@ -39,6 +39,29 @@ Inspired by Oracle's brand colors
     border-color: #4a4a5a;
 }
 
+.nav-controls {
+    background: #312d3a;
+    border-bottom-color: #4a4a5a;
+}
+
+.nav-btn {
+    background: #1a1a24;
+    color: #ffffff;
+    border-color: #4a4a5a;
+}
+
+.nav-btn:hover {
+    background: #2a2a34;
+    border-color: #c74634;
+    color: #ff9f80;
+}
+
+.nav-btn.active {
+    background: #c74634;
+    border-color: #c74634;
+    color: #ffffff;
+}
+
 .breadcrumb {
     background: #312d3a;
     color: #b0b0b8;

@@ -170,9 +170,11 @@ def browse():
     Query params:
         path: Directory path to browse (defaults to ~/Documents)
         show_hidden: Show hidden files/folders (default: false)
+        sort_by: Sort order - "name" (alphabetical) or "date" (newest first, default)
     """
     path = request.args.get("path", str(DEFAULT_START_DIR))
     show_hidden = request.args.get("show_hidden", "false").lower() == "true"
+    sort_by = request.args.get("sort_by", "date")
 
     # Security: Resolve path and check for symlinks (filesystem access unrestricted)
     try:
@@ -197,7 +199,15 @@ def browse():
 
     items = []
     try:
-        for item in sorted(requested_path.iterdir(), key=lambda x: (not x.is_dir(), x.name.lower())):
+        # Sort items based on sort_by parameter
+        if sort_by == "name":
+            # Sort alphabetically: directories first, then by name
+            sorted_items = sorted(requested_path.iterdir(), key=lambda x: (not x.is_dir(), x.name.lower()))
+        else:
+            # Sort by modification time: directories first, then newest files first
+            sorted_items = sorted(requested_path.iterdir(), key=lambda x: (not x.is_dir(), -x.stat().st_mtime if x.exists() else 0))
+
+        for item in sorted_items:
             # Skip hidden files unless show_hidden is enabled
             if item.name.startswith(".") and not show_hidden:
                 continue
@@ -311,6 +321,58 @@ def get_file():
     except Exception as e:
         logger.error(f"Error reading file: {file_path} - {type(e).__name__}")
         return jsonify({"error": "An error occurred"}), 500
+
+
+@app.route("/api/image")
+@rate_limit
+def get_image():
+    """
+    Serve image files from allowed directories.
+    Query params:
+        path: Path to the image file
+    """
+    path = request.args.get("path")
+    if not path:
+        return jsonify({"error": "Path required"}), 400
+
+    # Security: Resolve path and check for symlinks
+    try:
+        file_path = Path(path).resolve()
+
+        # Check for symlinks
+        if file_path.is_symlink():
+            logger.warning(f"Symlink image access attempt: {path} from {request.remote_addr}")
+            return jsonify({"error": "Access denied"}), 403
+
+    except Exception as e:
+        logger.error(f"Invalid image path error: {path} - {type(e).__name__}")
+        return jsonify({"error": "Invalid path"}), 400
+
+    if not file_path.exists():
+        return jsonify({"error": "File not found"}), 404
+
+    # Allow common image extensions
+    allowed_extensions = {'.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.ico'}
+    if file_path.suffix.lower() not in allowed_extensions:
+        logger.warning(f"Non-image file access attempt: {path} from {request.remote_addr}")
+        return jsonify({"error": "Not an image file"}), 400
+
+    # Check file size (max 10MB for images)
+    try:
+        file_size = file_path.stat().st_size
+        if file_size > 10 * 1024 * 1024:
+            logger.warning(f"Image too large: {file_path} ({file_size} bytes) from {request.remote_addr}")
+            return jsonify({"error": "Image file too large"}), 413
+    except Exception as e:
+        logger.error(f"Error checking image size: {file_path} - {type(e).__name__}")
+        return jsonify({"error": "Error accessing file"}), 500
+
+    try:
+        logger.info(f"Image accessed: {file_path} from {request.remote_addr}")
+        return send_from_directory(file_path.parent, file_path.name)
+    except Exception as e:
+        logger.error(f"Error serving image: {file_path} - {type(e).__name__}")
+        return jsonify({"error": "Error serving image"}), 500
 
 
 @app.route("/api/themes")
