@@ -1,85 +1,83 @@
-# Markdown Viewer
+# Claude Code Guidelines
 
-A Flask-based web application for browsing and displaying markdown files with customizable themes.
+Project overview and setup instructions are in README.md.
 
-## Project Structure
+## Current Status (2026-01-12)
 
-```
-md-viewer/
-├── app.py              # Flask application with API endpoints
-├── requirements.txt    # Python dependencies (Flask 3.0.0)
-├── templates/
-│   └── index.html      # Main HTML template
-├── static/
-│   ├── css/
-│   │   ├── main.css    # Core styles
-│   │   └── themes/     # Theme CSS files (dark, nord, sepia, etc.)
-│   └── js/
-│       ├── app.js      # Frontend JavaScript
-│       ├── marked.min.js   # Markdown parser
-│       ├── purify.min.js   # DOMPurify for XSS protection
-│       └── highlight.min.js # Code syntax highlighting
-└── security-tests/     # XSS test files
-```
+**Version**: 2.1 (UI Improvements Complete)
 
-## Tech Stack
+**Recent Changes**:
+- ✅ Added 9 UI usability improvements (see README.md changelog)
+- ✅ New backend endpoint: `/api/file-metadata` for file stats
+- ✅ Recent files tracking (localStorage, max 15)
+- ✅ Bookmarks/favorites system (localStorage)
+- ✅ Enhanced UX with copy buttons, scroll-to-top, metadata display
+- ✅ Print-friendly CSS for browser print-to-PDF
 
-- **Backend**: Python 3.8+, Flask 3.0.0
-- **Frontend**: Vanilla JavaScript, marked.js, highlight.js, DOMPurify
-- **Styling**: CSS with theme system
+**Active App**: Running on http://localhost:5000
 
-## Running the Application
+## Code Style
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+- **Python**: Follow PEP 8, use type hints where helpful
+- **JavaScript**: Vanilla ES6+, no frameworks, no build step
+- **CSS**: Use CSS custom properties (variables) defined in themes
 
-# Run (development)
-python app.py
+## Security Requirements
 
-# Production (set environment variables)
-export SECRET_KEY='your-secret-key'
-export FLASK_HOST=127.0.0.1
-export FLASK_PORT=5000
-python app.py
-```
+This app has intentional security hardening. When modifying code:
 
-## API Endpoints
+- Never bypass CSRF validation on POST endpoints
+- Always validate/sanitize file paths before filesystem access
+- Use `Path.resolve()` and check for symlinks
+- Log security events to `logger` (writes to security.log)
+- Sanitize user input in error messages (no stack traces to client)
+- Keep DOMPurify sanitization on rendered markdown
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/` | GET | Main application page |
-| `/api/browse` | GET | Browse directory (params: `path`, `show_hidden`, `sort_by`) |
-| `/api/file` | GET | Get markdown file contents (param: `path`) |
-| `/api/image` | GET | Serve image files (param: `path`) |
-| `/api/themes` | GET | List available themes |
-| `/api/themes` | POST | Save/update theme (requires CSRF token) |
-| `/api/csrf-token` | GET | Get CSRF token |
+## Files to Be Careful With
 
-## Security Features
+- `app.py` - Contains security middleware; test thoroughly after changes
+- `static/js/purify.min.js` - Do not modify; vendor library for XSS protection
+- `static/js/marked.min.js` - Do not modify; vendor library
+- `static/js/highlight.min.js` - Do not modify; vendor library
 
-- CSRF protection with token rotation (1-hour expiry)
-- Rate limiting (100 requests/minute per IP)
-- Security headers (CSP, X-Frame-Options, HSTS, etc.)
-- Input validation and path sanitization
-- DOMPurify for XSS prevention on rendered markdown
-- Symlink traversal protection
-- File size limits (10MB markdown, 100KB themes)
+## Adding New Features
 
-## Development Guidelines
+### Backend (app.py)
+- New API endpoints go in `app.py` with `@rate_limit` decorator
+- POST endpoints require CSRF validation via `validate_csrf_token()`
+- Follow existing patterns for path validation and symlink checks
+- All endpoints must log security events
 
-- Security logging writes to `security.log`
-- Themes are stored in `static/css/themes/`
-- Default browse path: `/run/media/opc/spielraum`
-- Only `.md` files are served via `/api/file`
-- Images limited to: png, jpg, jpeg, gif, svg, webp, ico
+### Frontend
+- JavaScript changes go in `static/js/app.js`
+- CSS changes go in `static/css/main.css`
+- Theme-specific overrides go in `static/css/themes/*.css`
+- Use localStorage for client-side persistence
+- Always include try-catch for localStorage operations
 
-## Environment Variables
+### State Management
+- Current state tracked in app.js: `recentFiles`, `bookmarks`, `currentFilePath`, `rawMode`
+- Recent files: max 15, FIFO queue
+- Bookmarks: unlimited, sorted alphabetically
+- All state persists via localStorage with graceful fallback
 
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `SECRET_KEY` | (random) | Session secret key (required for production) |
-| `FLASK_HOST` | 127.0.0.1 | Bind address |
-| `FLASK_PORT` | 5000 | Port number |
-| `FLASK_DEBUG` | False | Enable debug mode |
-| `FLASK_ENV` | development | Environment (affects secure cookies) |
+## Testing
+
+- Run `python app.py` and test at http://localhost:5000
+- Check `security.log` for warnings after testing
+- XSS test files are in `security-tests/`
+- Test with all 7 themes (especially Oracle theme for sidebar sections)
+- Hard refresh browser (Ctrl+Shift+R) after code changes
+
+## Known Behavior
+
+- Recent Files & Bookmarks sections collapsed by default
+- Browser caching: may need hard refresh (Ctrl+Shift+R) after updates
+- localStorage quota: ~5-10MB limit (sufficient for current features)
+
+## Preferences
+
+- Keep dependencies minimal (currently just Flask)
+- No external CDNs; all JS/CSS libraries are self-hosted
+- Prefer simple solutions over complex abstractions
+- No emojis in code unless explicitly requested

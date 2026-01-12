@@ -114,12 +114,15 @@ server {
 - Breadcrumb navigation for quick path jumping
 - Collapsible sidebar for focused reading
 - Hidden file filtering (skips dotfiles)
+- **Recent Files** - Track last 15 opened files (collapsible section)
+- **Bookmarks** - Star your favorite files for quick access
 
 ### Markdown Rendering
 
 - Full GitHub Flavored Markdown (GFM) support
 - Automatic syntax highlighting for code blocks
 - Line break preservation for better readability
+- **Copy buttons** on all code blocks (hover to reveal)
 
 ### Dual View Modes
 
@@ -127,6 +130,16 @@ server {
 |------|-------------|
 | **Formatted** | Beautifully rendered HTML with proper styling |
 | **Raw** | Markdown source with line numbers and syntax highlighting |
+
+Toggle between modes with the **View/Raw button** in the content header.
+
+### File Metadata
+
+Each opened file displays:
+- Last modified date and time
+- File size (KB/MB)
+- Word count
+- Line count
 
 ### Theme System
 
@@ -137,12 +150,18 @@ Switch between 7 carefully crafted themes:
 | **Dark** | Sleek dark theme for eye comfort |
 | **High Contrast** | Maximum readability with strong contrast |
 | **Nord** | Arctic, north-bluish color palette |
-| **Oracle** | Inspired by Oracle's brand colors |
+| **Oracle** | Inspired by Oracle's brand colors (dark sidebar) |
 | **Sepia** | Warm, book-like reading experience |
 | **Solarized Light** | Ethan Schoonover's precision color scheme |
 | **Raw** | For viewing raw markdown source |
 
 Theme preferences persist across sessions using localStorage.
+
+### Enhanced UX
+
+- **Skeleton loading** - Smooth animated placeholders while loading
+- **Scroll-to-top** - Floating button appears when scrolled down
+- **Print-friendly** - Optimized CSS for browser print-to-PDF (Ctrl+P)
 
 ---
 
@@ -196,6 +215,8 @@ Markdown Viewer implements defense-in-depth security controls:
 | `GET` | `/api/csrf-token` | Get CSRF token for session |
 | `GET` | `/api/browse?path=<dir>` | List directory contents |
 | `GET` | `/api/file?path=<file>` | Get markdown file content |
+| `GET` | `/api/file-metadata?path=<file>` | Get file stats (mtime, size, word/line count) |
+| `GET` | `/api/image?path=<img>` | Serve image files |
 | `GET` | `/api/themes` | List available themes |
 | `POST` | `/api/themes` | Create or update a theme (requires CSRF token) |
 
@@ -360,7 +381,22 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Changelog
 
-### Version 2.0 (Current)
+### Version 2.1 (2026-01-12)
+**UI/UX Improvements Update**
+- Added Recent Files tracking (last 15 files, localStorage-based)
+- Implemented Bookmarks/Favorites system with star button
+- Added file metadata display (modified date, size, word/line counts)
+- New backend endpoint: `GET /api/file-metadata` with security validation
+- Copy-to-clipboard buttons on all code blocks
+- Smooth scroll-to-top button (appears when scrolled >300px)
+- View/Raw mode toggle button in content header
+- Skeleton loading animations (replaced static "Loading..." text)
+- Print-friendly CSS for clean browser print-to-PDF output
+- Recent & Bookmarks sections collapsed by default
+- Oracle theme styling for sidebar sections (dark background)
+- All features use localStorage with try-catch error handling
+
+### Version 2.0
 - Added comprehensive security controls (CSRF, rate limiting, security headers)
 - Implemented symlink protection and path validation
 - Added security logging and audit trail

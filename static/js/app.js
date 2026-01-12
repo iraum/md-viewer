@@ -11,6 +11,10 @@
     let csrfToken = null;
     let showHidden = localStorage.getItem('md-viewer-show-hidden') === 'true' || false;
     let sortOrder = localStorage.getItem('md-viewer-sort-order') || 'date'; // 'date' or 'name'
+    const MAX_RECENT_FILES = 15;
+    let recentFiles = JSON.parse(localStorage.getItem('md-viewer-recent-files') || '[]');
+    let bookmarks = JSON.parse(localStorage.getItem('md-viewer-bookmarks') || '[]');
+    let currentFilePath = null;
 
     // Path display configuration
     const BASE_PATH = '/run/media/opc/spielraum';
@@ -166,6 +170,11 @@
         await loadThemes();
         await browse();
 
+        // Setup collapsible sections
+        setupCollapsibleSections();
+        renderRecentFiles();
+        renderBookmarks();
+
         // Apply saved theme
         if (currentTheme) {
             themeSelect.value = currentTheme;
@@ -217,6 +226,28 @@
                 e.preventDefault();
                 toggleHiddenFiles();
             }
+        });
+
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scroll-to-top');
+        let scrollTimeout;
+
+        markdownContent.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(() => {
+                if (markdownContent.scrollTop > 300) {
+                    scrollToTopBtn.classList.add('visible');
+                } else {
+                    scrollToTopBtn.classList.remove('visible');
+                }
+            }, 100);
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            markdownContent.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
 
@@ -363,6 +394,47 @@
     }
 
     /**
+     * Add copy buttons to code blocks
+     */
+    function addCopyButtons() {
+        markdownContent.querySelectorAll('pre').forEach((preBlock) => {
+            // Skip if button already exists
+            if (preBlock.querySelector('.copy-button')) {
+                return;
+            }
+
+            const button = document.createElement('button');
+            button.className = 'copy-button';
+            button.textContent = 'Copy';
+            button.title = 'Copy code to clipboard';
+
+            button.addEventListener('click', async () => {
+                const codeBlock = preBlock.querySelector('code');
+                const code = codeBlock ? codeBlock.textContent : preBlock.textContent;
+
+                try {
+                    await navigator.clipboard.writeText(code);
+                    button.textContent = '✓ Copied';
+                    button.classList.add('copied');
+
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                        button.classList.remove('copied');
+                    }, 2000);
+                } catch (error) {
+                    console.error('Failed to copy code:', error);
+                    button.textContent = '✗ Failed';
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                }
+            });
+
+            preBlock.appendChild(button);
+        });
+    }
+
+    /**
      * Render content (raw or formatted)
      */
     function renderContent(content, name, isRaw) {
@@ -415,6 +487,9 @@
                     }
                 });
             }
+
+            // Add copy buttons to code blocks
+            addCopyButtons();
         }
     }
 
@@ -422,7 +497,16 @@
      * Browse directory
      */
     async function browse(path = null) {
-        fileTree.innerHTML = '<div class="loading">Loading...</div>';
+        fileTree.innerHTML = `
+            <div class="skeleton-tree">
+                ${Array(8).fill(0).map(() => `
+                    <div class="skeleton-tree-item">
+                        <div class="skeleton skeleton-tree-icon"></div>
+                        <div class="skeleton skeleton-tree-name"></div>
+                    </div>
+                `).join('')}
+            </div>
+        `;
 
         try {
             let url = path ? `/api/browse?path=${encodeURIComponent(path)}` : '/api/browse';
@@ -540,7 +624,14 @@
      * Load and display a markdown file
      */
     async function loadFile(path) {
-        markdownContent.innerHTML = '<div class="loading">Loading...</div>';
+        markdownContent.innerHTML = `
+            <div class="skeleton-content">
+                <div class="skeleton skeleton-content-title"></div>
+                ${Array(12).fill(0).map(() => `
+                    <div class="skeleton skeleton-content-line"></div>
+                `).join('')}
+            </div>
+        `;
 
         // Update active state in file tree
         fileTree.querySelectorAll('.file-item').forEach(el => {
@@ -566,6 +657,15 @@
                 <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">&#9776;</button>
                 <span class="file-name">${escapeHtml(data.name)}</span>
                 <span class="file-path">${escapeHtml(dirPath)}/</span>
+                <button class="view-toggle" id="view-toggle">
+                    <span>👁️</span><span>View</span>
+                </button>
+                <button class="bookmark-button" id="bookmark-btn">
+                    <span>☆</span><span>Bookmark</span>
+                </button>
+                <div class="metadata-display">
+                    <span class="metadata-loading">Loading metadata...</span>
+                </div>
             `;
             // Re-attach toggle event
             document.getElementById('sidebar-toggle').addEventListener('click', () => {
@@ -574,6 +674,38 @@
                 localStorage.setItem('md-viewer-sidebar-collapsed', sidebar.classList.contains('collapsed'));
             });
 
+            // Attach view toggle event
+            const viewToggleBtn = document.getElementById('view-toggle');
+            const updateViewToggle = () => {
+                if (rawMode) {
+                    viewToggleBtn.classList.add('raw-mode');
+                    viewToggleBtn.innerHTML = '<span>📝</span><span>Raw</span>';
+                    viewToggleBtn.title = 'Switch to formatted view';
+                } else {
+                    viewToggleBtn.classList.remove('raw-mode');
+                    viewToggleBtn.innerHTML = '<span>👁️</span><span>View</span>';
+                    viewToggleBtn.title = 'Switch to raw view';
+                }
+            };
+
+            viewToggleBtn.addEventListener('click', () => {
+                rawMode = !rawMode;
+                renderContent(currentFileContent, currentFileName, rawMode);
+                updateViewToggle();
+            });
+            updateViewToggle();
+
+            // Attach bookmark event
+            currentFilePath = path;
+            const bookmarkBtn = document.getElementById('bookmark-btn');
+            bookmarkBtn.addEventListener('click', () => {
+                toggleBookmark(path, data.name);
+            });
+            updateBookmarkButton();
+
+            // Load metadata asynchronously
+            loadFileMetadata(path).then(renderMetadata);
+
             // Store content for theme switching
             currentFileContent = data.content;
             currentFileName = data.name;
@@ -581,6 +713,9 @@
 
             // Render content (raw or formatted based on current mode)
             renderContent(data.content, data.name, rawMode);
+
+            // Add to recent files
+            addToRecentFiles(path, data.name);
 
             // Scroll to top
             markdownContent.scrollTop = 0;
@@ -626,6 +761,288 @@
         if (bytes < 1024) return bytes + ' B';
         if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
         return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+    }
+
+    /**
+     * Load and display file metadata
+     */
+    async function loadFileMetadata(path) {
+        try {
+            const response = await fetch(`/api/file-metadata?path=${encodeURIComponent(path)}`);
+            const data = await response.json();
+
+            if (data.error) {
+                console.error('Failed to load metadata:', data.error);
+                return null;
+            }
+
+            // Format modified date
+            const modifiedDate = new Date(data.mtime * 1000);
+            const formattedDate = modifiedDate.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+
+            return {
+                modified: formattedDate,
+                size: formatSize(data.size),
+                words: data.word_count.toLocaleString(),
+                lines: data.line_count.toLocaleString()
+            };
+        } catch (error) {
+            console.error('Failed to load metadata:', error);
+            return null;
+        }
+    }
+
+    /**
+     * Render metadata in content header
+     */
+    function renderMetadata(metadata) {
+        const metadataContainer = contentHeader.querySelector('.metadata-display');
+        if (!metadataContainer) return;
+
+        if (!metadata) {
+            metadataContainer.innerHTML = '<span class="metadata-loading">Metadata unavailable</span>';
+            return;
+        }
+
+        metadataContainer.innerHTML = `
+            <div class="metadata-item" title="Last modified">
+                <span class="icon">🕒</span>
+                <span>${escapeHtml(metadata.modified)}</span>
+            </div>
+            <div class="metadata-item" title="File size">
+                <span class="icon">📄</span>
+                <span>${escapeHtml(metadata.size)}</span>
+            </div>
+            <div class="metadata-item" title="Word count">
+                <span class="icon">📝</span>
+                <span>${escapeHtml(metadata.words)} words</span>
+            </div>
+            <div class="metadata-item" title="Line count">
+                <span class="icon">📏</span>
+                <span>${escapeHtml(metadata.lines)} lines</span>
+            </div>
+        `;
+    }
+
+    /**
+     * Add file to recent files list
+     */
+    function addToRecentFiles(path, name) {
+        // Remove if already exists
+        recentFiles = recentFiles.filter(f => f.path !== path);
+
+        // Add to beginning
+        recentFiles.unshift({ path, name, timestamp: Date.now() });
+
+        // Limit to MAX_RECENT_FILES
+        if (recentFiles.length > MAX_RECENT_FILES) {
+            recentFiles = recentFiles.slice(0, MAX_RECENT_FILES);
+        }
+
+        // Save to localStorage
+        try {
+            localStorage.setItem('md-viewer-recent-files', JSON.stringify(recentFiles));
+        } catch (error) {
+            console.error('Failed to save recent files:', error);
+        }
+
+        // Update UI
+        renderRecentFiles();
+    }
+
+    /**
+     * Remove file from recent files list
+     */
+    function removeFromRecentFiles(path) {
+        recentFiles = recentFiles.filter(f => f.path !== path);
+        try {
+            localStorage.setItem('md-viewer-recent-files', JSON.stringify(recentFiles));
+        } catch (error) {
+            console.error('Failed to save recent files:', error);
+        }
+        renderRecentFiles();
+    }
+
+    /**
+     * Render recent files list
+     */
+    function renderRecentFiles() {
+        const recentList = document.getElementById('recent-list');
+
+        if (recentFiles.length === 0) {
+            recentList.innerHTML = '<div class="sidebar-section-empty">No recent files</div>';
+            return;
+        }
+
+        const html = recentFiles.map(file => `
+            <div class="recent-item" data-path="${escapeHtml(file.path)}">
+                <span class="icon">📄</span>
+                <span class="name" title="${escapeHtml(file.path)}">${escapeHtml(file.name)}</span>
+                <span class="remove-btn" data-path="${escapeHtml(file.path)}" title="Remove from recent">×</span>
+            </div>
+        `).join('');
+
+        recentList.innerHTML = html;
+
+        // Add click handlers
+        recentList.querySelectorAll('.recent-item').forEach(el => {
+            el.addEventListener('click', (e) => {
+                if (!e.target.classList.contains('remove-btn')) {
+                    loadFile(el.dataset.path);
+                }
+            });
+        });
+
+        recentList.querySelectorAll('.remove-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                removeFromRecentFiles(btn.dataset.path);
+            });
+        });
+    }
+
+    /**
+     * Check if file is bookmarked
+     */
+    function isBookmarked(path) {
+        return bookmarks.some(b => b.path === path);
+    }
+
+    /**
+     * Toggle bookmark for current file
+     */
+    function toggleBookmark(path, name) {
+        if (isBookmarked(path)) {
+            // Remove bookmark
+            bookmarks = bookmarks.filter(b => b.path !== path);
+        } else {
+            // Add bookmark
+            bookmarks.push({ path, name, timestamp: Date.now() });
+            // Sort by name
+            bookmarks.sort((a, b) => a.name.localeCompare(b.name));
+        }
+
+        try {
+            localStorage.setItem('md-viewer-bookmarks', JSON.stringify(bookmarks));
+        } catch (error) {
+            console.error('Failed to save bookmarks:', error);
+        }
+        renderBookmarks();
+        updateBookmarkButton();
+    }
+
+    /**
+     * Remove bookmark
+     */
+    function removeBookmark(path) {
+        bookmarks = bookmarks.filter(b => b.path !== path);
+        try {
+            localStorage.setItem('md-viewer-bookmarks', JSON.stringify(bookmarks));
+        } catch (error) {
+            console.error('Failed to save bookmarks:', error);
+        }
+        renderBookmarks();
+        updateBookmarkButton();
+    }
+
+    /**
+     * Render bookmarks list
+     */
+    function renderBookmarks() {
+        const bookmarksList = document.getElementById('bookmarks-list');
+
+        if (bookmarks.length === 0) {
+            bookmarksList.innerHTML = '<div class="sidebar-section-empty">No bookmarks</div>';
+            return;
+        }
+
+        const html = bookmarks.map(bookmark => `
+            <div class="bookmark-item" data-path="${escapeHtml(bookmark.path)}">
+                <span class="icon">⭐</span>
+                <span class="name" title="${escapeHtml(bookmark.path)}">${escapeHtml(bookmark.name)}</span>
+                <span class="remove-btn" data-path="${escapeHtml(bookmark.path)}" title="Remove bookmark">×</span>
+            </div>
+        `).join('');
+
+        bookmarksList.innerHTML = html;
+
+        // Add click handlers
+        bookmarksList.querySelectorAll('.bookmark-item').forEach(el => {
+            el.addEventListener('click', (e) => {
+                if (!e.target.classList.contains('remove-btn')) {
+                    loadFile(el.dataset.path);
+                }
+            });
+        });
+
+        bookmarksList.querySelectorAll('.remove-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                removeBookmark(btn.dataset.path);
+            });
+        });
+    }
+
+    /**
+     * Update bookmark button state
+     */
+    function updateBookmarkButton() {
+        const bookmarkBtn = document.getElementById('bookmark-btn');
+        if (!bookmarkBtn || !currentFilePath) return;
+
+        if (isBookmarked(currentFilePath)) {
+            bookmarkBtn.classList.add('bookmarked');
+            bookmarkBtn.innerHTML = '<span>⭐</span><span>Bookmarked</span>';
+            bookmarkBtn.title = 'Remove bookmark';
+        } else {
+            bookmarkBtn.classList.remove('bookmarked');
+            bookmarkBtn.innerHTML = '<span>☆</span><span>Bookmark</span>';
+            bookmarkBtn.title = 'Add bookmark';
+        }
+    }
+
+    /**
+     * Setup collapsible sections
+     */
+    function setupCollapsibleSections() {
+        const sections = [
+            { header: 'recent-header', content: 'recent-list', storageKey: 'md-viewer-recent-collapsed' },
+            { header: 'bookmarks-header', content: 'bookmarks-list', storageKey: 'md-viewer-bookmarks-collapsed' }
+        ];
+
+        sections.forEach(({ header, content, storageKey }) => {
+            const headerEl = document.getElementById(header);
+            const contentEl = document.getElementById(content);
+            const storedState = localStorage.getItem(storageKey);
+
+            // Only apply stored state if it exists, otherwise keep HTML default (collapsed)
+            if (storedState !== null) {
+                const isCollapsed = storedState === 'true';
+                if (isCollapsed) {
+                    headerEl.classList.add('collapsed');
+                    contentEl.classList.add('collapsed');
+                } else {
+                    headerEl.classList.remove('collapsed');
+                    contentEl.classList.remove('collapsed');
+                }
+            }
+
+            headerEl.addEventListener('click', () => {
+                const collapsed = headerEl.classList.toggle('collapsed');
+                contentEl.classList.toggle('collapsed');
+                try {
+                    localStorage.setItem(storageKey, collapsed);
+                } catch (error) {
+                    console.error('Failed to save section state:', error);
+                }
+            });
+        });
     }
 
     // Initialize on DOM ready

@@ -39,6 +39,26 @@
                     <span id="sort-icon">↓</span>
                 </button>
             </div>
+            <!-- Recent Files Section -->
+            <div class="sidebar-section" id="recent-section">
+                <div class="sidebar-section-header collapsed" id="recent-header">
+                    <span>Recent Files</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="sidebar-section-content collapsed" id="recent-list">
+                    <div class="sidebar-section-empty">No recent files</div>
+                </div>
+            </div>
+            <!-- Bookmarks Section -->
+            <div class="sidebar-section" id="bookmarks-section">
+                <div class="sidebar-section-header collapsed" id="bookmarks-header">
+                    <span>Bookmarks</span>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="sidebar-section-content collapsed" id="bookmarks-list">
+                    <div class="sidebar-section-empty">No bookmarks</div>
+                </div>
+            </div>
             <div class="breadcrumb" id="breadcrumb"></div>
             <div class="file-tree" id="file-tree">
                 <div class="loading">Loading...</div>
@@ -60,6 +80,8 @@
             </article>
         </main>
     </div>
+
+    <button class="scroll-to-top" id="scroll-to-top" title="Scroll to top">↑</button>
 
     <script src="/static/js/app.js"></script>
 </body>

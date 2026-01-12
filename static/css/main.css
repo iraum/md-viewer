@@ -456,6 +456,345 @@ html, body {
     color: var(--text-muted);
 }
 
+/* Skeleton loading animations */
+@keyframes skeleton-loading {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.skeleton {
+    background: linear-gradient(
+        90deg,
+        var(--bg-secondary) 0%,
+        var(--bg-primary) 50%,
+        var(--bg-secondary) 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s ease-in-out infinite;
+    border-radius: 4px;
+}
+
+/* Skeleton for file tree */
+.skeleton-tree {
+    padding: 8px 16px;
+}
+
+.skeleton-tree-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.skeleton-tree-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.skeleton-tree-name {
+    flex: 1;
+    height: 16px;
+    border-radius: 4px;
+}
+
+/* Skeleton for content */
+.skeleton-content {
+    padding: 32px 48px;
+}
+
+.skeleton-content-title {
+    width: 60%;
+    height: 32px;
+    margin-bottom: 24px;
+    border-radius: 6px;
+}
+
+.skeleton-content-line {
+    width: 100%;
+    height: 16px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+}
+
+.skeleton-content-line:nth-child(2) { width: 95%; }
+.skeleton-content-line:nth-child(3) { width: 98%; }
+.skeleton-content-line:nth-child(4) { width: 90%; }
+.skeleton-content-line:nth-child(5) { width: 85%; }
+
+/* Scroll to top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 1000;
+    user-select: none;
+}
+
+.scroll-to-top:hover {
+    background: var(--accent-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:active {
+    transform: translateY(-2px);
+}
+
+/* Code block copy button */
+.markdown-body pre {
+    position: relative;
+}
+
+.copy-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s, background 0.2s, color 0.2s;
+    z-index: 10;
+}
+
+.markdown-body pre:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+.copy-button.copied {
+    background: var(--success-color);
+    border-color: var(--success-color);
+    color: white;
+    opacity: 1;
+}
+
+/* File metadata display */
+.metadata-display {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.metadata-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.metadata-item .icon {
+    font-size: 14px;
+}
+
+.metadata-loading {
+    font-size: 11px;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+/* Recent files and bookmarks section */
+.sidebar-section {
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+}
+
+.sidebar-section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.15s;
+}
+
+.sidebar-section-header:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-section-header .toggle-icon {
+    font-size: 10px;
+    transition: transform 0.2s;
+}
+
+.sidebar-section-header.collapsed .toggle-icon {
+    transform: rotate(-90deg);
+}
+
+.sidebar-section-content {
+    max-height: 200px;
+    overflow-y: auto;
+    transition: max-height 0.3s ease;
+}
+
+.sidebar-section-content.collapsed {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.recent-item,
+.bookmark-item {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    gap: 8px;
+    font-size: 12px;
+    transition: background-color 0.15s;
+    position: relative;
+}
+
+.recent-item:hover,
+.bookmark-item:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.recent-item .icon,
+.bookmark-item .icon {
+    font-size: 14px;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.recent-item .name,
+.bookmark-item .name {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-primary);
+}
+
+.recent-item .remove-btn,
+.bookmark-item .remove-btn {
+    opacity: 0;
+    font-size: 16px;
+    padding: 0 4px;
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: opacity 0.2s, color 0.2s;
+}
+
+.recent-item:hover .remove-btn,
+.bookmark-item:hover .remove-btn {
+    opacity: 1;
+}
+
+.recent-item .remove-btn:hover,
+.bookmark-item .remove-btn:hover {
+    color: #cf222e;
+}
+
+.sidebar-section-empty {
+    padding: 12px 16px;
+    font-size: 11px;
+    color: var(--text-muted);
+    text-align: center;
+    font-style: italic;
+}
+
+/* Bookmark button */
+.bookmark-button {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bookmark-button:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.bookmark-button.bookmarked {
+    background: var(--warning-color);
+    border-color: var(--warning-color);
+    color: white;
+}
+
+.bookmark-button.bookmarked:hover {
+    opacity: 0.9;
+}
+
+/* View mode toggle */
+.view-toggle {
+    padding: 4px 12px;
+    font-size: 12px;
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.view-toggle:hover {
+    background: var(--bg-secondary);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.view-toggle.raw-mode {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 8px;
@@ -473,4 +812,74 @@ html, body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-muted);
+}
+
+/* Print styles */
+@media print {
+    /* Hide navigation elements */
+    .sidebar,
+    .sidebar-toggle,
+    .content-header,
+    .scroll-to-top,
+    .copy-button,
+    .bookmark-button,
+    .view-toggle,
+    .metadata-display {
+        display: none !important;
+    }
+
+    /* Full width for content */
+    .app-container,
+    .content,
+    .markdown-body {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+    }
+
+    /* Reset backgrounds to white */
+    body,
+    .markdown-body,
+    .markdown-body pre,
+    .markdown-body code {
+        background: white !important;
+        color: black !important;
+    }
+
+    /* Optimize spacing */
+    .markdown-body {
+        padding: 0.5cm;
+        font-size: 11pt;
+        line-height: 1.5;
+    }
+
+    /* Page breaks */
+    .markdown-body h1,
+    .markdown-body h2 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    .markdown-body pre,
+    .markdown-body blockquote,
+    .markdown-body table {
+        page-break-inside: avoid;
+    }
+
+    /* Links - show URLs */
+    .markdown-body a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+
+    /* Code blocks - better borders */
+    .markdown-body pre {
+        border: 1px solid #ddd;
+        padding: 10px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+    }
 }

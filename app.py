@@ -323,6 +323,78 @@ def get_file():
         return jsonify({"error": "An error occurred"}), 500
 
 
+@app.route("/api/file-metadata")
+@rate_limit
+def get_file_metadata():
+    """
+    Get metadata for a markdown file without loading full content.
+    Query params:
+        path: Path to the markdown file
+    Returns: {mtime, size, word_count, line_count}
+    """
+    path = request.args.get("path")
+    if not path:
+        return jsonify({"error": "Path required"}), 400
+
+    # Security: Resolve path and check for symlinks
+    try:
+        file_path = Path(path).resolve()
+
+        # Check for symlinks
+        if file_path.is_symlink():
+            logger.warning(f"Symlink file metadata attempt: {path} from {request.remote_addr}")
+            return jsonify({"error": "Access denied"}), 403
+
+    except Exception as e:
+        logger.error(f"Invalid file path error: {path} - {type(e).__name__}")
+        return jsonify({"error": "Invalid path"}), 400
+
+    if not file_path.exists():
+        return jsonify({"error": "File not found"}), 404
+
+    if file_path.suffix.lower() != ".md":
+        logger.warning(f"Non-markdown metadata attempt: {path} from {request.remote_addr}")
+        return jsonify({"error": "Not a markdown file"}), 400
+
+    # Get file stats
+    try:
+        stats = file_path.stat()
+        file_size = stats.st_size
+        mtime = stats.st_mtime
+
+        # Check file size before reading
+        if file_size > MAX_MARKDOWN_SIZE:
+            return jsonify({
+                "error": f"File too large. Maximum size is {MAX_MARKDOWN_SIZE / (1024*1024):.1f}MB"
+            }), 413
+
+        # Read file to count words and lines
+        content = file_path.read_text(encoding="utf-8")
+        line_count = len(content.split('\n'))
+
+        # Word count (split by whitespace, filter empty strings)
+        words = [w for w in content.split() if w.strip()]
+        word_count = len(words)
+
+        logger.info(f"Metadata accessed: {file_path} from {request.remote_addr}")
+        return jsonify({
+            "mtime": mtime,
+            "size": file_size,
+            "word_count": word_count,
+            "line_count": line_count
+        })
+
+    except PermissionError:
+        logger.warning(f"Permission denied reading metadata: {file_path} from {request.remote_addr}")
+        return jsonify({"error": "Permission denied"}), 403
+    except UnicodeDecodeError:
+        logger.warning(f"Invalid UTF-8 encoding: {file_path} from {request.remote_addr}")
+        return jsonify({"error": "File contains invalid UTF-8 encoding"}), 400
+    except Exception as e:
+        logger.error(f"Error reading file metadata: {file_path} - {type(e).__name__}")
+        return jsonify({"error": "An error occurred"}), 500
+
+
 @app.route("/api/image")
 @rate_limit
 def get_image():
