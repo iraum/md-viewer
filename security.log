@@ -5910,3 +5910,1276 @@
 2026-01-09 12:04:58,193 - INFO - 127.0.0.1 - - [09/Jan/2026 12:04:58] "GET /api/file?path=/run/media/opc/spielraum/Backups/nutrition-tracker/PORT-CHANGE-SUMMARY.md HTTP/1.1" 200 -
 2026-01-09 12:05:07,493 - INFO - File accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md (5038 bytes) from 127.0.0.1
 2026-01-09 12:05:07,494 - INFO - 127.0.0.1 - - [09/Jan/2026 12:05:07] "GET /api/file?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-11 14:01:37,578 - WARNING - ============================================================
+2026-01-11 14:01:37,579 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-11 14:01:37,579 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-11 14:01:37,579 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-11 14:01:37,579 - WARNING -   export SECRET_KEY='1c0cdbfce82b00c20e3f9056c13e1e410629facb4eed5660997dcaf5e4dd1fb3'
+2026-01-11 14:01:37,579 - WARNING - ============================================================
+2026-01-11 14:01:37,580 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-11 14:01:37,588 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-11 14:01:37,588 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-11 14:01:45,824 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:45] "GET / HTTP/1.1" 200 -
+2026-01-11 14:01:46,012 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-11 14:01:46,039 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2026-01-11 14:01:46,040 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2026-01-11 14:01:46,040 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2026-01-11 14:01:46,040 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2026-01-11 14:01:46,040 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-11 14:01:46,363 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-11 14:01:46,363 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-11 14:01:46,372 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /static/favicon.svg HTTP/1.1" 200 -
+2026-01-11 14:01:46,434 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /api/themes HTTP/1.1" 200 -
+2026-01-11 14:01:46,601 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-11 14:01:46,601 - INFO - 127.0.0.1 - - [11/Jan/2026 14:01:46] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:44:41,280 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-11 14:44:41,280 - INFO - 127.0.0.1 - - [11/Jan/2026 14:44:41] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:44:43,383 - INFO - Browse: /home/opc from 127.0.0.1
+2026-01-11 14:44:43,383 - INFO - 127.0.0.1 - - [11/Jan/2026 14:44:43] "GET /api/browse?path=/home/opc&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:44:45,620 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2026-01-11 14:44:45,621 - INFO - 127.0.0.1 - - [11/Jan/2026 14:44:45] "GET /api/browse?path=/home/opc/Documents&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:44:46,424 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2026-01-11 14:44:46,424 - INFO - 127.0.0.1 - - [11/Jan/2026 14:44:46] "GET /api/browse?path=/home/opc/Documents/chats&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:44:47,964 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-11 14:44:47,965 - INFO - 127.0.0.1 - - [11/Jan/2026 14:44:47] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-11 14:46:53,167 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-11 14:46:53,168 - INFO - 127.0.0.1 - - [11/Jan/2026 14:46:53] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:46:54,745 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-11 14:46:54,745 - INFO - 127.0.0.1 - - [11/Jan/2026 14:46:54] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:46:55,595 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-11 14:46:55,596 - INFO - 127.0.0.1 - - [11/Jan/2026 14:46:55] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-11 14:46:56,179 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/CLAUDE.md (5672 bytes) from 127.0.0.1
+2026-01-11 14:46:56,180 - INFO - 127.0.0.1 - - [11/Jan/2026 14:46:56] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/CLAUDE.md HTTP/1.1" 200 -
+2026-01-11 15:07:55,404 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-11 15:07:55,405 - INFO - 127.0.0.1 - - [11/Jan/2026 15:07:55] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-11 15:07:58,568 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-11 15:07:58,568 - INFO - 127.0.0.1 - - [11/Jan/2026 15:07:58] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-11 15:07:59,778 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-11 15:07:59,778 - INFO - 127.0.0.1 - - [11/Jan/2026 15:07:59] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-11 15:08:00,423 - INFO - Browse: /run/media/opc/spielraum/dev-code/nutrition-tracker from 127.0.0.1
+2026-01-11 15:08:00,423 - INFO - 127.0.0.1 - - [11/Jan/2026 15:08:00] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/nutrition-tracker&sort_by=date HTTP/1.1" 200 -
+2026-01-11 15:08:01,564 - INFO - File accessed: /run/media/opc/spielraum/dev-code/nutrition-tracker/CLAUDE.md (2305 bytes) from 127.0.0.1
+2026-01-11 15:08:01,565 - INFO - 127.0.0.1 - - [11/Jan/2026 15:08:01] "GET /api/file?path=/run/media/opc/spielraum/dev-code/nutrition-tracker/CLAUDE.md HTTP/1.1" 200 -
+2026-01-11 19:05:37,558 - INFO - File accessed: /run/media/opc/spielraum/dev-code/nutrition-tracker/CLAUDE.md (2305 bytes) from 127.0.0.1
+2026-01-11 19:05:37,558 - INFO - 127.0.0.1 - - [11/Jan/2026 19:05:37] "GET /api/file?path=/run/media/opc/spielraum/dev-code/nutrition-tracker/CLAUDE.md HTTP/1.1" 200 -
+2026-01-11 19:05:41,322 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-11 19:05:41,322 - INFO - 127.0.0.1 - - [11/Jan/2026 19:05:41] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-11 19:05:42,337 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-11 19:05:42,337 - INFO - 127.0.0.1 - - [11/Jan/2026 19:05:42] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-11 19:05:43,273 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/CLAUDE.md (5672 bytes) from 127.0.0.1
+2026-01-11 19:05:43,274 - INFO - 127.0.0.1 - - [11/Jan/2026 19:05:43] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/CLAUDE.md HTTP/1.1" 200 -
+2026-01-12 00:39:28,108 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 00:39:28,109 - INFO - 127.0.0.1 - - [12/Jan/2026 00:39:28] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 00:39:30,722 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 00:39:30,722 - INFO - 127.0.0.1 - - [12/Jan/2026 00:39:30] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 00:39:31,370 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 00:39:31,370 - INFO - 127.0.0.1 - - [12/Jan/2026 00:39:31] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 00:39:32,066 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 00:39:32,066 - INFO - 127.0.0.1 - - [12/Jan/2026 00:39:32] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 00:39:34,313 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/THESIS.md (10012 bytes) from 127.0.0.1
+2026-01-12 00:39:34,314 - INFO - 127.0.0.1 - - [12/Jan/2026 00:39:34] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/THESIS.md HTTP/1.1" 200 -
+2026-01-12 00:54:03,201 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 00:54:03,201 - INFO - 127.0.0.1 - - [12/Jan/2026 00:54:03] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=date HTTP/1.1" 200 -
+2026-01-12 00:54:05,940 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md (3892 bytes) from 127.0.0.1
+2026-01-12 00:54:05,941 - INFO - 127.0.0.1 - - [12/Jan/2026 00:54:05] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md HTTP/1.1" 200 -
+2026-01-12 00:54:08,060 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md (3470 bytes) from 127.0.0.1
+2026-01-12 00:54:08,060 - INFO - 127.0.0.1 - - [12/Jan/2026 00:54:08] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md HTTP/1.1" 200 -
+2026-01-12 00:54:12,289 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md (3892 bytes) from 127.0.0.1
+2026-01-12 00:54:12,290 - INFO - 127.0.0.1 - - [12/Jan/2026 00:54:12] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md HTTP/1.1" 200 -
+2026-01-12 00:54:14,612 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md (3470 bytes) from 127.0.0.1
+2026-01-12 00:54:14,613 - INFO - 127.0.0.1 - - [12/Jan/2026 00:54:14] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md HTTP/1.1" 200 -
+2026-01-12 00:57:13,065 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md (3892 bytes) from 127.0.0.1
+2026-01-12 00:57:13,065 - INFO - 127.0.0.1 - - [12/Jan/2026 00:57:13] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md HTTP/1.1" 200 -
+2026-01-12 01:07:07,460 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:07:07,461 - INFO - 127.0.0.1 - - [12/Jan/2026 01:07:07] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:07:14,691 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/RALPH.md (10304 bytes) from 127.0.0.1
+2026-01-12 01:07:14,691 - INFO - 127.0.0.1 - - [12/Jan/2026 01:07:14] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/RALPH.md HTTP/1.1" 200 -
+2026-01-12 01:09:46,224 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 01:09:46,225 - INFO - 127.0.0.1 - - [12/Jan/2026 01:09:46] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:09:52,182 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md (13850 bytes) from 127.0.0.1
+2026-01-12 01:09:52,183 - INFO - 127.0.0.1 - - [12/Jan/2026 01:09:52] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md HTTP/1.1" 200 -
+2026-01-12 01:11:09,273 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/allus_ai.md (11311 bytes) from 127.0.0.1
+2026-01-12 01:11:09,273 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:09] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/allus_ai.md HTTP/1.1" 200 -
+2026-01-12 01:11:26,251 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 01:11:26,251 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:26] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:11:27,856 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:11:27,856 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:27] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:11:28,969 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:11:28,970 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:28] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:11:38,288 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/forge_robotics_tech.md (15398 bytes) from 127.0.0.1
+2026-01-12 01:11:38,288 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:38] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/forge_robotics_tech.md HTTP/1.1" 200 -
+2026-01-12 01:11:46,283 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/intrepid_labs_tech.md (3512 bytes) from 127.0.0.1
+2026-01-12 01:11:46,283 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:46] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/intrepid_labs_tech.md HTTP/1.1" 200 -
+2026-01-12 01:11:51,228 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/forge_robotics_tech.md (15398 bytes) from 127.0.0.1
+2026-01-12 01:11:51,229 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:51] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/forge_robotics_tech.md HTTP/1.1" 200 -
+2026-01-12 01:11:56,868 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/intrepid_labs_tech.md (3512 bytes) from 127.0.0.1
+2026-01-12 01:11:56,868 - INFO - 127.0.0.1 - - [12/Jan/2026 01:11:56] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/intrepid_labs_tech.md HTTP/1.1" 200 -
+2026-01-12 01:12:06,110 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/paxton_ai_tech.md (3205 bytes) from 127.0.0.1
+2026-01-12 01:12:06,110 - INFO - 127.0.0.1 - - [12/Jan/2026 01:12:06] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/paxton_ai_tech.md HTTP/1.1" 200 -
+2026-01-12 01:13:26,038 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/casca_tech.md (3122 bytes) from 127.0.0.1
+2026-01-12 01:13:26,039 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:26] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/casca_tech.md HTTP/1.1" 200 -
+2026-01-12 01:13:27,422 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:13:27,422 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:27] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:28,675 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 01:13:28,675 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:28] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:44,856 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:13:44,856 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:44] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:45,927 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:13:45,928 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:45] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:51,024 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:13:51,024 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:51] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:53,599 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports from 127.0.0.1
+2026-01-12 01:13:53,599 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:53] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:55,555 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:13:55,555 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:55] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:13:56,791 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:13:56,792 - INFO - 127.0.0.1 - - [12/Jan/2026 01:13:56] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:37,859 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "GET / HTTP/1.1" 200 -
+2026-01-12 01:15:37,919 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 01:15:37,945 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 01:15:37,977 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 01:15:37,986 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 01:15:37,988 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 01:15:37,989 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 01:15:38,064 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 01:15:38,065 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 01:15:38,065 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:38] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 01:15:38,134 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:38] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 01:15:38,196 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 01:15:38,197 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:38] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:40,074 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 01:15:40,074 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:40] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:41,540 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 01:15:41,541 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:41] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:42,147 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:15:42,148 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:42] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:43,660 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 01:15:43,661 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:43] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:56,156 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:15:56,156 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:56] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:15:57,858 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 01:15:57,858 - INFO - 127.0.0.1 - - [12/Jan/2026 01:15:57] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 01:16:01,430 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 01:16:01,431 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:01] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:05,130 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:05,130 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:05] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:06,956 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:06,956 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:06] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:29,110 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:29,111 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:29] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:30,792 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:30,793 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:30] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:32,746 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:32,747 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:32] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:33,865 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:33,866 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:33] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:36,913 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:36,913 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:36] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:38,750 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:38,750 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:38] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:40,362 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:40,363 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:40] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:41,218 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:41,219 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:41] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:43,272 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:16:43,273 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:43] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:16:44,442 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:16:44,443 - INFO - 127.0.0.1 - - [12/Jan/2026 01:16:44] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:17:26,377 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:17:26,377 - INFO - 127.0.0.1 - - [12/Jan/2026 01:17:26] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:17:27,861 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:17:27,862 - INFO - 127.0.0.1 - - [12/Jan/2026 01:17:27] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:18:31,181 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:18:31,182 - INFO - 127.0.0.1 - - [12/Jan/2026 01:18:31] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:18:32,282 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 01:18:32,283 - INFO - 127.0.0.1 - - [12/Jan/2026 01:18:32] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:19:08,046 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 01:19:08,047 - INFO - 127.0.0.1 - - [12/Jan/2026 01:19:08] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 01:19:09,450 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 01:19:09,450 - INFO - 127.0.0.1 - - [12/Jan/2026 01:19:09] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:45:20,468 - WARNING - ============================================================
+2026-01-12 09:45:20,468 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 09:45:20,468 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 09:45:20,468 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 09:45:20,468 - WARNING -   export SECRET_KEY='0c2eceba2b719e74b36905b28c7ace78e8b9766792c260a12e792476c3b63de9'
+2026-01-12 09:45:20,468 - WARNING - ============================================================
+2026-01-12 09:45:20,470 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 09:45:20,478 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-12 09:45:20,478 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 09:45:29,214 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 09:45:29,215 - INFO - 127.0.0.1 - - [12/Jan/2026 09:45:29] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:45:31,146 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 09:45:31,146 - INFO - 127.0.0.1 - - [12/Jan/2026 09:45:31] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:45:32,384 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 09:45:32,384 - INFO - 127.0.0.1 - - [12/Jan/2026 09:45:32] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:49:37,710 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 09:49:37,710 - INFO - 127.0.0.1 - - [12/Jan/2026 09:49:37] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:49:39,018 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 09:49:39,018 - INFO - 127.0.0.1 - - [12/Jan/2026 09:49:39] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 09:49:43,612 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/RALPH.md (10304 bytes) from 127.0.0.1
+2026-01-12 09:49:43,613 - INFO - 127.0.0.1 - - [12/Jan/2026 09:49:43] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/RALPH.md HTTP/1.1" 200 -
+2026-01-12 09:49:49,550 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/ROADMAP.md (3445 bytes) from 127.0.0.1
+2026-01-12 09:49:49,551 - INFO - 127.0.0.1 - - [12/Jan/2026 09:49:49] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/ROADMAP.md HTTP/1.1" 200 -
+2026-01-12 09:49:55,776 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/SCREENING.md (14510 bytes) from 127.0.0.1
+2026-01-12 09:49:55,777 - INFO - 127.0.0.1 - - [12/Jan/2026 09:49:55] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/SCREENING.md HTTP/1.1" 200 -
+2026-01-12 09:52:49,723 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/CLAUDE.md (5839 bytes) from 127.0.0.1
+2026-01-12 09:52:49,724 - INFO - 127.0.0.1 - - [12/Jan/2026 09:52:49] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/CLAUDE.md HTTP/1.1" 200 -
+2026-01-12 09:52:50,312 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/PORTFOLIO.md (10795 bytes) from 127.0.0.1
+2026-01-12 09:52:50,312 - INFO - 127.0.0.1 - - [12/Jan/2026 09:52:50] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/PORTFOLIO.md HTTP/1.1" 200 -
+2026-01-12 10:00:14,546 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:00:14,546 - INFO - 127.0.0.1 - - [12/Jan/2026 10:00:14] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:23,810 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "GET / HTTP/1.1" 200 -
+2026-01-12 10:05:23,864 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,895 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,905 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,905 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,906 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,913 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 10:05:23,985 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 10:05:23,985 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 10:05:23,993 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:23] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 10:05:24,057 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:24] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 10:05:24,126 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 10:05:24,127 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:24] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:26,749 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 10:05:26,750 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:26] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:28,502 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 10:05:28,503 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:28] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:29,264 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 10:05:29,264 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:29] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:30,274 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:05:30,275 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:30] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:31,147 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:05:31,148 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:31] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:37,862 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:05:37,863 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:37] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:39,394 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:05:39,395 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:39] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:49,056 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:05:49,057 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:50,470 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:05:50,470 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:50] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:52,355 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 10:05:52,356 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:52] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:53,391 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:05:53,391 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:53] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:05:54,162 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:05:54,163 - INFO - 127.0.0.1 - - [12/Jan/2026 10:05:54] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:17:20,717 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:17:20,717 - INFO - 127.0.0.1 - - [12/Jan/2026 10:17:20] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:17:21,841 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:17:21,842 - INFO - 127.0.0.1 - - [12/Jan/2026 10:17:21] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:24,492 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 10:20:24,493 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:24] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:25,945 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:20:25,946 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:25] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:26,679 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 10:20:26,680 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:26] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:46,769 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:20:46,770 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:46] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:49,608 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports from 127.0.0.1
+2026-01-12 10:20:49,608 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:51,041 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 10:20:51,042 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:51] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:20:52,301 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:20:52,301 - INFO - 127.0.0.1 - - [12/Jan/2026 10:20:52] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:21:02,123 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 10:21:02,123 - INFO - 127.0.0.1 - - [12/Jan/2026 10:21:02] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:21:08,899 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md (13708 bytes) from 127.0.0.1
+2026-01-12 10:21:08,900 - INFO - 127.0.0.1 - - [12/Jan/2026 10:21:08] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md HTTP/1.1" 200 -
+2026-01-12 10:21:40,307 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md (13850 bytes) from 127.0.0.1
+2026-01-12 10:21:40,308 - INFO - 127.0.0.1 - - [12/Jan/2026 10:21:40] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md HTTP/1.1" 200 -
+2026-01-12 10:21:41,728 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md (9053 bytes) from 127.0.0.1
+2026-01-12 10:21:41,729 - INFO - 127.0.0.1 - - [12/Jan/2026 10:21:41] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md HTTP/1.1" 200 -
+2026-01-12 10:26:25,976 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 10:26:25,976 - INFO - 127.0.0.1 - - [12/Jan/2026 10:26:25] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:26:27,774 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:26:27,774 - INFO - 127.0.0.1 - - [12/Jan/2026 10:26:27] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:26:29,453 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 10:26:29,454 - INFO - 127.0.0.1 - - [12/Jan/2026 10:26:29] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:27:09,698 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 10:27:09,699 - INFO - 127.0.0.1 - - [12/Jan/2026 10:27:09] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 10:27:11,621 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 10:27:11,621 - INFO - 127.0.0.1 - - [12/Jan/2026 10:27:11] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 11:00:32,053 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "GET / HTTP/1.1" 200 -
+2026-01-12 11:00:32,103 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,105 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,107 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,108 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,110 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,121 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 11:00:32,424 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 11:00:32,425 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 11:00:32,440 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 11:00:32,480 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 11:00:32,480 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 11:00:32,485 - INFO - 127.0.0.1 - - [12/Jan/2026 11:00:32] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,030 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "GET / HTTP/1.1" 200 -
+2026-01-12 11:54:17,089 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,121 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,131 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,132 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,133 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,134 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,215 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 11:54:17,216 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 11:54:17,217 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 11:54:17,306 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 11:54:17,375 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 11:54:17,375 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:17] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 11:54:18,417 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 11:54:18,417 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:18] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 11:54:19,119 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 11:54:19,120 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:19] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 11:54:19,831 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 11:54:19,831 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:19] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 11:54:22,368 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 11:54:22,369 - INFO - 127.0.0.1 - - [12/Jan/2026 11:54:22] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:02:38,141 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 12:02:38,141 - INFO - 127.0.0.1 - - [12/Jan/2026 12:02:38] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:02:39,287 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 12:02:39,287 - INFO - 127.0.0.1 - - [12/Jan/2026 12:02:39] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:02:40,361 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 12:02:40,361 - INFO - 127.0.0.1 - - [12/Jan/2026 12:02:40] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:02:42,635 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 12:02:42,636 - INFO - 127.0.0.1 - - [12/Jan/2026 12:02:42] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:11:24,608 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "GET / HTTP/1.1" 200 -
+2026-01-12 12:11:24,720 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,746 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,755 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,765 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,765 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,766 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,873 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 12:11:24,900 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 12:11:24,944 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:24] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 12:11:25,026 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 12:11:25,026 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:25] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:11:26,497 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 12:11:26,498 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:26] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:11:27,541 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 12:11:27,541 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:27] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:11:28,572 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 12:11:28,572 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:28] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:11:30,364 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 12:11:30,364 - INFO - 127.0.0.1 - - [12/Jan/2026 12:11:30] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 12:56:16,877 - WARNING - ============================================================
+2026-01-12 12:56:16,878 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 12:56:16,878 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 12:56:16,878 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 12:56:16,878 - WARNING -   export SECRET_KEY='68fe0e70d42d691c01f6ec4689240a3910bd14c4cf2eeaad2700a72d31cf3d4c'
+2026-01-12 12:56:16,878 - WARNING - ============================================================
+2026-01-12 12:56:16,879 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 12:56:16,887 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-12 12:56:16,887 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 12:56:20,214 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET / HTTP/1.1" 200 -
+2026-01-12 12:56:20,293 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 12:56:20,320 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2026-01-12 12:56:20,320 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2026-01-12 12:56:20,320 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2026-01-12 12:56:20,329 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 12:56:20,329 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2026-01-12 12:56:20,548 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 12:56:20,549 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 12:56:20,558 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /static/favicon.svg HTTP/1.1" 200 -
+2026-01-12 12:56:20,616 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 12:56:20,675 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 12:56:20,675 - INFO - 127.0.0.1 - - [12/Jan/2026 12:56:20] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:06:55,650 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "GET / HTTP/1.1" 200 -
+2026-01-12 13:06:55,741 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,768 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,768 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,783 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,784 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,784 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,863 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:06:55,872 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:06:55,926 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:06:55,989 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:06:55,989 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:55] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:06:57,351 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:06:57,351 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:57] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:06:58,634 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:06:58,634 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:58] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:06:59,489 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:06:59,489 - INFO - 127.0.0.1 - - [12/Jan/2026 13:06:59] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:07:08,469 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 13:07:08,469 - INFO - 127.0.0.1 - - [12/Jan/2026 13:07:08] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:07:11,541 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:07:11,541 - INFO - 127.0.0.1 - - [12/Jan/2026 13:07:11] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:07:12,770 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:07:12,770 - INFO - 127.0.0.1 - - [12/Jan/2026 13:07:12] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:07:14,727 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:07:14,727 - INFO - 127.0.0.1 - - [12/Jan/2026 13:07:14] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:11:49,238 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:11:49,238 - INFO - 127.0.0.1 - - [12/Jan/2026 13:11:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:12:11,963 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/salient.md (7749 bytes) from 127.0.0.1
+2026-01-12 13:12:11,963 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:11] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/salient.md HTTP/1.1" 200 -
+2026-01-12 13:12:31,987 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:12:31,987 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:31] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:12:32,918 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 13:12:32,918 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:32] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:12:34,940 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_competitive.md (3291 bytes) from 127.0.0.1
+2026-01-12 13:12:34,941 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:34] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_competitive.md HTTP/1.1" 200 -
+2026-01-12 13:12:36,022 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md (3892 bytes) from 127.0.0.1
+2026-01-12 13:12:36,023 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:36] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_fintech.md HTTP/1.1" 200 -
+2026-01-12 13:12:41,540 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md (3470 bytes) from 127.0.0.1
+2026-01-12 13:12:41,541 - INFO - 127.0.0.1 - - [12/Jan/2026 13:12:41] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments/salient_tech.md HTTP/1.1" 200 -
+2026-01-12 13:14:07,983 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:14:07,984 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:07] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:14:11,029 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:14:11,030 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:11] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:14:12,600 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md (13708 bytes) from 127.0.0.1
+2026-01-12 13:14:12,601 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:12] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md HTTP/1.1" 200 -
+2026-01-12 13:14:15,473 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/allus_ai.md (11311 bytes) from 127.0.0.1
+2026-01-12 13:14:15,473 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:15] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/allus_ai.md HTTP/1.1" 200 -
+2026-01-12 13:14:17,904 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/ai-bob.md (12959 bytes) from 127.0.0.1
+2026-01-12 13:14:17,905 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:17] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/ai-bob.md HTTP/1.1" 200 -
+2026-01-12 13:14:19,317 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/casca.md (7915 bytes) from 127.0.0.1
+2026-01-12 13:14:19,318 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:19] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/casca.md HTTP/1.1" 200 -
+2026-01-12 13:14:20,438 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md (16449 bytes) from 127.0.0.1
+2026-01-12 13:14:20,439 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:20] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md HTTP/1.1" 200 -
+2026-01-12 13:14:21,301 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md (13850 bytes) from 127.0.0.1
+2026-01-12 13:14:21,301 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:21] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md HTTP/1.1" 200 -
+2026-01-12 13:14:22,529 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/groundcontrol.md (10408 bytes) from 127.0.0.1
+2026-01-12 13:14:22,529 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:22] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/groundcontrol.md HTTP/1.1" 200 -
+2026-01-12 13:14:24,225 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md (9053 bytes) from 127.0.0.1
+2026-01-12 13:14:24,226 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:24] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md HTTP/1.1" 200 -
+2026-01-12 13:14:25,643 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/linewise.md (13514 bytes) from 127.0.0.1
+2026-01-12 13:14:25,643 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:25] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/linewise.md HTTP/1.1" 200 -
+2026-01-12 13:14:28,652 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md (13708 bytes) from 127.0.0.1
+2026-01-12 13:14:28,652 - INFO - 127.0.0.1 - - [12/Jan/2026 13:14:28] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md HTTP/1.1" 200 -
+2026-01-12 13:15:46,749 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:15:46,749 - INFO - 127.0.0.1 - - [12/Jan/2026 13:15:46] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:15:49,016 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:15:49,016 - INFO - 127.0.0.1 - - [12/Jan/2026 13:15:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:15:53,029 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:15:53,030 - INFO - 127.0.0.1 - - [12/Jan/2026 13:15:53] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:15:54,641 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments from 127.0.0.1
+2026-01-12 13:15:54,642 - INFO - 127.0.0.1 - - [12/Jan/2026 13:15:54] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/assessments&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:15:57,106 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:15:57,106 - INFO - 127.0.0.1 - - [12/Jan/2026 13:15:57] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:16:00,155 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports from 127.0.0.1
+2026-01-12 13:16:00,155 - INFO - 127.0.0.1 - - [12/Jan/2026 13:16:00] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/reports&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:16:01,706 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:16:01,707 - INFO - 127.0.0.1 - - [12/Jan/2026 13:16:01] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:16:04,700 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:16:04,700 - INFO - 127.0.0.1 - - [12/Jan/2026 13:16:04] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:30:50,013 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:30:50,014 - INFO - 127.0.0.1 - - [12/Jan/2026 13:30:50] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:30:53,268 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:30:53,269 - INFO - 127.0.0.1 - - [12/Jan/2026 13:30:53] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:30:59,424 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tesora.md (12531 bytes) from 127.0.0.1
+2026-01-12 13:30:59,424 - INFO - 127.0.0.1 - - [12/Jan/2026 13:30:59] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tesora.md HTTP/1.1" 200 -
+2026-01-12 13:31:06,052 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/salient.md (7749 bytes) from 127.0.0.1
+2026-01-12 13:31:06,052 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:06] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/salient.md HTTP/1.1" 200 -
+2026-01-12 13:31:07,790 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/lunabill.md (12875 bytes) from 127.0.0.1
+2026-01-12 13:31:07,790 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:07] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/lunabill.md HTTP/1.1" 200 -
+2026-01-12 13:31:09,296 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md (9053 bytes) from 127.0.0.1
+2026-01-12 13:31:09,296 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:09] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md HTTP/1.1" 200 -
+2026-01-12 13:31:10,688 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/groundcontrol.md (10408 bytes) from 127.0.0.1
+2026-01-12 13:31:10,689 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:10] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/groundcontrol.md HTTP/1.1" 200 -
+2026-01-12 13:31:16,728 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md (13850 bytes) from 127.0.0.1
+2026-01-12 13:31:16,729 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:16] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/forge_robotics.md HTTP/1.1" 200 -
+2026-01-12 13:31:18,679 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/unlimited_industries.md (15240 bytes) from 127.0.0.1
+2026-01-12 13:31:18,679 - INFO - 127.0.0.1 - - [12/Jan/2026 13:31:18] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/unlimited_industries.md HTTP/1.1" 200 -
+2026-01-12 13:34:36,341 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:34:36,342 - INFO - 127.0.0.1 - - [12/Jan/2026 13:34:36] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:34:38,276 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:34:38,277 - INFO - 127.0.0.1 - - [12/Jan/2026 13:34:38] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:40,869 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:40,923 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 13:38:40,959 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:40,960 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:40,969 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:40,969 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:38:40,970 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:40] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:41,071 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:41] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:41,071 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:41] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:41,128 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:41] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:41,192 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:41,193 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:41] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:42,073 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:42,128 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,162 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,172 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,175 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,175 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,175 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,247 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:42,248 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:42,328 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:42,384 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:42,385 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:42] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:43,104 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:43,191 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,218 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,239 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,240 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,241 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,241 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,309 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:43,318 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:43,368 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:43,448 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:43,448 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:43] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:44,185 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:44,244 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,266 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,274 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,285 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,286 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,286 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,346 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:44,355 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:44,405 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:44,471 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:44,472 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:44] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:45,046 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:45,102 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,127 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,137 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,137 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,145 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,146 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,230 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:45,231 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:45,293 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:45,355 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:45,356 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:45] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:46,356 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:46,356 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:46] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:38:47,500 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:47,501 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:47] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:48,284 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:48,285 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:48] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:38:49,758 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:49,760 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:49] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:38:50,173 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:50,174 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:50] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:38:51,010 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:51,093 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,118 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,118 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,136 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,137 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,138 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,224 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:51,229 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:51,283 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:51,345 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:51,346 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:38:51,958 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:51] "GET / HTTP/1.1" 200 -
+2026-01-12 13:38:52,012 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,065 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,066 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,067 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,071 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,072 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,147 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:38:52,156 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:38:52,219 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:38:52,289 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:38:52,289 - INFO - 127.0.0.1 - - [12/Jan/2026 13:38:52] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:39:49,394 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:39:49,395 - INFO - 127.0.0.1 - - [12/Jan/2026 13:39:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:39:50,847 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:39:50,848 - INFO - 127.0.0.1 - - [12/Jan/2026 13:39:50] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:39:51,665 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:39:51,665 - INFO - 127.0.0.1 - - [12/Jan/2026 13:39:51] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:39:53,358 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:39:53,359 - INFO - 127.0.0.1 - - [12/Jan/2026 13:39:53] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:44,496 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET / HTTP/1.1" 200 -
+2026-01-12 13:40:44,560 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 13:40:44,609 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:40:44,610 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:44,614 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:40:44,615 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:44,615 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:44,720 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:40:44,720 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:40:44,782 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:40:44,850 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:40:44,851 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:44] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:45,744 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "GET / HTTP/1.1" 200 -
+2026-01-12 13:40:45,811 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,839 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,846 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,856 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,856 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,857 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:40:45,947 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:40:45,948 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:45] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:40:46,017 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:46] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:40:46,077 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:40:46,078 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:46] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:47,181 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:40:47,181 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:47] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:40:48,213 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:40:48,214 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:48] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:50,106 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:40:50,106 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:50] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:51,011 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 13:40:51,012 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:51] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:40:52,576 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (1655 bytes) from 127.0.0.1
+2026-01-12 13:40:52,577 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:52] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 13:40:52,643 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:52] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1[0m" 404 -
+2026-01-12 13:40:54,247 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (9965 bytes) from 127.0.0.1
+2026-01-12 13:40:54,248 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:54] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 13:40:54,324 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:54] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1[0m" 404 -
+2026-01-12 13:40:54,360 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 13:40:54,361 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:54] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 13:40:55,931 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (1655 bytes) from 127.0.0.1
+2026-01-12 13:40:55,932 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:55] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 13:40:55,992 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:55] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1[0m" 404 -
+2026-01-12 13:40:58,886 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (9965 bytes) from 127.0.0.1
+2026-01-12 13:40:58,887 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:58] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 13:40:58,946 - INFO - 127.0.0.1 - - [12/Jan/2026 13:40:58] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1[0m" 404 -
+2026-01-12 13:41:04,387 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (1655 bytes) from 127.0.0.1
+2026-01-12 13:41:04,387 - INFO - 127.0.0.1 - - [12/Jan/2026 13:41:04] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 13:41:04,455 - INFO - 127.0.0.1 - - [12/Jan/2026 13:41:04] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:26,935 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:26] "GET / HTTP/1.1" 200 -
+2026-01-12 13:42:27,125 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 13:42:27,127 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2026-01-12 13:42:27,129 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:42:27,143 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:42:27,144 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:42:27,148 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:42:27,216 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 13:42:27,216 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:42:27,242 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:42:27,277 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:42:27,278 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:27] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:33,506 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:42:33,507 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:33] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:34,377 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 13:42:34,377 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:34] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:35,061 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer/templates from 127.0.0.1
+2026-01-12 13:42:35,061 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:35] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer/templates&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:36,190 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 13:42:36,190 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:36] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:38,094 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:42:38,095 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:38] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:39,688 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:42:39,688 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:39] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:40,389 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:42:40,390 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:40] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:41,560 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:42:41,560 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:41] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:44,908 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/furtherai.md (25536 bytes) from 127.0.0.1
+2026-01-12 13:42:44,909 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:44] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/furtherai.md HTTP/1.1" 200 -
+2026-01-12 13:42:44,916 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:44] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/furtherai.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:48,402 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md (21175 bytes) from 127.0.0.1
+2026-01-12 13:42:48,403 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:48] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md HTTP/1.1" 200 -
+2026-01-12 13:42:48,407 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:48] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:49,398 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tesora.md (12531 bytes) from 127.0.0.1
+2026-01-12 13:42:49,399 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:49] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tesora.md HTTP/1.1" 200 -
+2026-01-12 13:42:49,405 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:49] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tesora.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:50,540 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/prosper-ai.md (13830 bytes) from 127.0.0.1
+2026-01-12 13:42:50,541 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:50] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/prosper-ai.md HTTP/1.1" 200 -
+2026-01-12 13:42:50,547 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:50] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/prosper-ai.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:51,831 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md (13708 bytes) from 127.0.0.1
+2026-01-12 13:42:51,832 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:51] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md HTTP/1.1" 200 -
+2026-01-12 13:42:51,836 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:51] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/bild_ai.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:54,878 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:42:54,879 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:54] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:55,942 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 13:42:55,942 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:55] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:42:57,361 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (1655 bytes) from 127.0.0.1
+2026-01-12 13:42:57,361 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:57] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 13:42:57,365 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:57] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:59,231 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (9965 bytes) from 127.0.0.1
+2026-01-12 13:42:59,231 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:59] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 13:42:59,237 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:59] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1[0m" 404 -
+2026-01-12 13:42:59,254 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 13:42:59,255 - INFO - 127.0.0.1 - - [12/Jan/2026 13:42:59] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 13:43:59,141 - WARNING - ============================================================
+2026-01-12 13:43:59,142 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 13:43:59,142 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 13:43:59,142 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 13:43:59,142 - WARNING -   export SECRET_KEY='d4746481453b6f81402fab9653fb6ea1ecc4e27c6863ad3efd3055ba022eb3c5'
+2026-01-12 13:43:59,142 - WARNING - ============================================================
+2026-01-12 13:43:59,143 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 13:44:04,645 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET / HTTP/1.1" 200 -
+2026-01-12 13:44:04,701 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/js/marked.min.js HTTP/1.1" 200 -
+2026-01-12 13:44:04,703 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/js/purify.min.js HTTP/1.1" 200 -
+2026-01-12 13:44:04,704 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 13:44:04,705 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/css/highlight-github.min.css HTTP/1.1" 200 -
+2026-01-12 13:44:04,707 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:44:04,707 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/js/highlight.min.js HTTP/1.1" 200 -
+2026-01-12 13:44:04,753 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 13:44:04,754 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /static/favicon.svg HTTP/1.1" 200 -
+2026-01-12 13:44:04,754 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:44:04,769 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:44:04,774 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:44:04,775 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:04] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:06,419 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:44:06,420 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:06] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:07,499 - INFO - Browse: /run/media/opc/spielraum/dev-code/sqlcl-mcp-bug from 127.0.0.1
+2026-01-12 13:44:07,499 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:07] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/sqlcl-mcp-bug&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:08,288 - INFO - File accessed: /run/media/opc/spielraum/dev-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md (6106 bytes) from 127.0.0.1
+2026-01-12 13:44:08,289 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:08] "GET /api/file?path=/run/media/opc/spielraum/dev-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1" 200 -
+2026-01-12 13:44:08,293 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:08] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/sqlcl-mcp-bug/sqlcl-mcp-bug-report-reference.md HTTP/1.1[0m" 404 -
+2026-01-12 13:44:12,350 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "GET / HTTP/1.1" 200 -
+2026-01-12 13:44:12,365 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,370 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,371 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,371 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,372 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,374 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:44:12,393 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:44:12,399 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:44:12,406 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:44:12,406 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:12] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:13,764 - INFO - Browse: /run/media/opc/spielraum/Docs from 127.0.0.1
+2026-01-12 13:44:13,765 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:13] "GET /api/browse?path=/run/media/opc/spielraum/Docs&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:14,746 - INFO - Browse: /run/media/opc/spielraum/Docs/JEP documents from 127.0.0.1
+2026-01-12 13:44:14,746 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:14] "GET /api/browse?path=/run/media/opc/spielraum/Docs/JEP%20documents&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:44:15,580 - INFO - File accessed: /run/media/opc/spielraum/Docs/JEP documents/Sherwin-Williams_Data_Pipeline_JEP_2026.md (21685 bytes) from 127.0.0.1
+2026-01-12 13:44:15,582 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:15] "GET /api/file?path=/run/media/opc/spielraum/Docs/JEP%20documents/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1" 200 -
+2026-01-12 13:44:15,585 - INFO - 127.0.0.1 - - [12/Jan/2026 13:44:15] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/Docs/JEP%20documents/Sherwin-Williams_Data_Pipeline_JEP_2026.md HTTP/1.1[0m" 404 -
+2026-01-12 13:45:05,227 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "GET / HTTP/1.1" 200 -
+2026-01-12 13:45:05,244 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,249 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,249 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,249 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,250 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,252 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:45:05,277 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:45:05,283 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:45:05,288 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:45:05,289 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:05] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:45:06,643 - INFO - Browse: /run/media/opc/spielraum/Backups from 127.0.0.1
+2026-01-12 13:45:06,644 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:06] "GET /api/browse?path=/run/media/opc/spielraum/Backups&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:45:07,348 - INFO - Browse: /run/media/opc/spielraum/Backups/nutrition-tracker from 127.0.0.1
+2026-01-12 13:45:07,348 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:07] "GET /api/browse?path=/run/media/opc/spielraum/Backups/nutrition-tracker&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:45:08,519 - INFO - File accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md (5038 bytes) from 127.0.0.1
+2026-01-12 13:45:08,520 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:08] "GET /api/file?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-12 13:45:08,526 - INFO - 127.0.0.1 - - [12/Jan/2026 13:45:08] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1[0m" 404 -
+2026-01-12 13:45:19,488 - WARNING - ============================================================
+2026-01-12 13:45:19,488 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 13:45:19,489 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 13:45:19,489 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 13:45:19,489 - WARNING -   export SECRET_KEY='01f8f28cc8de6ea740c3192dece73c6dbab1d69dce89d5858c15e3c817bf9993'
+2026-01-12 13:45:19,489 - WARNING - ============================================================
+2026-01-12 13:45:19,491 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 13:47:20,057 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:20,072 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,075 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,076 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,077 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,078 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,079 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:20,097 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:20,103 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:20,109 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:20,110 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:20] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:21,131 - INFO - Browse: /run/media/opc/spielraum/Backups from 127.0.0.1
+2026-01-12 13:47:21,131 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:21] "GET /api/browse?path=/run/media/opc/spielraum/Backups&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:22,018 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index from 127.0.0.1
+2026-01-12 13:47:22,018 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:22] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:23,460 - INFO - File accessed: /run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md (10304 bytes) from 127.0.0.1
+2026-01-12 13:47:23,460 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:23] "GET /api/file?path=/run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md HTTP/1.1" 200 -
+2026-01-12 13:47:23,464 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:23] "[33mGET /api/file-metadata?path=/run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md HTTP/1.1[0m" 404 -
+2026-01-12 13:47:29,663 - WARNING - ============================================================
+2026-01-12 13:47:29,663 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 13:47:29,663 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 13:47:29,663 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 13:47:29,663 - WARNING -   export SECRET_KEY='efbb4a6b5a0d4f709a7e80f5f93e508fc2b184bfcbfa8cfad9db41ed944cf00e'
+2026-01-12 13:47:29,663 - WARNING - ============================================================
+2026-01-12 13:47:29,665 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 13:47:29,669 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-12 13:47:29,669 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 13:47:31,044 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:31,069 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,069 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,070 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,071 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,072 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,076 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:31,101 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 13:47:31,102 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:31,107 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:31,118 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:31,119 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:31,127 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:31] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2026-01-12 13:47:32,369 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:32,391 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,391 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,393 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,394 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,397 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,397 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:32,420 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:32,427 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:32,435 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:32,435 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:32,441 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:32] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,156 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:33,173 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,175 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,176 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,177 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,179 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,180 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,207 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:33,217 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:33,221 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:33,222 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:33,226 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,918 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:33,937 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,940 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,945 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,946 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,946 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,948 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:33,967 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:33,975 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:33,979 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:33,979 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:33,990 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:33] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,912 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "GET / HTTP/1.1" 200 -
+2026-01-12 13:47:34,929 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,933 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,934 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,934 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,937 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,938 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:47:34,965 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:47:34,974 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:47:34,979 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:47:34,980 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:34,990 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:34] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 13:47:40,859 - INFO - Browse: /run/media/opc/spielraum/Backups from 127.0.0.1
+2026-01-12 13:47:40,860 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:40] "GET /api/browse?path=/run/media/opc/spielraum/Backups&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:41,790 - INFO - Browse: /run/media/opc/spielraum/Backups/nutrition-tracker from 127.0.0.1
+2026-01-12 13:47:41,790 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:41] "GET /api/browse?path=/run/media/opc/spielraum/Backups/nutrition-tracker&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:47:43,074 - INFO - File accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md (5038 bytes) from 127.0.0.1
+2026-01-12 13:47:43,075 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:43] "GET /api/file?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-12 13:47:43,079 - INFO - Metadata accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md from 127.0.0.1
+2026-01-12 13:47:43,079 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:43] "GET /api/file-metadata?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-12 13:47:47,655 - INFO - 127.0.0.1 - - [12/Jan/2026 13:47:47] "GET /static/css/themes/dark.css HTTP/1.1" 200 -
+2026-01-12 13:48:01,509 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md (21175 bytes) from 127.0.0.1
+2026-01-12 13:48:01,509 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:01] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md HTTP/1.1" 200 -
+2026-01-12 13:48:01,514 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md from 127.0.0.1
+2026-01-12 13:48:01,515 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:01] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/eudia.md HTTP/1.1" 200 -
+2026-01-12 13:48:04,731 - INFO - File accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md (5038 bytes) from 127.0.0.1
+2026-01-12 13:48:04,732 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:04] "GET /api/file?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-12 13:48:04,736 - INFO - Metadata accessed: /run/media/opc/spielraum/Backups/nutrition-tracker/README.md from 127.0.0.1
+2026-01-12 13:48:04,737 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:04] "GET /api/file-metadata?path=/run/media/opc/spielraum/Backups/nutrition-tracker/README.md HTTP/1.1" 200 -
+2026-01-12 13:48:06,378 - INFO - File accessed: /run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md (10304 bytes) from 127.0.0.1
+2026-01-12 13:48:06,379 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:06] "GET /api/file?path=/run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md HTTP/1.1" 200 -
+2026-01-12 13:48:06,383 - INFO - Metadata accessed: /run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md from 127.0.0.1
+2026-01-12 13:48:06,383 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:06] "GET /api/file-metadata?path=/run/media/opc/spielraum/Backups/model-weight-first-index/RALPH.md HTTP/1.1" 200 -
+2026-01-12 13:48:13,449 - INFO - Browse: /run/media/opc/spielraum/Backups from 127.0.0.1
+2026-01-12 13:48:13,449 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:13] "GET /api/browse?path=/run/media/opc/spielraum/Backups&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:15,247 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index from 127.0.0.1
+2026-01-12 13:48:15,247 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:15] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:17,761 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:48:17,761 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:17] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:21,261 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index from 127.0.0.1
+2026-01-12 13:48:21,262 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:21] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:26,816 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:48:26,816 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:26] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:38,286 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET / HTTP/1.1" 200 -
+2026-01-12 13:48:38,340 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET /static/css/main.css HTTP/1.1" 200 -
+2026-01-12 13:48:38,390 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:48:38,391 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:48:38,391 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:48:38,398 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:48:38,399 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:48:38,488 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 13:48:38,488 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:48:38,493 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:48:38,547 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:48:38,614 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:48:38,615 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:38] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:40,219 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:48:40,220 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:40] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:41,323 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:48:41,324 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:41] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:42,065 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:48:42,066 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:42] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:43,418 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:48:43,419 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:43] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:54,593 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index from 127.0.0.1
+2026-01-12 13:48:54,594 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:54] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:48:56,496 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:48:56,496 - INFO - 127.0.0.1 - - [12/Jan/2026 13:48:56] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:00,801 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "GET / HTTP/1.1" 200 -
+2026-01-12 13:49:00,816 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,817 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,820 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,821 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,823 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,824 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:49:00,844 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:49:00,853 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:49:00,856 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:49:00,857 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:00] "GET /api/browse?sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:02,242 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:49:02,242 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:02] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:03,173 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 13:49:03,173 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:03] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:05,198 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:49:05,199 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:05] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:06,440 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:49:06,441 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:06] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:07,119 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:49:07,119 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:07] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:10,416 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:49:10,416 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:10] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=date HTTP/1.1" 200 -
+2026-01-12 13:49:17,698 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:49:17,699 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:17] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:49:19,819 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:49:19,819 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:19] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:49:30,073 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:30] "[36mGET /static/css/themes/dark.css HTTP/1.1[0m" 304 -
+2026-01-12 13:49:32,172 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:32] "GET /static/css/themes/nord.css HTTP/1.1" 200 -
+2026-01-12 13:49:34,100 - INFO - 127.0.0.1 - - [12/Jan/2026 13:49:34] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 13:51:34,364 - WARNING - ============================================================
+2026-01-12 13:51:34,364 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 13:51:34,364 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 13:51:34,364 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 13:51:34,364 - WARNING -   export SECRET_KEY='7fa6583bc7927827d1b1b4a59d7cfeb74f1b91c1ee472521391539837f916175'
+2026-01-12 13:51:34,364 - WARNING - ============================================================
+2026-01-12 13:51:34,365 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 13:51:34,369 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-12 13:51:34,369 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 13:51:37,861 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "GET / HTTP/1.1" 200 -
+2026-01-12 13:51:37,935 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:51:37,967 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:37,967 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:51:37,975 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:37,976 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:37,977 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:37] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 13:51:38,087 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 13:51:38,088 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:38] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:51:38,092 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:38] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:51:38,151 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:38] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:51:38,218 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:51:38,219 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:38] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:51:38,890 - WARNING - ============================================================
+2026-01-12 13:51:38,890 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 13:51:38,890 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 13:51:38,890 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 13:51:38,890 - WARNING -   export SECRET_KEY='927d6e900f5d2a7d04539a0b32e9897686c5b13a95f91095c8e218762ec9aeca'
+2026-01-12 13:51:38,890 - WARNING - ============================================================
+2026-01-12 13:51:38,892 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 13:51:41,396 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "GET / HTTP/1.1" 200 -
+2026-01-12 13:51:41,460 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,491 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,501 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,502 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,502 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,503 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,568 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 13:51:41,574 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 13:51:41,639 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 13:51:41,698 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:51:41,699 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:41] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:51:52,497 - INFO - Browse: /run/media/opc/spielraum/reference from 127.0.0.1
+2026-01-12 13:51:52,498 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:52] "GET /api/browse?path=/run/media/opc/spielraum/reference&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:51:53,363 - INFO - Browse: /run/media/opc/spielraum/reference/select-ai-reference from 127.0.0.1
+2026-01-12 13:51:53,364 - INFO - 127.0.0.1 - - [12/Jan/2026 13:51:53] "GET /api/browse?path=/run/media/opc/spielraum/reference/select-ai-reference&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:56:55,511 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 13:56:55,511 - INFO - 127.0.0.1 - - [12/Jan/2026 13:56:55] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:56:56,746 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 13:56:56,747 - INFO - 127.0.0.1 - - [12/Jan/2026 13:56:56] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:56:57,595 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 13:56:57,596 - INFO - 127.0.0.1 - - [12/Jan/2026 13:56:57] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:56:58,529 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 13:56:58,530 - INFO - 127.0.0.1 - - [12/Jan/2026 13:56:58] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 13:57:01,787 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 13:57:01,788 - INFO - 127.0.0.1 - - [12/Jan/2026 13:57:01] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:03:44,573 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 14:03:44,573 - INFO - 127.0.0.1 - - [12/Jan/2026 14:03:44] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:03:45,590 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 14:03:45,591 - INFO - 127.0.0.1 - - [12/Jan/2026 14:03:45] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:03:47,914 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 14:03:47,914 - INFO - 127.0.0.1 - - [12/Jan/2026 14:03:47] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:03:54,542 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tensr_quick_screen.md (5075 bytes) from 127.0.0.1
+2026-01-12 14:03:54,542 - INFO - 127.0.0.1 - - [12/Jan/2026 14:03:54] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tensr_quick_screen.md HTTP/1.1" 200 -
+2026-01-12 14:03:54,650 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tensr_quick_screen.md from 127.0.0.1
+2026-01-12 14:03:54,651 - INFO - 127.0.0.1 - - [12/Jan/2026 14:03:54] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/tensr_quick_screen.md HTTP/1.1" 200 -
+2026-01-12 14:10:08,652 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "GET / HTTP/1.1" 200 -
+2026-01-12 14:10:08,702 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,741 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,742 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,742 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,742 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,746 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,832 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:10:08,842 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 14:10:08,910 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:10:08,976 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:08,977 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:08] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:12,261 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:12] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2026-01-12 14:10:16,606 - INFO - Browse: /run/media/opc/spielraum/Backups from 127.0.0.1
+2026-01-12 14:10:16,606 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:16] "GET /api/browse?path=/run/media/opc/spielraum/Backups&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:17,585 - INFO - Browse: /run/media/opc/spielraum/Backups/model-weight-first-index from 127.0.0.1
+2026-01-12 14:10:17,586 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:17] "GET /api/browse?path=/run/media/opc/spielraum/Backups/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:19,284 - INFO - File accessed: /run/media/opc/spielraum/Backups/model-weight-first-index/BOOTSTRAP.md (3514 bytes) from 127.0.0.1
+2026-01-12 14:10:19,285 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:19] "GET /api/file?path=/run/media/opc/spielraum/Backups/model-weight-first-index/BOOTSTRAP.md HTTP/1.1" 200 -
+2026-01-12 14:10:19,353 - INFO - Metadata accessed: /run/media/opc/spielraum/Backups/model-weight-first-index/BOOTSTRAP.md from 127.0.0.1
+2026-01-12 14:10:19,353 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:19] "GET /api/file-metadata?path=/run/media/opc/spielraum/Backups/model-weight-first-index/BOOTSTRAP.md HTTP/1.1" 200 -
+2026-01-12 14:10:22,531 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "GET / HTTP/1.1" 200 -
+2026-01-12 14:10:22,591 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,625 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,636 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,637 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,637 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,638 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,711 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:10:22,712 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 14:10:22,774 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:10:22,848 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:22,849 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:22,915 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:22] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 14:10:23,684 - INFO - Browse: /home/opc from 127.0.0.1
+2026-01-12 14:10:23,684 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:23] "GET /api/browse?path=/home/opc&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:24,697 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:24,698 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:24] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:25,418 - INFO - Browse: /home/opc from 127.0.0.1
+2026-01-12 14:10:25,418 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:25] "GET /api/browse?path=/home/opc&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:25,964 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:25,965 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:25] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:10:27,216 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:27,217 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:27] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=date HTTP/1.1" 200 -
+2026-01-12 14:10:27,906 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:10:27,907 - INFO - 127.0.0.1 - - [12/Jan/2026 14:10:27] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:09,035 - WARNING - ============================================================
+2026-01-12 14:30:09,035 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
+2026-01-12 14:30:09,035 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
+2026-01-12 14:30:09,035 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
+2026-01-12 14:30:09,035 - WARNING -   export SECRET_KEY='067cfcdc2b5d09b3209cb276f25bfd25f555650d452eae067f8f1a8fcf6b51f3'
+2026-01-12 14:30:09,035 - WARNING - ============================================================
+2026-01-12 14:30:09,037 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
+2026-01-12 14:30:09,041 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2026-01-12 14:30:09,041 - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 14:30:11,357 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "GET / HTTP/1.1" 200 -
+2026-01-12 14:30:11,435 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,472 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,478 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,479 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,479 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,480 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,580 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 14:30:11,580 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:30:11,593 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/favicon.svg HTTP/1.1[0m" 304 -
+2026-01-12 14:30:11,648 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:30:11,715 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:30:11,716 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:11,782 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:11] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 14:30:13,837 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:30:13,838 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:13] "GET /api/browse?path=/run/media/opc/spielraum&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:15,596 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 14:30:15,596 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:15] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:16,359 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore from 127.0.0.1
+2026-01-12 14:30:16,359 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:16] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:17,094 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index from 127.0.0.1
+2026-01-12 14:30:17,094 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:17] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:19,511 - INFO - Browse: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research from 127.0.0.1
+2026-01-12 14:30:19,511 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:19] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:30:22,123 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/trunk_tools.md (10831 bytes) from 127.0.0.1
+2026-01-12 14:30:22,124 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:22] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/trunk_tools.md HTTP/1.1" 200 -
+2026-01-12 14:30:22,182 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/trunk_tools.md from 127.0.0.1
+2026-01-12 14:30:22,182 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:22] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/trunk_tools.md HTTP/1.1" 200 -
+2026-01-12 14:30:25,360 - INFO - File accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md (9053 bytes) from 127.0.0.1
+2026-01-12 14:30:25,360 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:25] "GET /api/file?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md HTTP/1.1" 200 -
+2026-01-12 14:30:25,429 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md from 127.0.0.1
+2026-01-12 14:30:25,430 - INFO - 127.0.0.1 - - [12/Jan/2026 14:30:25] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/loom-explore/model-weight-first-index/research/intrepid_labs.md HTTP/1.1" 200 -
+2026-01-12 14:31:30,761 - INFO - Browse: /home/opc from 127.0.0.1
+2026-01-12 14:31:30,763 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:30] "GET /api/browse?path=/home/opc&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:31:32,189 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2026-01-12 14:31:32,190 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:32] "GET /api/browse?path=/home/opc/Documents&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:31:32,809 - INFO - Browse: /home/opc/Documents/chats from 127.0.0.1
+2026-01-12 14:31:32,809 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:32] "GET /api/browse?path=/home/opc/Documents/chats&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:31:32,984 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-12 14:31:32,984 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:32] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:31:33,038 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md from 127.0.0.1
+2026-01-12 14:31:33,038 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:33] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:31:34,701 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-12 14:31:34,702 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:34] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:31:34,760 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md from 127.0.0.1
+2026-01-12 14:31:34,760 - INFO - 127.0.0.1 - - [12/Jan/2026 14:31:34] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:32:17,142 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-12 14:32:17,142 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:17] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:32:17,223 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md from 127.0.0.1
+2026-01-12 14:32:17,223 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:17] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:32:32,407 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:32] "GET /static/css/themes/raw.css HTTP/1.1" 200 -
+2026-01-12 14:32:41,510 - INFO - File accessed: /home/opc/Documents/chats/chat-model-weight-first-index-2026.0111.1430-mwf-portfolio-build.md (8452 bytes) from 127.0.0.1
+2026-01-12 14:32:41,511 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:41] "GET /api/file?path=/home/opc/Documents/chats/chat-model-weight-first-index-2026.0111.1430-mwf-portfolio-build.md HTTP/1.1" 200 -
+2026-01-12 14:32:41,578 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-model-weight-first-index-2026.0111.1430-mwf-portfolio-build.md from 127.0.0.1
+2026-01-12 14:32:41,578 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:41] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-model-weight-first-index-2026.0111.1430-mwf-portfolio-build.md HTTP/1.1" 200 -
+2026-01-12 14:32:44,639 - INFO - File accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md (7392 bytes) from 127.0.0.1
+2026-01-12 14:32:44,640 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:44] "GET /api/file?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md HTTP/1.1" 200 -
+2026-01-12 14:32:44,692 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md from 127.0.0.1
+2026-01-12 14:32:44,693 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:44] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md HTTP/1.1" 200 -
+2026-01-12 14:32:47,470 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-12 14:32:47,471 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:47] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:32:47,546 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md from 127.0.0.1
+2026-01-12 14:32:47,547 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:47] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 14:32:50,646 - INFO - File accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md (7392 bytes) from 127.0.0.1
+2026-01-12 14:32:50,646 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:50] "GET /api/file?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md HTTP/1.1" 200 -
+2026-01-12 14:32:50,712 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md from 127.0.0.1
+2026-01-12 14:32:50,712 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:50] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.0751-db-schema-design.md HTTP/1.1" 200 -
+2026-01-12 14:32:54,788 - INFO - File accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.1823-prd-stage1-review.md (6724 bytes) from 127.0.0.1
+2026-01-12 14:32:54,788 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:54] "GET /api/file?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.1823-prd-stage1-review.md HTTP/1.1" 200 -
+2026-01-12 14:32:54,859 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-smokenotes-2026.0107.1823-prd-stage1-review.md from 127.0.0.1
+2026-01-12 14:32:54,860 - INFO - 127.0.0.1 - - [12/Jan/2026 14:32:54] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-smokenotes-2026.0107.1823-prd-stage1-review.md HTTP/1.1" 200 -
+2026-01-12 14:33:28,518 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET / HTTP/1.1" 200 -
+2026-01-12 14:33:28,537 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:33:28,539 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:33:28,539 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:33:28,542 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:33:28,542 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:33:28,542 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-01-12 14:33:28,561 - INFO - New CSRF token generated for session from 127.0.0.1
+2026-01-12 14:33:28,561 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:33:28,570 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:33:28,573 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:33:28,573 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:33:28,576 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:28] "GET /static/css/themes/oracle.css HTTP/1.1" 200 -
+2026-01-12 14:33:47,824 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 14:33:47,824 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:47] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:33:49,824 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:33:49,825 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:49] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:33:58,871 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:33:58,872 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:58] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:33:58,875 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:33:58,875 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:58] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:33:58,912 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 14:33:58,913 - INFO - 127.0.0.1 - - [12/Jan/2026 14:33:58] "[36mGET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1[0m" 304 -
+2026-01-12 14:34:27,744 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (3053 bytes) from 127.0.0.1
+2026-01-12 14:34:27,744 - INFO - 127.0.0.1 - - [12/Jan/2026 14:34:27] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:34:27,748 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md from 127.0.0.1
+2026-01-12 14:34:27,749 - INFO - 127.0.0.1 - - [12/Jan/2026 14:34:27] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:34:33,424 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:34:33,425 - INFO - 127.0.0.1 - - [12/Jan/2026 14:34:33] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:34:33,429 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:34:33,430 - INFO - 127.0.0.1 - - [12/Jan/2026 14:34:33] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:35:15,353 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (3053 bytes) from 127.0.0.1
+2026-01-12 14:35:15,354 - INFO - 127.0.0.1 - - [12/Jan/2026 14:35:15] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:35:15,357 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md from 127.0.0.1
+2026-01-12 14:35:15,358 - INFO - 127.0.0.1 - - [12/Jan/2026 14:35:15] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:36:35,234 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "GET / HTTP/1.1" 200 -
+2026-01-12 14:36:35,249 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,249 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,251 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,252 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,254 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,256 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:36:35,272 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:36:35,278 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:36:35,281 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:36:35,282 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:36:35,286 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:35] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 14:36:37,019 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 14:36:37,020 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:37] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:36:38,184 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:36:38,184 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:38] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:36:40,255 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:36:40,256 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:40] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:36:40,262 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:36:40,263 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:40] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:36:40,305 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 14:36:40,305 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:40] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 14:36:55,047 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:36:55,047 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:55] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=date HTTP/1.1" 200 -
+2026-01-12 14:36:57,189 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:36:57,189 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:57] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:36:59,409 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:36:59,410 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:59] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:36:59,413 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:36:59,414 - INFO - 127.0.0.1 - - [12/Jan/2026 14:36:59] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:37:45,738 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (3053 bytes) from 127.0.0.1
+2026-01-12 14:37:45,739 - INFO - 127.0.0.1 - - [12/Jan/2026 14:37:45] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:37:45,745 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md from 127.0.0.1
+2026-01-12 14:37:45,745 - INFO - 127.0.0.1 - - [12/Jan/2026 14:37:45] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:38:52,304 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:38:52,304 - INFO - 127.0.0.1 - - [12/Jan/2026 14:38:52] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:38:52,309 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:38:52,309 - INFO - 127.0.0.1 - - [12/Jan/2026 14:38:52] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:38:52,335 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 14:38:52,336 - INFO - 127.0.0.1 - - [12/Jan/2026 14:38:52] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 14:39:35,191 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (3053 bytes) from 127.0.0.1
+2026-01-12 14:39:35,192 - INFO - 127.0.0.1 - - [12/Jan/2026 14:39:35] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:39:35,194 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md from 127.0.0.1
+2026-01-12 14:39:35,195 - INFO - 127.0.0.1 - - [12/Jan/2026 14:39:35] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:40:07,890 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:40:07,891 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:07] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:07,894 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:40:07,895 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:07] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:15,831 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md (3053 bytes) from 127.0.0.1
+2026-01-12 14:40:15,832 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:15] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:40:15,834 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/claude.md from 127.0.0.1
+2026-01-12 14:40:15,835 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:15] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/claude.md HTTP/1.1" 200 -
+2026-01-12 14:40:38,027 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:40:38,028 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:38] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:38,033 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:40:38,033 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:38] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:40,747 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "GET / HTTP/1.1" 200 -
+2026-01-12 14:40:40,764 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,764 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,765 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,766 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,767 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,769 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:40:40,799 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:40:40,805 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:40:40,808 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:40:40,809 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:40:40,814 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:40] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 14:40:42,820 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 14:40:42,820 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:42] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:40:45,082 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:40:45,082 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:45] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:40:46,531 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:40:46,531 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:46] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:46,536 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:40:46,536 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:46] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:40:46,565 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 14:40:46,566 - INFO - 127.0.0.1 - - [12/Jan/2026 14:40:46] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 14:41:33,735 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/QUICK_REFERENCE.md (4494 bytes) from 127.0.0.1
+2026-01-12 14:41:33,736 - INFO - 127.0.0.1 - - [12/Jan/2026 14:41:33] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/QUICK_REFERENCE.md HTTP/1.1" 200 -
+2026-01-12 14:41:33,739 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/QUICK_REFERENCE.md from 127.0.0.1
+2026-01-12 14:41:33,739 - INFO - 127.0.0.1 - - [12/Jan/2026 14:41:33] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/QUICK_REFERENCE.md HTTP/1.1" 200 -
+2026-01-12 14:42:03,910 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:42:03,911 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:03] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:42:03,914 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:42:03,914 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:03] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:42:09,203 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "GET / HTTP/1.1" 200 -
+2026-01-12 14:42:09,220 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,221 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/css/highlight-github.min.css HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,222 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/js/purify.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,223 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/js/highlight.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,225 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/js/marked.min.js HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,226 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2026-01-12 14:42:09,251 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "GET /api/csrf-token HTTP/1.1" 200 -
+2026-01-12 14:42:09,256 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "GET /api/themes HTTP/1.1" 200 -
+2026-01-12 14:42:09,259 - INFO - Browse: /run/media/opc/spielraum from 127.0.0.1
+2026-01-12 14:42:09,259 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "GET /api/browse?sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:42:09,266 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:09] "[36mGET /static/css/themes/oracle.css HTTP/1.1[0m" 304 -
+2026-01-12 14:42:10,454 - INFO - Browse: /run/media/opc/spielraum/dev-code from 127.0.0.1
+2026-01-12 14:42:10,455 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:10] "GET /api/browse?path=/run/media/opc/spielraum/dev-code&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:42:11,548 - INFO - Browse: /run/media/opc/spielraum/dev-code/md-viewer from 127.0.0.1
+2026-01-12 14:42:11,548 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:11] "GET /api/browse?path=/run/media/opc/spielraum/dev-code/md-viewer&sort_by=name HTTP/1.1" 200 -
+2026-01-12 14:42:12,648 - INFO - File accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md (11508 bytes) from 127.0.0.1
+2026-01-12 14:42:12,649 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:12] "GET /api/file?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:42:12,652 - INFO - Metadata accessed: /run/media/opc/spielraum/dev-code/md-viewer/README.md from 127.0.0.1
+2026-01-12 14:42:12,652 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:12] "GET /api/file-metadata?path=/run/media/opc/spielraum/dev-code/md-viewer/README.md HTTP/1.1" 200 -
+2026-01-12 14:42:12,673 - INFO - Image accessed: /run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png from 127.0.0.1
+2026-01-12 14:42:12,674 - INFO - 127.0.0.1 - - [12/Jan/2026 14:42:12] "GET /api/image?path=/run/media/opc/spielraum/dev-code/md-viewer/md-viewer.png HTTP/1.1" 200 -
+2026-01-12 15:07:07,473 - INFO - File accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md (9638 bytes) from 127.0.0.1
+2026-01-12 15:07:07,473 - INFO - 127.0.0.1 - - [12/Jan/2026 15:07:07] "GET /api/file?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 15:07:07,540 - INFO - Metadata accessed: /home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md from 127.0.0.1
+2026-01-12 15:07:07,540 - INFO - 127.0.0.1 - - [12/Jan/2026 15:07:07] "GET /api/file-metadata?path=/home/opc/Documents/chats/chat-loom-explore-2026.0111.1443-ralph-wiggum-research.md HTTP/1.1" 200 -
+2026-01-12 15:07:10,422 - INFO - Browse: /home/opc/Documents from 127.0.0.1
+2026-01-12 15:07:10,422 - INFO - 127.0.0.1 - - [12/Jan/2026 15:07:10] "GET /api/browse?path=/home/opc/Documents&sort_by=name HTTP/1.1" 200 -
