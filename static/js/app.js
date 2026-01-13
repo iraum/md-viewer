@@ -914,11 +914,40 @@
             return;
         }
 
-        const html = recentFiles.map(file => `
-            <div class="recent-item" data-path="${escapeHtml(file.path)}">
-                <span class="icon">📄</span>
-                <span class="name" title="${escapeHtml(file.path)}">${escapeHtml(file.name)}</span>
-                <span class="remove-btn" data-path="${escapeHtml(file.path)}" title="Remove from recent">×</span>
+        // Group files by parent folder
+        const groupedByFolder = {};
+        recentFiles.forEach(file => {
+            const lastSlashIndex = file.path.lastIndexOf('/');
+            const parentPath = lastSlashIndex > 0 ? file.path.substring(0, lastSlashIndex) : '/';
+            const folderName = parentPath.substring(parentPath.lastIndexOf('/') + 1) || parentPath;
+
+            if (!groupedByFolder[parentPath]) {
+                groupedByFolder[parentPath] = { folderName, files: [] };
+            }
+            groupedByFolder[parentPath].files.push(file);
+        });
+
+        // Sort groups by most recent file timestamp, files within groups by timestamp
+        const sortedGroups = Object.entries(groupedByFolder)
+            .map(([folderPath, group]) => ({
+                folderPath,
+                folderName: group.folderName,
+                files: group.files.sort((a, b) => b.timestamp - a.timestamp),
+                mostRecentTimestamp: Math.max(...group.files.map(f => f.timestamp))
+            }))
+            .sort((a, b) => b.mostRecentTimestamp - a.mostRecentTimestamp);
+
+        // Render grouped recent files
+        const html = sortedGroups.map(group => `
+            <div class="recent-group">
+                <div class="recent-group-header">${escapeHtml(group.folderName)}</div>
+                ${group.files.map(file => `
+                    <div class="recent-item" data-path="${escapeHtml(file.path)}">
+                        <span class="icon">📄</span>
+                        <span class="name" title="${escapeHtml(file.path)}">${escapeHtml(file.name)}</span>
+                        <span class="remove-btn" data-path="${escapeHtml(file.path)}" title="Remove from recent">×</span>
+                    </div>
+                `).join('')}
             </div>
         `).join('');
 
