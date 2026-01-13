@@ -929,12 +929,15 @@
 
         // Sort groups by most recent file timestamp, files within groups by timestamp
         const sortedGroups = Object.entries(groupedByFolder)
-            .map(([folderPath, group]) => ({
-                folderPath,
-                folderName: group.folderName,
-                files: group.files.sort((a, b) => b.timestamp - a.timestamp),
-                mostRecentTimestamp: Math.max(...group.files.map(f => f.timestamp))
-            }))
+            .map(([folderPath, group]) => {
+                const sortedFiles = group.files.sort((a, b) => b.timestamp - a.timestamp);
+                return {
+                    folderPath,
+                    folderName: group.folderName,
+                    files: sortedFiles.slice(0, 3), // Only keep top 3 most recent files
+                    mostRecentTimestamp: sortedFiles[0].timestamp
+                };
+            })
             .sort((a, b) => b.mostRecentTimestamp - a.mostRecentTimestamp);
 
         // Render grouped recent files
