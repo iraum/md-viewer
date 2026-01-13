@@ -960,7 +960,12 @@
         recentList.querySelectorAll('.recent-item').forEach(el => {
             el.addEventListener('click', (e) => {
                 if (!e.target.classList.contains('remove-btn')) {
-                    loadFile(el.dataset.path);
+                    const filePath = el.dataset.path;
+                    // Extract parent directory and navigate to it first
+                    const lastSlashIndex = filePath.lastIndexOf('/');
+                    const parentDir = lastSlashIndex > 0 ? filePath.substring(0, lastSlashIndex) : '/';
+                    browse(parentDir);
+                    loadFile(filePath);
                 }
             });
         });
@@ -1042,7 +1047,12 @@
         bookmarksList.querySelectorAll('.bookmark-item').forEach(el => {
             el.addEventListener('click', (e) => {
                 if (!e.target.classList.contains('remove-btn')) {
-                    loadFile(el.dataset.path);
+                    const filePath = el.dataset.path;
+                    // Extract parent directory and navigate to it first
+                    const lastSlashIndex = filePath.lastIndexOf('/');
+                    const parentDir = lastSlashIndex > 0 ? filePath.substring(0, lastSlashIndex) : '/';
+                    browse(parentDir);
+                    loadFile(filePath);
                 }
             });
         });
