@@ -542,20 +542,54 @@
         let accumulatedDisplay = '';
         let accumulatedReal = '';
 
-        parts.forEach((part, index) => {
-            accumulatedDisplay += '/' + part;
-            // Convert display path back to real path for API calls
-            accumulatedReal = toRealPath(accumulatedDisplay);
-            const isLast = index === parts.length - 1;
+        // Determine if truncation is needed (show ellipsis + last 3 if > 3 segments)
+        const needsTruncation = parts.length > 3;
+        let segmentsToShow = [];
 
-            if (isLast) {
-                html += `<span class="breadcrumb-current">${escapeHtml(part)}</span>`;
-            } else {
-                html += `<a href="#" class="breadcrumb-link" data-path="${escapeHtml(accumulatedReal)}">${escapeHtml(part)}</a>`;
+        if (needsTruncation) {
+            // Ellipsis indicator with all segments except last 3 as hidden
+            segmentsToShow.push({ index: -1, part: '...', type: 'ellipsis', hidden: parts.slice(0, -3) });
+            // Third to last segment (grandparent)
+            segmentsToShow.push({ index: parts.length - 3, part: parts[parts.length - 3], type: 'link' });
+            // Second to last segment (parent)
+            segmentsToShow.push({ index: parts.length - 2, part: parts[parts.length - 2], type: 'link' });
+            // Last segment (current)
+            segmentsToShow.push({ index: parts.length - 1, part: parts[parts.length - 1], type: 'current' });
+        } else {
+            // Show all segments
+            parts.forEach((part, index) => {
+                const type = index === parts.length - 1 ? 'current' : 'link';
+                segmentsToShow.push({ index, part, type });
+            });
+        }
+
+        // Build HTML with truncation support
+        segmentsToShow.forEach((segment, showIndex) => {
+            if (segment.type === 'ellipsis') {
+                // Render ellipsis with tooltip showing hidden segments
+                const hiddenParts = segment.hidden.map(p => p).join(' / ');
+                html += `<span class="breadcrumb-ellipsis" title="Hidden: ${escapeHtml(hiddenParts)}">...</span>`;
                 html += '<span class="breadcrumb-sep">/</span>';
+            } else if (segment.type === 'current') {
+                html += `<span class="breadcrumb-current">${escapeHtml(segment.part)}</span>`;
+            } else {
+                // Build accumulated path for this segment
+                if (segment.index === 0) {
+                    accumulatedDisplay = '/' + segment.part;
+                } else {
+                    // Find the correct accumulated path
+                    accumulatedDisplay = '/' + parts.slice(0, segment.index + 1).join('/');
+                }
+                accumulatedReal = toRealPath(accumulatedDisplay);
+                html += `<a href="#" class="breadcrumb-link" data-path="${escapeHtml(accumulatedReal)}">${escapeHtml(segment.part)}</a>`;
+                if (showIndex < segmentsToShow.length - 1) {
+                    html += '<span class="breadcrumb-sep">/</span>';
+                }
             }
         });
 
+        // Set title attribute on breadcrumb container with full path
+        breadcrumb.title = displayPath;
         breadcrumb.innerHTML = html;
 
         // Add click handlers
