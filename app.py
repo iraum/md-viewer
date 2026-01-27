@@ -395,6 +395,52 @@ def get_file_metadata():
         return jsonify({"error": "An error occurred"}), 500
 
 
+@app.route("/api/file-mtime")
+@rate_limit
+def get_file_mtime():
+    """
+    Lightweight endpoint to get only the modification time of a file.
+    Used for auto-refresh polling - much faster than /api/file-metadata
+    since it only does a stat() call without reading file contents.
+    Query params:
+        path: Path to the markdown file
+    Returns: {mtime: float}
+    """
+    path = request.args.get("path")
+    if not path:
+        return jsonify({"error": "Path required"}), 400
+
+    # Security: Resolve path and check for symlinks
+    try:
+        file_path = Path(path).resolve()
+
+        # Check for symlinks
+        if file_path.is_symlink():
+            logger.warning(f"Symlink mtime access attempt: {path} from {request.remote_addr}")
+            return jsonify({"error": "Access denied"}), 403
+
+    except Exception as e:
+        logger.error(f"Invalid mtime path error: {path} - {type(e).__name__}")
+        return jsonify({"error": "Invalid path"}), 400
+
+    if not file_path.exists():
+        return jsonify({"error": "File not found"}), 404
+
+    if file_path.suffix.lower() != ".md":
+        return jsonify({"error": "Not a markdown file"}), 400
+
+    try:
+        mtime = file_path.stat().st_mtime
+        return jsonify({"mtime": mtime})
+
+    except PermissionError:
+        logger.warning(f"Permission denied reading mtime: {file_path} from {request.remote_addr}")
+        return jsonify({"error": "Permission denied"}), 403
+    except Exception as e:
+        logger.error(f"Error reading file mtime: {file_path} - {type(e).__name__}")
+        return jsonify({"error": "An error occurred"}), 500
+
+
 @app.route("/api/image")
 @rate_limit
 def get_image():

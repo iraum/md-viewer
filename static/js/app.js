@@ -16,6 +16,16 @@
     let bookmarks = JSON.parse(localStorage.getItem('md-viewer-bookmarks') || '[]');
     let currentFilePath = null;
 
+    // Auto-refresh state
+    let autoRefreshEnabled = localStorage.getItem('md-viewer-auto-refresh') !== 'false'; // Default: enabled
+    let autoRefreshIntervalId = null;
+    let lastKnownMtime = null;
+    let currentPollInterval = 3000;  // Start at 3 seconds
+    const MIN_POLL_INTERVAL = 2000;   // 2 seconds minimum
+    const MAX_POLL_INTERVAL = 30000;  // 30 seconds maximum (backoff ceiling)
+    let isTabVisible = true;
+    let refreshDebounceTimer = null;
+
     // Path display configuration
     const BASE_PATH = '/run/media/opc/spielraum';
     const DISPLAY_ROOT = '/spielraum';
