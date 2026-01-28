@@ -2,17 +2,9 @@
 
 Project overview and setup instructions are in README.md.
 
-## Current Status (2026-01-12)
+## Current Status (2026-01-27)
 
-**Version**: 2.1 (UI Improvements Complete)
-
-**Recent Changes**:
-- ✅ Added 9 UI usability improvements (see README.md changelog)
-- ✅ New backend endpoint: `/api/file-metadata` for file stats
-- ✅ Recent files tracking (localStorage, max 15)
-- ✅ Bookmarks/favorites system (localStorage)
-- ✅ Enhanced UX with copy buttons, scroll-to-top, metadata display
-- ✅ Print-friendly CSS for browser print-to-PDF
+**Version**: 2.2
 
 **Active App**: Running on http://localhost:5000
 

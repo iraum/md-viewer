@@ -1,6 +1,6 @@
 # Markdown Viewer - Quick Reference
 
-**Version**: 2.1 | **Updated**: 2026-01-12 | **Status**: ✅ Ready
+**Version**: 2.2 | **Updated**: 2026-01-27 | **Status**: ✅ Ready
 
 ---
 
@@ -198,6 +198,7 @@ localStorage.clear()
 
 ## Version History
 
+- **2.2** (2026-01-27): Documentation cleanup
 - **2.1** (2026-01-12): UI improvements (9 features)
 - **2.0**: Security hardening
 - **1.0**: Initial release

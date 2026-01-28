@@ -380,6 +380,13 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Changelog
 
+### Version 2.2 (2026-01-27)
+**Documentation Update**
+- Fixed theme count references (6 themes, not 7)
+- Removed references to non-existent files
+- Updated file line counts and project structure
+- Corrected filename casing (CLAUDE.md)
+
 ### Version 2.1 (2026-01-12)
 **UI/UX Improvements Update**
 - Added Recent Files tracking (last 15 files, localStorage-based)
