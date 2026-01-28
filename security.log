@@ -1,7 +1,0 @@
-2026-01-27 17:59:33,681 - WARNING - ============================================================
-2026-01-27 17:59:33,681 - WARNING - SECURITY WARNING: SECRET_KEY environment variable not set!
-2026-01-27 17:59:33,681 - WARNING - Using a randomly generated key. Sessions will not persist across restarts.
-2026-01-27 17:59:33,681 - WARNING - For production, set SECRET_KEY environment variable to a secure random value:
-2026-01-27 17:59:33,681 - WARNING -   export SECRET_KEY='5c263619a708c18f1251ee1fe87b14cce3ce8ca4b8f5163e1ea6acc8fcc1dc1c'
-2026-01-27 17:59:33,681 - WARNING - ============================================================
-2026-01-27 17:59:33,683 - INFO - Starting application on 127.0.0.1:5000 (debug=False)
