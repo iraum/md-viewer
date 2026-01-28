@@ -287,9 +287,11 @@
         if (sortOrder === 'date') {
             sortIcon.textContent = '↓';
             sortToggleBtn.title = 'Sort: Newest first (click for A-Z)';
+            sortToggleBtn.classList.remove('alpha-mode');
         } else {
             sortIcon.textContent = 'A-Z';
             sortToggleBtn.title = 'Sort: A-Z (click for Newest)';
+            sortToggleBtn.classList.add('alpha-mode');
         }
     }
 

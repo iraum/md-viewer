@@ -114,6 +114,11 @@ html, body {
     padding: 4px 8px;
 }
 
+.sidebar-controls .sort-btn.alpha-mode {
+    font-weight: normal;
+    font-size: 11px;
+}
+
 /* Breadcrumb */
 .breadcrumb {
     padding: 8px 16px;
