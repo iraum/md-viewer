@@ -19,23 +19,13 @@
     <div class="app-container">
         <!-- Sidebar: File Browser -->
         <aside class="sidebar">
-            <div class="sidebar-header">
-                <h1>MD Viewer</h1>
-                <div class="theme-selector">
-                    <label for="theme-select">Theme:</label>
-                    <select id="theme-select">
-                        <option value="">Default</option>
-                    </select>
-                </div>
-            </div>
-            <div class="nav-controls">
-                <button id="home-btn" class="nav-btn" title="Go to home directory (/home/opc)">
-                    Home
-                </button>
-                <button id="spielraum-btn" class="nav-btn" title="Go to Spielraum (/run/media/opc/spielraum)">
-                    Spielraum
-                </button>
-                <button id="sort-toggle-btn" class="nav-btn sort-btn" title="Toggle sort order (Newest/Oldest first)">
+            <div class="sidebar-controls">
+                <select id="theme-select" title="Select theme">
+                    <option value="">Default</option>
+                </select>
+                <button id="home-btn" class="nav-btn" title="Home (/home/opc)">Home</button>
+                <button id="spielraum-btn" class="nav-btn" title="Spielraum (/run/media/opc/spielraum)">📁</button>
+                <button id="sort-toggle-btn" class="nav-btn sort-btn" title="Toggle sort order">
                     <span id="sort-icon">↓</span>
                 </button>
             </div>

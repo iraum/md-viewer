@@ -700,10 +700,7 @@
             contentHeader.innerHTML = `
                 <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle sidebar">&#9776;</button>
                 <span class="file-name">${escapeHtml(data.name)}</span>
-                <span class="file-path">${escapeHtml(dirPath)}/</span>
-                <button class="view-toggle" id="view-toggle">
-                    <span>👁️</span><span>View</span>
-                </button>
+                <span class="file-path">${escapeHtml(toDisplayPath(dirPath))}/</span>
                 <button class="bookmark-button" id="bookmark-btn">
                     <span>☆</span><span>Bookmark</span>
                 </button>
@@ -717,27 +714,6 @@
                 sidebar.classList.toggle('collapsed');
                 localStorage.setItem('md-viewer-sidebar-collapsed', sidebar.classList.contains('collapsed'));
             });
-
-            // Attach view toggle event
-            const viewToggleBtn = document.getElementById('view-toggle');
-            const updateViewToggle = () => {
-                if (rawMode) {
-                    viewToggleBtn.classList.add('raw-mode');
-                    viewToggleBtn.innerHTML = '<span>📝</span><span>Raw</span>';
-                    viewToggleBtn.title = 'Switch to formatted view';
-                } else {
-                    viewToggleBtn.classList.remove('raw-mode');
-                    viewToggleBtn.innerHTML = '<span>👁️</span><span>View</span>';
-                    viewToggleBtn.title = 'Switch to raw view';
-                }
-            };
-
-            viewToggleBtn.addEventListener('click', () => {
-                rawMode = !rawMode;
-                renderContent(currentFileContent, currentFileName, rawMode);
-                updateViewToggle();
-            });
-            updateViewToggle();
 
             // Attach bookmark event
             currentFilePath = path;
@@ -856,19 +832,15 @@
 
         metadataContainer.innerHTML = `
             <div class="metadata-item" title="Last modified">
-                <span class="icon">🕒</span>
                 <span>${escapeHtml(metadata.modified)}</span>
             </div>
             <div class="metadata-item" title="File size">
-                <span class="icon">📄</span>
                 <span>${escapeHtml(metadata.size)}</span>
             </div>
             <div class="metadata-item" title="Word count">
-                <span class="icon">📝</span>
                 <span>${escapeHtml(metadata.words)} words</span>
             </div>
             <div class="metadata-item" title="Line count">
-                <span class="icon">📏</span>
                 <span>${escapeHtml(metadata.lines)} lines</span>
             </div>
         `;

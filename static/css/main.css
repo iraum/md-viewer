@@ -67,33 +67,20 @@ html, body {
     margin-left: 0;
 }
 
-.sidebar-header {
-    padding: 16px;
+/* Sidebar Controls - unified theme selector and nav buttons */
+.sidebar-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px;
     border-bottom: 1px solid var(--border-color);
     background: var(--bg-secondary);
 }
 
-.sidebar-header h1 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--text-primary);
-}
-
-.theme-selector {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.theme-selector label {
-    font-size: 12px;
-    color: var(--text-secondary);
-}
-
-.theme-selector select {
+.sidebar-controls select {
     flex: 1;
-    padding: 4px 8px;
+    min-width: 60px;
+    padding: 4px 6px;
     font-size: 12px;
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -102,18 +89,9 @@ html, body {
     cursor: pointer;
 }
 
-/* Navigation Controls */
-.nav-controls {
-    display: flex;
-    gap: 8px;
-    padding: 8px 16px;
-    border-bottom: 1px solid var(--border-color);
-    background: var(--bg-secondary);
-}
-
-.nav-btn {
-    flex: 1;
-    padding: 4px 12px;
+.sidebar-controls .nav-btn {
+    flex: 0 0 auto;
+    padding: 4px 10px;
     font-size: 12px;
     font-family: var(--font-sans);
     background: var(--bg-primary);
@@ -122,34 +100,18 @@ html, body {
     color: var(--text-primary);
     cursor: pointer;
     transition: all 0.2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
 }
 
-.nav-btn:hover {
+.sidebar-controls .nav-btn:hover {
     background: var(--bg-secondary);
     border-color: var(--accent-color);
     color: var(--accent-color);
 }
 
-.nav-btn.active {
-    background: var(--accent-color);
-    border-color: var(--accent-color);
-    color: white;
-}
-
-.nav-btn.sort-btn {
-    flex: 0 0 auto;
-    min-width: 32px;
-    padding: 4px 8px;
+.sidebar-controls .sort-btn {
     font-weight: bold;
     font-size: 14px;
-}
-
-.nav-btn.sort-btn #sort-icon {
-    display: inline-block;
+    padding: 4px 8px;
 }
 
 /* Breadcrumb */
