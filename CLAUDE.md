@@ -66,7 +66,7 @@ This app has intentional security hardening. When modifying code:
 - Run `python app.py` and test at http://localhost:5000
 - Check `security.log` for warnings after testing
 - XSS test files are in `security-tests/`
-- Test with all 7 themes (especially Oracle theme for sidebar sections)
+- Test with all 6 themes (especially Oracle theme for sidebar sections)
 - Hard refresh browser (Ctrl+Shift+R) after code changes
 
 ## Known Behavior

@@ -13,7 +13,7 @@ Markdown Viewer is a web-based application that lets you browse directories, dis
 ### Highlights
 
 - **Zero Build Process** - Just install and run
-- **7 Beautiful Themes** - Dark, Light, Nord, Solarized, and more
+- **6 Beautiful Themes** - Dark, Nord, Oracle, Solarized, and more
 - **Syntax Highlighting** - Code blocks with automatic language detection
 - **Raw Mode** - View markdown source with syntax highlighting
 - **Secure by Default** - Comprehensive security controls built-in
@@ -143,12 +143,11 @@ Each opened file displays:
 
 ### Theme System
 
-Switch between 7 carefully crafted themes:
+Switch between 6 carefully crafted themes:
 
 | Theme | Description |
 |-------|-------------|
 | **Dark** | Sleek dark theme for eye comfort |
-| **High Contrast** | Maximum readability with strong contrast |
 | **Nord** | Arctic, north-bluish color palette |
 | **Oracle** | Inspired by Oracle's brand colors (dark sidebar) |
 | **Sepia** | Warm, book-like reading experience |
@@ -261,13 +260,13 @@ md-viewer/
     ├── js/
     │   ├── app.js                 # Frontend application logic
     │   ├── marked.min.js          # Markdown parser
-    │   └── highlight.min.js       # Syntax highlighting
+    │   ├── highlight.min.js       # Syntax highlighting
+    │   └── purify.min.js          # XSS sanitizer (DOMPurify)
     └── css/
         ├── main.css               # Base styles and layout
         ├── highlight-github.min.css # Code highlighting theme
         └── themes/                # Theme CSS files
             ├── dark.css
-            ├── high-contrast.css
             ├── nord.css
             ├── oracle.css
             ├── raw.css
@@ -408,7 +407,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ### Version 1.0
 - Initial release
 - Basic markdown viewing functionality
-- Theme system with 7 themes
+- Theme system with 6 themes
 - File browser with directory navigation
 
 ---

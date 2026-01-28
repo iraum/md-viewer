@@ -22,7 +22,7 @@ python app.py
 - 📋 **Copy Code** - Click to copy code blocks
 - ⬆️ **Scroll Top** - Smooth scroll button
 - 👁️ **View Toggle** - Formatted ↔ Raw mode
-- 🎨 **7 Themes** - Including Oracle with dark sidebar
+- 🎨 **6 Themes** - Including Oracle with dark sidebar
 - 🖨️ **Print Ready** - Clean PDF export (Ctrl+P)
 - ✨ **Smooth UX** - Skeleton loading animations
 
@@ -33,15 +33,14 @@ python app.py
 ```
 md-viewer/
 ├── README.md              # User documentation
-├── claude.md              # Dev guidelines
-├── PROJECT_STATUS.md      # Technical status
+├── CLAUDE.md              # Dev guidelines
 ├── QUICK_REFERENCE.md     # This file
-├── app.py                 # Backend (398 lines)
+├── app.py                 # Backend (~620 lines)
 ├── templates/index.html   # UI structure
 ├── static/
-│   ├── js/app.js         # Frontend (1053 lines)
-│   └── css/main.css      # Styles (802 lines)
-└── static/css/themes/    # 7 theme files
+│   ├── js/app.js         # Frontend (~1115 lines)
+│   └── css/main.css      # Styles (~895 lines)
+└── static/css/themes/    # 6 theme files
 ```
 
 ---
@@ -50,13 +49,12 @@ md-viewer/
 
 | File | Purpose | Lines | Notes |
 |------|---------|-------|-------|
-| `app.py` | Backend API | 398 | Security-hardened Flask app |
-| `static/js/app.js` | Frontend logic | 1053 | Vanilla JS, no frameworks |
-| `static/css/main.css` | Base styles | 802 | CSS variables for theming |
-| `templates/index.html` | HTML structure | 89 | Single-page app |
-| `claude.md` | Dev guidelines | 84 | Code style, security rules |
-| `README.md` | User docs | 420 | Features, setup, API |
-| `PROJECT_STATUS.md` | Tech details | 350+ | Status, architecture |
+| `app.py` | Backend API | ~620 | Security-hardened Flask app |
+| `static/js/app.js` | Frontend logic | ~1115 | Vanilla JS, no frameworks |
+| `static/css/main.css` | Base styles | ~895 | CSS variables for theming |
+| `templates/index.html` | HTML structure | 78 | Single-page app |
+| `CLAUDE.md` | Dev guidelines | ~85 | Code style, security rules |
+| `README.md` | User docs | ~415 | Features, setup, API |
 
 ---
 
@@ -158,7 +156,7 @@ localStorage.clear()
 - Keep it simple
 
 **Testing**:
-- Test with all 7 themes
+- Test with all 6 themes
 - Check security.log
 - Hard refresh after changes
 
@@ -193,8 +191,7 @@ localStorage.clear()
 - Debug issues
 
 **Check**:
-- `claude.md` for guidelines
-- `PROJECT_STATUS.md` for details
+- `CLAUDE.md` for guidelines
 - `README.md` for user features
 
 ---
