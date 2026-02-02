@@ -1,20 +1,6 @@
 # Claude Code Guidelines
 
-Project overview and setup instructions are in README.md.
-
-## Current Status (2026-01-27)
-
-**Version**: 2.2
-
-**Active App**: Running on http://localhost:5000
-
-## Code Style
-
-- **Python**: Follow PEP 8, use type hints where helpful
-- **JavaScript**: Vanilla ES6+, no frameworks, no build step
-- **CSS**: Use CSS custom properties (variables) defined in themes
-
-## Security Requirements
+## Security Rules
 
 This app has intentional security hardening. When modifying code:
 
@@ -25,47 +11,36 @@ This app has intentional security hardening. When modifying code:
 - Sanitize user input in error messages (no stack traces to client)
 - Keep DOMPurify sanitization on rendered markdown
 
-## Files to Be Careful With
+## Do Not Modify
 
-- `app.py` - Contains security middleware; test thoroughly after changes
-- `static/js/purify.min.js` - Do not modify; vendor library for XSS protection
-- `static/js/marked.min.js` - Do not modify; vendor library
-- `static/js/highlight.min.js` - Do not modify; vendor library
+- `static/js/purify.min.js` - Vendor library (DOMPurify)
+- `static/js/marked.min.js` - Vendor library (Marked.js)
+- `static/js/highlight.min.js` - Vendor library (Highlight.js)
 
-## Adding New Features
+## Adding Features
 
 ### Backend (app.py)
-- New API endpoints go in `app.py` with `@rate_limit` decorator
-- POST endpoints require CSRF validation via `validate_csrf_token()`
+- New endpoints use `@rate_limit` decorator
+- POST endpoints require CSRF via `validate_csrf_token()`
 - Follow existing patterns for path validation and symlink checks
-- All endpoints must log security events
 
 ### Frontend
-- JavaScript changes go in `static/js/app.js`
-- CSS changes go in `static/css/main.css`
-- Theme-specific overrides go in `static/css/themes/*.css`
-- Use localStorage for client-side persistence
-- Always include try-catch for localStorage operations
+- JavaScript: `static/js/app.js`
+- CSS: `static/css/main.css`
+- Themes: `static/css/themes/*.css`
+- Use localStorage with try-catch for client-side persistence
 
-### State Management
-- Current state tracked in app.js: `recentFiles`, `bookmarks`, `currentFilePath`, `rawMode`
-- Recent files: max 15, FIFO queue
-- Bookmarks: unlimited, sorted alphabetically
-- All state persists via localStorage with graceful fallback
+### State (app.js)
+- `recentFiles` - max 8, FIFO queue
+- `bookmarks` - unlimited, sorted alphabetically
+- All state persists via localStorage
 
 ## Testing
 
-- Run `python app.py` and test at http://localhost:5000
+- Run `python app.py`, test at http://localhost:5000
 - Check `security.log` for warnings after testing
-- XSS test files are in `security-tests/`
-- Test with all 6 themes (especially Oracle theme for sidebar sections)
-- Hard refresh browser (Ctrl+Shift+R) after code changes
-
-## Known Behavior
-
-- Recent Files & Bookmarks sections collapsed by default
-- Browser caching: may need hard refresh (Ctrl+Shift+R) after updates
-- localStorage quota: ~5-10MB limit (sufficient for current features)
+- Test with all 6 themes (especially Oracle for sidebar sections)
+- Hard refresh (Ctrl+Shift+R) after code changes
 
 ## Preferences
 

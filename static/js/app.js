@@ -11,7 +11,7 @@
     let csrfToken = null;
     let showHidden = localStorage.getItem('md-viewer-show-hidden') === 'true' || false;
     let sortOrder = localStorage.getItem('md-viewer-sort-order') || 'date'; // 'date' or 'name'
-    const MAX_RECENT_FILES = 15;
+    const MAX_RECENT_FILES = 8;
     let recentFiles = JSON.parse(localStorage.getItem('md-viewer-recent-files') || '[]');
     let bookmarks = JSON.parse(localStorage.getItem('md-viewer-bookmarks') || '[]');
     let currentFilePath = null;
@@ -704,7 +704,7 @@
                 <span class="file-name">${escapeHtml(data.name)}</span>
                 <span class="file-path">${escapeHtml(toDisplayPath(dirPath))}/</span>
                 <button class="bookmark-button" id="bookmark-btn">
-                    <span>☆</span><span>Bookmark</span>
+                    <span>☆</span>
                 </button>
                 <div class="metadata-display">
                     <span class="metadata-loading">Loading metadata...</span>
@@ -1058,11 +1058,11 @@
 
         if (isBookmarked(currentFilePath)) {
             bookmarkBtn.classList.add('bookmarked');
-            bookmarkBtn.innerHTML = '<span>⭐</span><span>Bookmarked</span>';
+            bookmarkBtn.innerHTML = '<span>⭐</span>';
             bookmarkBtn.title = 'Remove bookmark';
         } else {
             bookmarkBtn.classList.remove('bookmarked');
-            bookmarkBtn.innerHTML = '<span>☆</span><span>Bookmark</span>';
+            bookmarkBtn.innerHTML = '<span>☆</span>';
             bookmarkBtn.title = 'Add bookmark';
         }
     }
