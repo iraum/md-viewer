@@ -11,11 +11,13 @@ Requires Python 3.8+.
 ```bash
 git clone https://github.com/your-username/md-viewer.git
 cd md-viewer
-pip install -r requirements.txt
-python app.py
+python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
+PYTHON=./venv/bin/python ./start.sh
 ```
 
 Open **http://localhost:5000**
+
+`start.sh` honors `FLASK_HOST` (default `127.0.0.1`), `FLASK_PORT` (default `5000`), `PYTHON`, and `SECRET_KEY`. Set `SECRET_KEY` to keep sessions across restarts. The 🏠 button follows the user running the process; 📁 jumps to the configured Spielraum directory.
 
 ## Features
 
@@ -34,6 +36,7 @@ Open **http://localhost:5000**
 ```
 md-viewer/
 ├── app.py                       # Flask backend
+├── start.sh                     # Launcher (banner + env overrides)
 ├── requirements.txt             # Python dependencies (Flask)
 ├── templates/
 │   └── index.html               # Single-page HTML shell
@@ -86,6 +89,7 @@ The theme appears in the dropdown after server restart.
 | `GET` | `/api/browse?path=<dir>` | List directory contents |
 | `GET` | `/api/file?path=<file>` | Get markdown file content |
 | `GET` | `/api/file-metadata?path=<file>` | Get file stats (mtime, size, word/line count) |
+| `GET` | `/api/file-mtime?path=<file>` | Get modification time only (stat-only check) |
 | `GET` | `/api/image?path=<img>` | Serve image files |
 | `GET` | `/api/themes` | List available themes |
 | `POST` | `/api/themes` | Create or update a theme (requires CSRF token) |

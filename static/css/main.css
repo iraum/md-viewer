@@ -171,6 +171,14 @@ html, body {
     padding: 8px 0;
 }
 
+.sidebar-footer {
+    padding: 6px 12px;
+    border-top: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 11px;
+    text-align: right;
+}
+
 .file-item {
     display: flex;
     align-items: center;

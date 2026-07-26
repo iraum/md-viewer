@@ -23,8 +23,8 @@
                 <select id="theme-select" title="Select theme">
                     <option value="">Default</option>
                 </select>
-                <button id="home-btn" class="nav-btn" title="Home (/home/opc)">🏠</button>
-                <button id="spielraum-btn" class="nav-btn" title="Spielraum (/run/media/opc/spielraum)">📁</button>
+                <button id="home-btn" class="nav-btn" data-home-dir="{{ home_dir }}" title="Home ({{ home_dir }})">🏠</button>
+                <button id="spielraum-btn" class="nav-btn" title="Spielraum (/mnt/spielraum/code-spielraum)">📁</button>
                 <button id="sort-toggle-btn" class="nav-btn sort-btn" title="Toggle sort order">
                     <span id="sort-icon">↓</span>
                 </button>
@@ -53,6 +53,7 @@
             <div class="file-tree" id="file-tree">
                 <div class="loading">Loading...</div>
             </div>
+            <div class="sidebar-footer" title="User running the md-viewer process">as: {{ username }}</div>
         </aside>
 
         <!-- Main Content: Markdown Display -->

@@ -27,9 +27,10 @@
     let refreshDebounceTimer = null;
 
     // Path display configuration
-    const BASE_PATH = '/run/media/opc/spielraum';
+    const BASE_PATH = '/mnt/spielraum';
     const DISPLAY_ROOT = '/spielraum';
-    const HOME_DIR = '/home/opc';
+    const SPIELRAUM_BTN_TARGET = '/mnt/spielraum/code-spielraum';
+    const HOME_DIR = document.getElementById('home-btn').dataset.homeDir;
 
     // DOM Elements
     const fileTree = document.getElementById('file-tree');
@@ -219,7 +220,7 @@
 
         // Spielraum button
         spielraumBtn.addEventListener('click', () => {
-            browse(BASE_PATH);
+            browse(SPIELRAUM_BTN_TARGET);
         });
 
         // Sort toggle button

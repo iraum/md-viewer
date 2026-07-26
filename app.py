@@ -8,6 +8,7 @@ import os
 import json
 import logging
 import secrets
+import getpass
 from pathlib import Path
 from functools import wraps
 from flask import Flask, render_template, jsonify, request, send_from_directory, session
@@ -18,7 +19,7 @@ app = Flask(__name__)
 # Application Configuration (before logging setup)
 HOME_DIR = Path.home()
 THEMES_DIR = Path(__file__).parent / "static" / "css" / "themes"
-DEFAULT_START_DIR = Path("/run/media/opc/spielraum")  # Changed to allow full filesystem access
+DEFAULT_START_DIR = Path("/mnt/spielraum")  # Changed to allow full filesystem access
 MAX_THEME_SIZE = 100 * 1024  # 100KB max theme size
 MAX_MARKDOWN_SIZE = 10 * 1024 * 1024  # 10MB max markdown file size
 LOG_FILE = Path(__file__).parent / "security.log"
@@ -153,7 +154,7 @@ def rate_limit(func):
 @app.route("/")
 def index():
     """Serve the main application page."""
-    return render_template("index.html")
+    return render_template("index.html", home_dir=str(HOME_DIR), username=getpass.getuser())
 
 
 @app.route("/api/csrf-token")
