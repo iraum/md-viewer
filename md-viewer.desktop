@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Markdown Viewer
+GenericName=Markdown Browser
+Comment=Browse and render local markdown files in your browser
+Exec=env PYTHON=/mnt/spielraum/code-spielraum/utilities-ijr/md-viewer/venv/bin/python /mnt/spielraum/code-spielraum/utilities-ijr/md-viewer/start.sh --background
+Path=/mnt/spielraum/code-spielraum/utilities-ijr/md-viewer
+Icon=/mnt/spielraum/code-spielraum/utilities-ijr/md-viewer/static/favicon.svg
+Terminal=false
+Categories=Utility;Development;TextTools;
+StartupNotify=false

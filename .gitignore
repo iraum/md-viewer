@@ -1,2 +1,4 @@
 security.log
 venv/
+md-viewer.log
+md-viewer.pid
